@@ -32,6 +32,7 @@
 
 ## Software
 - [www.r-project.org](https://www.r-project.org)
+  - [An introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf)
 
 ## Course Program
 - **Descriptive Statistics**: Data types, frequency distributions, summary statistics (mean, median, variance), visualizations (histograms, boxplots).
