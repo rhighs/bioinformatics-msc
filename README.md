@@ -53,4 +53,6 @@ A few recommendations:
 | **Databases**                     | **Wednesday**| 16:15 - 18:45     | 25.1.3    |
 |                                   | **Thursday** | 16:15 - 18:45     | 25.1.2    |
 
+### First Semester Courses
+
 ### [MIT LICENSE](./LICENSE)
