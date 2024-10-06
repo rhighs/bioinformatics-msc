@@ -1,0 +1,26 @@
+site_name: "Bioinformatics for Computational Genomics - MSc Repository"
+theme:
+  name: mkdocs
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - js/mathjax-config.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+plugins:
+  - search
+  - awesome-pages:
+      collapse_single_pages: false
+repo_url: https://github.com/rhighs/bioinformatics-msc.git
+nav:
+  - Home: index.md
+  - Resources: RESOURCES.md
+  - Lectures:
+      - Genetics: lectures/genetics-cellular-and-molecular-biology/index.md
+      - Organic Chemistry: lectures/organic-chemistry/index.md
+      - Statistics: lectures/statistics/index.md
+
