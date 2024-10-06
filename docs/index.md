@@ -1,58 +1,36 @@
-# [Bioinformatics for Computational Genomics - MSc Repository 2024/2025](https://www.unimi.it/en/education/master-programme/bioinformatics-computational-genomics)
+# Bioinformatics for Computational Genomics
 
-This repository serves as a central hub for my personal notes, scripts, code, and other resources that I’ve accumulated during the course of
-my studies. The goal is to create a valuable resource for both myself and others who are interested in the field, whether they are fellow
-students or collaborators.
+This website is designed as a central hub for notes, scripts, and resources accumulated during the [MSc in Bioinformatics for Computational Genomics](https://www.unimi.it/en/education/master-programme/bioinformatics-computational-genomics). The goal is to provide a structured collection of materials for students and anyone interested in bioinformatics and related fields.
 
-## Table of contents
-  - [Resources](./RESOURCES.md)
+## Quick links
 
-## A brief overview
+{% macro render_toc(pages) %}
+<ul>
+{% for page in pages %}
+  <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% if page.children %}
+      {{ render_toc(page.children) }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endmacro %}
 
-- **Lecture Notes**: Comprehensive notes from lectures, summarizing key concepts, techniques, and applications covered in the program. Mostly markdown.
-- **Scripts and Code**: Various scripts be it Python, R.
-- **Assignments and Projects**: Solutions to assignments, along with code and reports from projects.
-- **Resources**: A collection of links to research papers, tutorials, and other materials that are relevant to the courses and topics
-    covered.
+{{ render_toc(navigation.pages) }}
 
-## Contributing
+---
 
-Contributions are welcome! If you have notes, code, or resources that you think would be valuable to others, feel free to submit a pull request or contact me directly.
+### Core contents in a few words
 
+This website includes comprehensive lecture notes covering key concepts and methodologies in subjects like Organic Chemistry, Statistics, Genetics, and Molecular Biology.
+It also provides scripts and code examples written in Python, R, and Bash to demonstrate practical bioinformatics tools, such as BioPython and R for statistical analysis.
+Additionally, documentation for assignments and group projects showcases real-world applications, including data analysis, machine learning in genomics, and statistical model building.
 
-**NOTE**:
-A few recommendations:
+---
 
-- Notes:
-  - Write notes as markdown files.
-  - This format is easy to understand both in terms of syntax and layout.
+## Requesting changes
 
-- Code:
-  - Make sure it runs.
-  - Make sure any dependency is listed and updated via a proper package manager.
-  - Make sure to include the necessary tools and guides to run it properly.
+If you find any typos, inconsistencies, or would like to suggest improvements, you can request changes via
 
-- Resources:
-   - TBD.
-
-## Course timetable
-
-### Polimi dispatched courses
-
-| Course                            | Day         | Time              | Location  |
-|-----------------------------------|-------------|-------------------|-----------|
-| **Bioinformatics and Computational Biology** | **Monday**    | 12:15 - 13:45   | B.3.4     |
-|                                   | **Tuesday**  | 09:15 - 10:45     | 9.0.3     |
-|                                   |             | 17:15 - 18:45     | 26.12     |
-| **Programming and Databases**     | **Monday**   | 08:15 - 09:45     | T.0.3     |
-|                                   | **Wednesday**| 14:15 - 15:45     | 25.1.3    |
-|                                   |             | 17:15 - 18:45     | 25.1.3    |
-| **Statistics**                    | **Monday**   | 08:15 - 09:45     | T.0.3     |
-|                                   | **Tuesday**  | 09:15 - 10:45     | 25.1.3    |
-|                                   | **Wednesday**| 14:15 - 15:45     | 25.1.3    |
-| **Databases**                     | **Wednesday**| 16:15 - 18:45     | 25.1.3    |
-|                                   | **Thursday** | 16:15 - 18:45     | 25.1.2    |
-
-### First Semester Courses
-
-### [MIT LICENSE](./LICENSE)
+- [Github: rhighs/bioinformatics-msc](https://github.com/rhighs/bioinformatics-msc)

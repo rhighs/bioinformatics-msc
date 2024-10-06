@@ -1,6 +1,6 @@
 # Genetics, Cellular, and Molecular Biology
 
-Welcome to the course on Genetics, Cellular, and Molecular Biology. Below are the lessons covered in this course.
+Welcome to the course on Genetics, Cellular, and Molecular Biology. Below are the lesson notes covered collected for this course.
 
 ## Lessons
 

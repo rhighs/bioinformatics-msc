@@ -25,6 +25,8 @@
   - Learn fundamental methods of statistical inference.
   - Apply statistical methods to real data using appropriate software.
 
+[TOC]
+
 ## Timetable
 - **Monday**: 10:30 - 13:15 (Room T.0.3)
 - **Wednesday**: 11:30 - 13:15 (Room 25.1.3)  

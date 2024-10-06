@@ -1,6 +1,6 @@
 # Organic Chemistry
 
-Welcome to the course on Organic Chemistry. Below are the lessons covered in this course.
+Welcome to the Organic Chemistry course notes. Below are the lessons covered in this course.
 
 ## Lessons
 

@@ -4,6 +4,8 @@
     - laura.belvisi@unimi.it
     - daniele.passarella@unimi.it
 
+[TOC]
+
 ## Program of the Course
 
 - Fundamentals of general chemistry
