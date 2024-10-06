@@ -4,21 +4,19 @@ This repository serves as a central hub for my personal notes, scripts, code, an
 my studies. The goal is to create a valuable resource for both myself and others who are interested in the field, whether they are fellow
 students or collaborators.
 
-## Table of contents
-  - [Resources](./RESOURCES.md)
+This all really is just a [`mkdocs`](https://www.mkdocs.org/) project which can be accessed [here](https://rhighs.github.io/bioinformatics-msc).
+Most of the project is still WIP and quite unstructured. 
 
 ## A brief overview
 
-- **Lecture Notes**: Comprehensive notes from lectures, summarizing key concepts, techniques, and applications covered in the program. Mostly markdown.
-- **Scripts and Code**: Various scripts be it Python, R.
+- **Lecture Notes**: Comprehensive notes from lectures. Mostly markdown with support for inline and block LaTeX syntax.
+- **Scripts and Code**: scripts and code examples.
 - **Assignments and Projects**: Solutions to assignments, along with code and reports from projects.
-- **Resources**: A collection of links to research papers, tutorials, and other materials that are relevant to the courses and topics
-    covered.
+- **Resources**: A collection of links to research papers, tutorials, and other materials that are relevant to the courses and topics covered.
 
 ## Contributing
 
 Contributions are welcome! If you have notes, code, or resources that you think would be valuable to others, feel free to submit a pull request or contact me directly.
-
 
 **NOTE**:
 A few recommendations:
@@ -34,25 +32,3 @@ A few recommendations:
 
 - Resources:
    - TBD.
-
-## Course timetable
-
-### Polimi dispatched courses
-
-| Course                            | Day         | Time              | Location  |
-|-----------------------------------|-------------|-------------------|-----------|
-| **Bioinformatics and Computational Biology** | **Monday**    | 12:15 - 13:45   | B.3.4     |
-|                                   | **Tuesday**  | 09:15 - 10:45     | 9.0.3     |
-|                                   |             | 17:15 - 18:45     | 26.12     |
-| **Programming and Databases**     | **Monday**   | 08:15 - 09:45     | T.0.3     |
-|                                   | **Wednesday**| 14:15 - 15:45     | 25.1.3    |
-|                                   |             | 17:15 - 18:45     | 25.1.3    |
-| **Statistics**                    | **Monday**   | 08:15 - 09:45     | T.0.3     |
-|                                   | **Tuesday**  | 09:15 - 10:45     | 25.1.3    |
-|                                   | **Wednesday**| 14:15 - 15:45     | 25.1.3    |
-| **Databases**                     | **Wednesday**| 16:15 - 18:45     | 25.1.3    |
-|                                   | **Thursday** | 16:15 - 18:45     | 25.1.2    |
-
-### First Semester Courses
-
-### [MIT LICENSE](./LICENSE)
