@@ -16,7 +16,6 @@ This website is designed as a central hub for notes, scripts, and resources accu
 {% endfor %}
 </ul>
 {% endmacro %}
-
 {{ render_toc(navigation.pages) }}
 
 ---
