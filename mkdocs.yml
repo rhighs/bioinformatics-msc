@@ -26,4 +26,5 @@ nav:
   - Lectures:
       - Genetics: lectures/genetics-cellular-and-molecular-biology/index.md
       - Organic Chemistry: lectures/organic-chemistry/index.md
+      - Biochemistry: lectures/biochemistry/index.md
       - Statistics: lectures/statistics/index.md
