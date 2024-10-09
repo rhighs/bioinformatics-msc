@@ -1,4 +1,6 @@
-# First Lesson
+# Lesson 1 - An Introduction to Cell Biology: Key Concepts and Biomolecules
+
+[TOC]
 
 ## The Living Cell
 

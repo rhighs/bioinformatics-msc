@@ -1,8 +1,14 @@
 # Biochemistry
 
+
 ##  Prof. L. Gourlay - Department of Biosciences
 - **Office & Lab**: 5th floor, Tower B  
 - **Email**: [louise.gourlay@unimi.it](mailto:louise.gourlay@unimi.it)
+
+## Notes
+[Introduction to Cell Biology: Key Concepts and Biomolecules](./lesson-1.md)
+
+[TOC]
 
 ## Lessons
 - **Day**: Wednesday, 9:00 – 13:00
