@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -24,4 +27,6 @@ jobs:
         pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-macros-plugin pymdown-extensions
 
     - name: Deploy to gh pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mkdocs gh-deploy --force
