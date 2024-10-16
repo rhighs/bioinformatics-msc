@@ -12,6 +12,7 @@
 |                          | [**YouTube: Shells, Subshells, and Orbitals**](https://www.youtube.com/watch?v=UDmrRWeFWwU) | Video Tutorial | Simple video explaining atomic structure       |
 |                          | [**MinutePhysics: A Better Way To Picture Atoms**](https://www.youtube.com/watch?v=W2Xb2GFK2yc) | Video Tutorial | Visualization of atomic structure and behavior |
 |                          | [**Hydrogenic Orbitals Visualizer**](https://al2me6.github.io/evanescence/) | Tool | Interactive tool for visualizing hydrogen orbitals |
+|                           | [**Encoding 2D molecular structures**](https://www.drugdesign.org/chapters/encoding-molecules/) | Website | Encoding 2D Molecular structures into 2D computer readable formats | 
 | **Research Papers**       | [**Google Scholar**](https://scholar.google.com)   | Research Database     | Search for academic papers                     |
 
 ---
