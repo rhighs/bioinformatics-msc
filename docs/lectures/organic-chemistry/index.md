@@ -4,5 +4,6 @@ Welcome to the Organic Chemistry course notes. Below are the lessons covered in 
 
 ## Lessons
 
-- [Lesson 1: Introduction (17-09-2024)](./lesson-1_17-09-2024-introduction.md)
-- [Lesson 2 (19-09-2024)](./lesson-2_19-09-2024.md)
+- [Introduction](./lesson-1_17-09-2024-introduction.md)
+- [Atomic structure and chemical bonding](./lesson-2_19-09-2024.md)
+- [Brønsted-Lowry Acids and Bases, Lewis Acids and Bases](./lesson-3_20-09-2024.md)
