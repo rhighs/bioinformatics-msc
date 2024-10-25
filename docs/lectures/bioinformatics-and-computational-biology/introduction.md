@@ -12,7 +12,7 @@ In alternative, the following extended defition could be considered:
 
 - Bioinformatics is an interdisciplinary field that combines biology, computer science, mathematics, and statistics to analyze and interpret biological data, especially large datasets. It primarily involves developing algorithms, computational models, and software tools to understand biological processes and systems.
 
-### Definition of **Computational Biology** (according to the \( \text{NIH} \))
+### Definition of **Computational Biology** (according to the $ \text{NIH} $)
 
 Computational Biology refers to the development and application of data-analytical and theoretical methods, mathematical modeling and
 computational simulation tecniques to the study of biological, behavioral and, social systems.

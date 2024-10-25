@@ -97,15 +97,15 @@ In biomolecules, functional groups are essential for dictating how molecules int
 
 These groups typically replace hydrogen atoms in hydrocarbons, giving rise to molecules with diverse chemical behaviors.
 
-- **Variety of carbon** (\( \text{C} \)): Carbon's ability to form covalent single, double, and occasionally triple bonds makes it incredibly versatile.
+- **Variety of carbon** ($ \text{C} $): Carbon's ability to form covalent single, double, and occasionally triple bonds makes it incredibly versatile.
     - In biological molecules, this means carbon can create stable, complex structures essential for life, such as chains and rings, which serve as backbones for biomolecules.
 
 - **Formation of 4 stable single bonds**: Carbon can form up to four stable single covalent bonds with other atoms, including other carbon atoms.
     - This property allows the formation of long carbon chains and branched structures, which are foundational to many biomolecules like carbohydrates, lipids, and proteins.
     - Biomolecules as hydrocarbons: Biomolecules can be thought of as hydrocarbons (compounds made of hydrogen and carbon). In most biomolecules, some of the hydrogen atoms are replaced by functional groups, such as:
-        - hydroxyl \( \text{-OH} \)
-        - carboxyl \( \text{-COOH} \)
-        - amino \( \text{-NH}_2 \)
+        - hydroxyl $ \text{-OH} $
+        - carboxyl $ \text{-COOH} $
+        - amino $ \text{-NH}_2 $
 
         Giving the molecules distinct properties and reactivity.
 
