@@ -2,6 +2,10 @@
 
 **Objective**: Develop a solid grasp of Lewis structures, isomers, resonance structures, and acid-base concepts, focusing on conjugate acids and bases.
 
+**PDFs to Focus On**:
+- **Lesson 2**: [lesson 2 problems with annotations](88), [lesson 2 problems](89)
+- **Lesson 3**: [lesson 3 problems with annotations](90), [lesson 3 problems](91)
+
 ---
 
 #### **Hours 1–2: Lewis Structures, Isomers, and Resonance**
@@ -9,17 +13,17 @@
 
 - **Hour 1:**
   - **Pomodoro 1 (25 min)**: Study and draw **Lewis structures** for basic molecules and polyatomic ions.
-    - **Exercise**: Try drawing Lewis structures for H₂O, CO₂, NH₃, and CH₄. Move to more complex ones like benzene.
+    - **Exercise**: Try drawing Lewis structures for $\ce{H2O}$, $\ce{CO2}$, $\ce{NH3}$, and $\ce{CH4}$. Move to more complex ones like benzene.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Review **isomers and resonance structures**.
-    - **Exercise**: For given compounds, identify different isomers (structural and geometric).
-    - **Resonance Exercise**: Practice resonance structures for NO₂⁻, O₃, and benzene.
+    - **Exercise**: For given compounds, identify different isomers (structural and geometric) using **Lesson 2 PDFs**.
+    - **Resonance Exercise**: Practice resonance structures for $\ce{NO2-}$, $\ce{O3}$, and benzene.
 
 - **Hour 2:**
   - **Pomodoro 3 (25 min)**: Apply and identify **resonance structures** and **formal charges**.
-    - **Exercise**: Use formal charge calculations to decide the most stable resonance forms for molecules like SO₄²⁻.
+    - **Exercise**: Use formal charge calculations to determine the most stable resonance forms for molecules like $\ce{SO4^{2-}}$ using **Lesson 2 problems**【88†source】【89†source】.
   - **Break (5 min)**
-  - **Pomodoro 4 (25 min)**: Review material, and summarize Lewis structures, resonance, and isomers.
+  - **Pomodoro 4 (25 min)**: Review material and summarize Lewis structures, resonance, and isomers.
     - **Recall Exercise**: Describe, without looking, the process to draw a Lewis structure and list isomer types.
 
 ---
@@ -29,14 +33,14 @@
 
 - **Hour 3:**
   - **Pomodoro 1 (25 min)**: Study acid-base theory (Bronsted-Lowry), focusing on **conjugate acids and bases**.
-    - **Exercise**: For given acids like HCl, H₂SO₄, and acetic acid, identify their conjugate bases.
+    - **Exercise**: For given acids like $\ce{HCl}$, $\ce{H2SO4}$, and acetic acid, identify their conjugate bases using **Lesson 3 PDFs**【90†source】【91†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice **pKa values and acidity trends**.
-    - **Exercise**: Compare acidity based on pKa (e.g., HCl vs. H₂O) and predict the outcome of acid-base reactions.
+    - **Exercise**: Compare acidity based on pKa (e.g., $\ce{HCl}$ vs. $\ce{H2O}$) and predict the outcome of acid-base reactions.
 
 - **Hour 4:**
   - **Pomodoro 3 (25 min)**: Go over **acid-base interactions in organic compounds**.
-    - **Exercise**: Identify acidic and basic sites in molecules like amino acids or carboxylic acids.
+    - **Exercise**: Identify acidic and basic sites in molecules like amino acids or carboxylic acids, referring to **Lesson 3 problems** for practice.
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Summarize and recap.
     - **Recall Exercise**: Describe the key differences between conjugate acids and bases and how to determine pKa-based acidity.
@@ -47,6 +51,10 @@
 
 **Objective**: Quickly identify functional groups and understand the basics of molecular conformations (Newman projections and chair conformations).
 
+**PDFs to Focus On**:
+- **Lesson 4**: [lesson 4 problems with annotations](92)
+- **Lesson 5**: [lesson 5 problems with annotations](93), [lesson 5 problems](94)
+
 ---
 
 #### **Hours 1–2: Functional Groups**
@@ -54,14 +62,14 @@
 
 - **Hour 1:**
   - **Pomodoro 1 (25 min)**: Review functional groups: carboxylic acids, amides, amines, alcohols, etc.
-    - **Exercise**: Identify functional groups in complex molecules provided in your exercises【19†source】.
+    - **Exercise**: Identify functional groups in complex molecules provided in your exercises from **Lesson 4 PDFs**【92†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice identifying and naming common compounds by IUPAC rules.
-    - **Exercise**: Practice naming compounds (refer to Lesson 5 problems)【20†source】【21†source】.
+    - **Exercise**: Practice naming compounds with **Lesson 5 problems**【93†source】【94†source】.
 
 - **Hour 2:**
   - **Pomodoro 3 (25 min)**: Functional group applications—focus on the reactivity of each group.
-    - **Exercise**: For functional groups in molecules, explain reactivity trends (e.g., amines vs. carboxylic acids).
+    - **Exercise**: For functional groups in molecules, explain reactivity trends (e.g., amines vs. carboxylic acids) using examples from **Lesson 5 PDFs**.
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Summarize and test recall on functional groups.
     - **Recall Exercise**: List functional groups from memory and explain their primary reactivity.
@@ -73,14 +81,14 @@
 
 - **Hour 3:**
   - **Pomodoro 1 (25 min)**: Study **Newman projections**.
-    - **Exercise**: Draw Newman projections for ethane, butane, and 2,3-dimethylbutane.
+    - **Exercise**: Draw Newman projections for ethane, butane, and 2,3-dimethylbutane, referring to **Lesson 5 problems**【93†source】【94†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice **conformational analysis**.
-    - **Exercise**: Identify the most stable conformation by analyzing torsional strain in different projections【20†source】.
+    - **Exercise**: Identify the most stable conformation by analyzing torsional strain in different projections.
 
 - **Hour 4:**
   - **Pomodoro 3 (25 min)**: **Chair conformations** for cyclohexane and derivatives.
-    - **Exercise**: Draw and compare chair conformations of cyclohexane derivatives like methylcyclohexane.
+    - **Exercise**: Draw and compare chair conformations of cyclohexane derivatives like methylcyclohexane using **Lesson 5 problems with annotations**【93†source】.
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Recap and test recall.
     - **Recall Exercise**: Without looking, describe the rules for drawing stable chair conformations and identifying Newman projections.
@@ -91,6 +99,10 @@
 
 **Objective**: Develop an understanding of stereoisomerism and reaction mechanisms, focusing on SN1/SN2 processes.
 
+**PDFs to Focus On**:
+- **Lesson 6**: [lesson 6 problems with annotations](95), [lesson 6 problems](96)
+- **Lesson 7**: [lesson 7 problems](97)
+
 ---
 
 #### **Hours 1–2: Stereochemistry**
@@ -98,14 +110,14 @@
 
 - **Hour 1:**
   - **Pomodoro 1 (25 min)**: Review stereoisomers and **R/S configurations**.
-    - **Exercise**: Assign R/S configurations to chiral centers in provided molecules【22†source】.
+    - **Exercise**: Assign R/S configurations to chiral centers in provided molecules using **Lesson 6 problems with annotations**【95†source】【96†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice identifying **stereogenic centers**.
     - **Exercise**: Locate and mark chiral centers on complex structures, deciding chirality or achirality.
 
 - **Hour 2:**
   - **Pomodoro 3 (25 min)**: Review **diastereomers and enantiomers**.
-    - **Exercise**: Identify pairs of enantiomers and diastereomers in examples【22†source】.
+    - **Exercise**: Identify pairs of enantiomers and diastereomers in examples from **Lesson 6 PDFs**【95†source】【96†source】.
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Summarize stereochemistry principles.
     - **Recall Exercise**: Explain the difference between enantiomers, diastereomers, and meso compounds.
@@ -117,7 +129,7 @@
 
 - **Hour 3:**
   - **Pomodoro 1 (25 min)**: Review **SN1 and SN2 reaction mechanisms**.
-    - **Exercise**: Identify nucleophiles and leaving groups in SN1/SN2 reactions, with a focus on substituent effects【24†source】.
+    - **Exercise**: Identify nucleophiles and leaving groups in SN1/SN2 reactions, with a focus on substituent effects using **Lesson 7 PDF**【97†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice predicting reaction outcomes based on pKa and nucleophile strength.
     - **Exercise**: For given reactions, determine whether they proceed by SN1 or SN2 and justify.
