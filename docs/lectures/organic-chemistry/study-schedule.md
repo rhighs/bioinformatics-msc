@@ -3,8 +3,8 @@
 **Objective**: Develop a solid grasp of Lewis structures, isomers, resonance structures, and acid-base concepts, focusing on conjugate acids and bases.
 
 **PDFs to Focus On**:
-- **Lesson 2**: [lesson 2 problems with annotations](88), [lesson 2 problems](89)
-- **Lesson 3**: [lesson 3 problems with annotations](90), [lesson 3 problems](91)
+- **Lesson 2**: [lesson 2 problems with annotations](assets/ex/lesson%202%20problems%20with%20annotations.pdf), [lesson 2 problems](assets/ex/lesson%202%20problems.pdf)
+- **Lesson 3**: [lesson 3 problems with annotations](assets/ex/lesson%203%20problems%20with%20annotations.pdf), [lesson 3 problems](assets/ex/lesson%203%20problems.pdf)
 
 ---
 
@@ -52,8 +52,8 @@
 **Objective**: Quickly identify functional groups and understand the basics of molecular conformations (Newman projections and chair conformations).
 
 **PDFs to Focus On**:
-- **Lesson 4**: [lesson 4 problems with annotations](92)
-- **Lesson 5**: [lesson 5 problems with annotations](93), [lesson 5 problems](94)
+- **Lesson 4**: [lesson 4 problems with annotations](assets/ex/lesson%204%20problems%20with%20annotations.pdf)
+- **Lesson 5**: [lesson 5 problems with annotations](assets/ex/lesson%205%20problems%20with%20annotations.pdf), [lesson 5 problems](assets/ex/lesson%205%20problems.pdf)
 
 ---
 
@@ -100,8 +100,8 @@
 **Objective**: Develop an understanding of stereoisomerism and reaction mechanisms, focusing on SN1/SN2 processes.
 
 **PDFs to Focus On**:
-- **Lesson 6**: [lesson 6 problems with annotations](95), [lesson 6 problems](96)
-- **Lesson 7**: [lesson 7 problems](97)
+- **Lesson 6**: [lesson 6 problems with annotations](assets/ex/lesson%206%20problems%20with%20annotations.pdf), [lesson 6 problems](assets/ex/lesson%206%20problems.pdf)
+- **Lesson 7**: [lesson 7 problems](assets/ex/lesson%207%20problems.pdf)
 
 ---
 
