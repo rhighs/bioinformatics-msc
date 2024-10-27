@@ -32,6 +32,12 @@
 | 9                     | Nonyl           | $\ce{C9H19-}$    | $\ce{-CH2(CH2)7CH3}$          |
 | 10                    | Decyl           | $\ce{C10H21-}$   | $\ce{-CH2(CH2)8CH3}$          |
 
+#### Skeletal structures
+
+<p align="center">
+    <img src="assets/alkyl-groups-skeletals.png" />
+</p>
+
 ### Straight-chain alkanes
 
 | **Number of Carbons** | **Alkane Name** | **Formula**       |
