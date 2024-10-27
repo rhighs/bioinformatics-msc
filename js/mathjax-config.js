@@ -1,7 +1,6 @@
 window.MathJax = {
   tex: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
+    inlineMath: ['\$','\$'],
     processEscapes: true,
     processEnvironments: true
   },

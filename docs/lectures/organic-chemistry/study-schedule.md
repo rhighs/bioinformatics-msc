@@ -21,7 +21,7 @@
 
 - **Hour 2:**
   - **Pomodoro 3 (25 min)**: Apply and identify **resonance structures** and **formal charges**.
-    - **Exercise**: Use formal charge calculations to determine the most stable resonance forms for molecules like $\ce{SO4^{2-}}$ using **Lesson 2 problems**【88†source】【89†source】.
+    - **Exercise**: Use formal charge calculations to determine the most stable resonance forms for molecules like $\ce{SO4^{2-}}$using **Lesson 2 problems**【88†source】【89†source】.
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Review material and summarize Lewis structures, resonance, and isomers.
     - **Recall Exercise**: Describe, without looking, the process to draw a Lewis structure and list isomer types.
@@ -36,7 +36,7 @@
     - **Exercise**: For given acids like $\ce{HCl}$, $\ce{H2SO4}$, and acetic acid, identify their conjugate bases using **Lesson 3 PDFs**【90†source】【91†source】.
   - **Break (5 min)**
   - **Pomodoro 2 (25 min)**: Practice **pKa values and acidity trends**.
-    - **Exercise**: Compare acidity based on pKa (e.g., $\ce{HCl}$ vs. $\ce{H2O}$) and predict the outcome of acid-base reactions.
+    - **Exercise**: Compare acidity based on pKa (e.g., $\ce{HCl}$vs. $\ce{H2O}$) and predict the outcome of acid-base reactions.
 
 - **Hour 4:**
   - **Pomodoro 3 (25 min)**: Go over **acid-base interactions in organic compounds**.

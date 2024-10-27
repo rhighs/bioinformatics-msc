@@ -8,6 +8,7 @@
 |                          | *Organic Chemistry, 6th Edition*                   | Book                  | Janice Gorzynski Smith, another recommended text|
 |                          | *Any Organic Chemistry textbook*                   | Book                  | General recommendation from course             |
 | **Software**              | [**ChemDraw**](https://www.perkinelmer.com/category/chemdraw) | Software | Tool for visualizing chemical structures       |
+|                           | [**PTable**](https://ptable.com/) | Web app | Interactive periodic table |
 | **Courses & Tutorials**   | [**Organic Chemistry Course on MyAriel**](https://myariel.unimi.it/course/view.php?id=4257) | Course Website | Official course page for Organic Chemistry     |
 |                          | [**YouTube: Shells, Subshells, and Orbitals**](https://www.youtube.com/watch?v=UDmrRWeFWwU) | Video Tutorial | Simple video explaining atomic structure       |
 |                          | [**MinutePhysics: A Better Way To Picture Atoms**](https://www.youtube.com/watch?v=W2Xb2GFK2yc) | Video Tutorial | Visualization of atomic structure and behavior |
