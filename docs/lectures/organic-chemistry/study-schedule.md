@@ -140,3 +140,29 @@
   - **Break (5 min)**
   - **Pomodoro 4 (25 min)**: Final recall and summary.
     - **Recall Exercise**: Summarize, without looking, the key differences between SN1 and SN2 reactions, including sterics and pKa considerations.
+
+### About past exams, what to focus on
+
+1. **Lewis Structures and Functional Groups**  
+   - Practice drawing Lewis structures and identifying functional groups. Be prepared to analyze compounds by structure and recognize functional groups directly
+
+2. **Curved Arrow Notation and Resonance**  
+   - You’ll likely need to show electron movement using curved arrows, particularly in resonance structures and acid-base reactions. Make sure you're clear on resonance theory and how electron pairs shift between structures
+
+3. **Bond Angles and Hybridization**  
+   - Expect questions requiring predictions of bond angles and identification of orbital types (e.g., sp, sp2, sp3). This includes applying hybridization theory to understand geometry
+
+4. **Acidity and Basicity Trends**  
+   - Be prepared to rank compounds by acidity or basicity, considering factors like electronegativity, resonance, and hybridization effects. Practice with conjugate bases and understanding equilibrium direction in acid-base reactions
+
+5. **Stereochemistry**  
+   - Review stereoisomerism (enantiomers, diastereomers) and R/S configuration assignments. You may be asked to locate stereogenic centers, determine chirality, and assign configurations based on priority rules
+
+6. **Nomenclature**  
+   - Brush up on IUPAC naming, particularly for alkanes, alkyl halides, and substituted cyclohexanes. Make sure you can convert between condensed, skeletal, and complete structural formulas
+
+7. **Newman Projections and Conformations**  
+   - You’ll likely encounter questions on Newman projections and conformations (e.g., staggered, eclipsed) for alkanes, including assigning names and assessing stability
+
+8. **SN1 and SN2 Mechanisms**  
+   - Focus on SN1 and SN2 reactions, including identifying nucleophiles, leaving groups, and product stereochemistry. Be able to describe reaction conditions, relative stability, and rate-determining factors
