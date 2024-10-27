@@ -62,3 +62,14 @@
 | 18                    | Octadecane      | $\ce{C18H38}$    |
 | 19                    | Nonadecane      | $\ce{C19H40}$    |
 | 20                    | Icosane         | $\ce{C20H42}$    |
+
+### Types of stereoisomers
+
+| Type                     | Mirror Image?              | Examples                                                      |
+|--------------------------|----------------------------|---------------------------------------------------------------|
+| **Enantiomers**          | Yes, non-superimposable    | L-alanine and D-alanine                                       |
+| **Diastereoisomers**     | No                         | Cis-trans isomers, epimers (D-glucose vs. D-galactose), anomers (α-D-glucose vs. β-D-glucose) |
+| **Conformational Isomers** | No                      | Chair and boat forms of cyclohexane, gauche and anti in butane |
+| **Atropisomers**         | No                         | Restricted rotation biaryls (substituted biphenyls)           |
+| **Configurational Isomers** | Depends               | Encompasses both enantiomers and diastereoisomers             |
+| **Homomers**             | Identical                  | Two ethanol molecules                                         |
