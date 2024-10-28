@@ -74,7 +74,6 @@
 | **Configurational Isomers** | Depends               | Encompasses both enantiomers and diastereoisomers             |
 | **Homomers**             | Identical                  | Two ethanol molecules                                         |
 
-
 ### Stereochemistry defs cheatsheet
 
 | **Category**             | **Term**               | **Definition**                                                                                                    | **Key Characteristics**                                                                                                                                                                                                                     |
@@ -89,7 +88,9 @@
 | **Types of Stereoisomers** | **Enantiomers**        | Non-superimposable mirror-image molecules.                                                                        | - Opposite configurations at all stereogenic centers<br> - Same physical properties (except optical rotation direction)                                                                                                                   |
 |                          | **Diastereomers**      | Stereoisomers that are not mirror images of each other.                                                           | - Different configurations at one or more (but not all) stereogenic centers<br> - Different physical and chemical properties                                                                                                             |
 | **Enantiomeric Properties** | **Optical Activity**  | Ability of chiral molecules to rotate plane-polarized light.                                                       | - Clockwise rotation: (+) or dextrorotatory<br> - Counterclockwise rotation: (-) or levorotatory<br> - Racemic mixtures are optically inactive                                                       |
-|                          | **Racemic Mixture**    | 1:1 mixture of two enantiomers, optically inactive as rotations cancel.                                           | - Forms racemate crystal structure in solids<br> - Often requires chiral resolution techniques to separate                                                                                          |
+|                          | **Racemic Mixture**    | 1:1 mixture of two enantiomers, optically inactive as rotations cancel.                                           | - Forms
+
+ racemate crystal structure in solids<br> - Often requires chiral resolution techniques to separate                                                                                          |
 | **Stereochemical Rules** | **Cahn-Ingold-Prelog (CIP)** | System to assign priority to substituents on a stereocenter for R/S configurations.                         | - Priority based on atomic number, bond multiplicity, and connectivity<br> - Used to determine R (clockwise) or S (counterclockwise) configurations at stereogenic centers                         |
 |                          | **R/S Configuration**  | Labels to specify the absolute configuration of a chiral center.                                                  | - Assign priorities, arrange so the lowest priority is away, and trace from highest to lowest to determine R or S                                                                                   |
 |                          | **E/Z Configuration**  | Used to designate the configuration of double bonds (geometric isomerism).                                        | - **E**: higher priority groups on opposite sides<br> - **Z**: higher priority groups on the same side                                                                                              |
@@ -108,21 +109,21 @@
 
 | Conjugate Acid pKa | Conjugate Base Stability | Leaving Group Quality              | Example                  |
 |--------------------|--------------------------|------------------------------------|--------------------------|
-| **pKa < 0**       | Very stable (weak base)  | Excellent leaving group            | $ \text{I}^- $, $ \text{Br}^- $, $ \text{Cl}^- $ |
-| **pKa 5–15**      | Moderately stable        | Moderate leaving group             | $ \text{H}_2\text{O} $, alcohols         |
-| **pKa > 15**      | Unstable (strong base)   | Poor leaving group                 | $ \text{OH}^- $, $ \text{NH}_2^- $, alkoxides   |
+| **pKa < 0**       | Very stable (weak base)  | Excellent leaving group            | $\text{I}^-$, $\text{Br}^-$, $\text{Cl}^-$ |
+| **pKa 5–15**      | Moderately stable        | Moderate leaving group             | $\text{H}_2\text{O}$, alcohols         |
+| **pKa > 15**      | Unstable (strong base)   | Poor leaving group                 | $\text{OH}^-$, $\text{NH}_2^-$, alkoxides   |
 
 ### Acidity and basicity trends
 
 | Factor                          | Trend in Acidity                        | Trend in Basicity                        | Explanation                                                                                      |
 |---------------------------------|-----------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------|
-| **Down a Group (e.g., HCl to HI)**       | Acidity increases                       | Basicity decreases                      | Larger atoms down a group form weaker bonds with $ \text{H} $, increasing acidity. Conjugate bases are more stable. |
+| **Down a Group (e.g., HCl to HI)**       | Acidity increases                       | Basicity decreases                      | Larger atoms down a group form weaker bonds with $\text{H}$, increasing acidity. Conjugate bases are more stable. |
 | **Across a Period (e.g., CH₄ to HF)**    | Acidity increases                       | Basicity decreases                      | More electronegative atoms across a period hold onto negative charge better, making stronger acids. |
 | **Electronegativity**           | Higher electronegativity = stronger acid | Lower electronegativity = stronger base | More electronegative atoms stabilize the conjugate base better, increasing acidity.              |
 | **Atomic Size**                 | Larger atoms = stronger acid            | Smaller atoms = stronger base           | Larger atoms stabilize the negative charge in the conjugate base, enhancing acidity.             |
 | **Inductive Effect**            | Electron-withdrawing groups increase acidity | Electron-donating groups increase basicity | Electronegative groups near acidic sites pull electron density, stabilizing the conjugate base.  |
 | **Resonance**                   | Resonance stabilization increases acidity | Resonance decreases basicity            | Delocalization of negative charge stabilizes the conjugate base, favoring acidity.               |
-| **Hybridization**               | More s-character = stronger acid        | Less s-character = stronger base        | $ sp $ hybridized atoms hold negative charge closer, stabilizing the conjugate base.           |
+| **Hybridization**               | More s-character = stronger acid        | Less s-character = stronger base        | $sp$ hybridized atoms hold negative charge closer, stabilizing the conjugate base.           |
 | **Solvent Effects**             | Protic solvents stabilize acids         | Aprotic solvents stabilize bases        | Protic solvents can stabilize conjugate bases through hydrogen bonding, enhancing acidity.       |
 
 ### Deprotonation step, should it apply?
@@ -131,29 +132,29 @@ If you see **O or N with three bonds and a positive charge** after the nucleophi
 
 | Situation                             | Apply Deprotonation?                          | Reason                                                 |
 |---------------------------------------|-----------------------------------------------|--------------------------------------------------------|
-| **Oxygen or nitrogen with three bonds and a positive charge** (e.g., $ \text{R-OH}_2^+ $ or $ \text{R-NH}_3^+ $) | **Yes** | Oxygen and nitrogen prefer neutral states with fewer bonds. |
-| **Nitrogen with four bonds and a positive charge** (e.g., $ \text{R}_4\text{N}^+ $) | **No**  | Quaternary ammonium ions are stable with a positive charge. |
-| **After nucleophilic attack by neutral molecule (e.g., $ \text{H}_2\text{O} $ or $ \text{NH}_3 $)** | **Usually Yes** | The nucleophile gains a proton and needs to lose it for stability. |
+| **Oxygen or nitrogen with three bonds and a positive charge** (e.g., $\text{R-OH}_2^+$ or $\text{R-NH}_3^+$) | **Yes** | Oxygen and nitrogen prefer neutral states with fewer bonds. |
+| **Nitrogen with four bonds and a positive charge** (e.g., $\text{R}_4\text{N}^+$) | **No**  | Quaternary ammonium ions are stable with a positive charge. |
+| **After nucleophilic attack by neutral molecule (e.g., $\text{H}_2\text{O}$ or $\text{NH}_3$)** | **Usually Yes** | The nucleophile gains a proton and needs to lose it for stability. |
 | **Leaving group departure without proton gain** (e.g., direct SN1/SN2) | **No**  | No positive intermediate is formed that requires neutralization. |
-
 
 ### Alkyl halides, reaction type based off of class type (primary, secondary, tertiary)
 
 | **Class of Halide**      | **Common Mechanisms**  | **Conditions Favoring Each Mechanism** | **Example Reaction**                                                   | **Product**                                      |
 |--------------------------|------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------|
-| **Primary Alkyl Halide** | $ \text{S}_\text{N}2 $ | Strong nucleophile in aprotic solvent  | $ \text{CH}_3\text{CH}_2\text{Br} + \text{OH}^- \rightarrow \text{CH}_3\text{CH}_2\text{OH} + \text{Br}^- $ | Ethanol ($ \text{CH}_3\text{CH}_2\text{OH} $) |
-|                          | **E2**                 | Strong base (e.g., NaOEt)              | $ \text{CH}_3\text{CH}_2\text{CH}_2\text{Br} + \text{EtO}^- \rightarrow \text{CH}_2=\text{CHCH}_3 + \text{EtOH} $ | Propene ($ \text{CH}_2=\text{CHCH}_3 $)       |
+| **Primary Alkyl Halide** | $\text{S}_\text{N}2$ | Strong nucleophile in aprotic solvent  | $\text{CH}_3\text{CH}_2\text{Br} + \text{OH}^- \rightarrow \text{CH}_3\text{CH}_2\text{OH} + \text{Br}^-$ | Ethanol ($\text{CH}_3\text{CH}_2\text{OH}$) |
+|                          | **E2**                 | Strong base (e.g., NaOEt)              | $\text{CH}_3\text{CH}_2\text{CH}_2\text{Br} + \text{EtO}^- \rightarrow \text{CH}_2=\text{CHCH}_3 + \text{EtOH}$ | Propene ($\text{CH}_2=\text{CHCH}_3$)       |
 |                          | No $\text{S}_\text{N}1$              | Primary carbocations are unstable     | -                                                                       | -                                                |
 |                          | **No E1**              | Primary carbocations are unstable      | -                                                                       | -                                                |
-| **Secondary Alkyl Halide** | $ \text{S}_\text{N}2 $ | Strong nucleophile, aprotic solvent   | $ \text{CH}_3\text{CHBrCH}_3 + \text{CN}^- \rightarrow \text{CH}_3\text{CH(CN)CH}_3 + \text{Br}^- $ | Isopropyl cyanide ($ \text{CH}_3\text{CH(CN)CH}_3 $) |
-|                          | **E2**                 | Strong base (e.g., NaOEt or NaOH)      | $ \text{CH}_3\text{CHBrCH}_3 + \text{EtO}^- \rightarrow \text{CH}_3\text{CH=CH}_2 + \text{EtOH} $ | Propene ($ \text{CH}_3\text{CH=CH}_2 $)       |
-|                          | **$ \text{S}_\text{N}1 $** (less common) | Weak nucleophile, polar protic solvent | $ \text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \rightarrow \text{CH}_3\text{CH(OH)CH}_3 + \text{HBr} $ | Isopropanol ($ \text{CH}_3\text{CH(OH)CH}_3 $) |
-|                          | **E1**                 | Weak base, polar protic solvent        | $ text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \rightarrow \text{CH}_2=\text{CHCH}_3 + \text{HBr} $ | Propene ($ \text{CH}_3\text{CH=CH}_2 $)       |
-| **Tertiary Alkyl Halide** | No $\text{S}_\text{N}2$  due to steric hindrance | -                               | -                                                                       | -                                                |
-|                          | $\text{S}_\text{N}1$ | Weak nucleophile, polar protic solvent | $ \text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_3\text{COH} + \text{HBr} $ | tert-Butyl alcohol ($ \text{(CH}_3\text{)}_3\text{COH} $) |
-|                          | **E2**                 | Strong base (e.g., NaOH, NaOEt)        | $ \text{(CH}_3\text{)}_3\text{CBr} + \text{OH}^- \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{H}_2\text{O} + \text{Br}^- $ | Isobutene ($ \text{(CH}_3\text{)}_2\text{C=CH}_2 $) |
-|                          | **E1**                 | Weak base, polar protic solvent        | $ \text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{HBr} $ | Isobutene ($ \text{(CH}_3\text{)}_2\text{C=CH}_2 $) |
+| **Secondary Alkyl Halide** | $\text{S}_\text{N}2$ | Strong nucleophile, aprotic solvent   | $\text{CH}_3\text{CHBrCH}_3 + \text{CN}^- \rightarrow \text{CH}_3\text{CH(CN)CH}_3 + \text{Br}^-$ | Isopropyl cyanide ($\text{CH}_3\text{CH(CN)CH}_3$) |
+|                          | **E2**                 | Strong base (e.g., NaOEt or NaOH)      | $\text{CH}_3\text{CHBrCH}_3 + \text{EtO}^- \rightarrow \text{CH}_3\text{CH=CH}_2 + \text{EtOH}$ | Propene ($\text{CH}_3\text{CH=CH}_2$)       |
+|                          | **$\text{S}_\text{N}1$** (less common) | Weak nucleophile, polar protic solvent | $\text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \rightarrow \text{CH}_3\text{CH(OH)CH}_3 + \text{HBr}$ | Isopropanol ($\text{CH}_3\text{CH(OH)CH}_3$) |
+|                          | **E1**                 | Weak base, polar protic solvent        | $text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \
 
+rightarrow \text{CH}_2=\text{CHCH}_3 + \text{HBr}$ | Propene ($\text{CH}_3\text{CH=CH}_2$)       |
+| **Tertiary Alkyl Halide** | No $\text{S}_\text{N}2$  due to steric hindrance | -                               | -                                                                       | -                                                |
+|                          | $\text{S}_\text{N}1$ | Weak nucleophile, polar protic solvent | $\text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_3\text{COH} + \text{HBr}$ | tert-Butyl alcohol ($\text{(CH}_3\text{)}_3\text{COH}$) |
+|                          | **E2**                 | Strong base (e.g., NaOH, NaOEt)        | $\text{(CH}_3\text{)}_3\text{CBr} + \text{OH}^- \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{H}_2\text{O} + \text{Br}^-$ | Isobutene ($\text{(CH}_3\text{)}_2\text{C=CH}_2$) |
+|                          | **E1**                 | Weak base, polar protic solvent        | $\text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{HBr}$ | Isobutene ($\text{(CH}_3\text{)}_2\text{C=CH}_2$) |
 
 ### Determining the relationships between molecules
 
