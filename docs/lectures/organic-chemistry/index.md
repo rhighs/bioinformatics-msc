@@ -156,6 +156,7 @@ rightarrow \text{CH}_2=\text{CHCH}_3 + \text{HBr}$ | Propene ($\text{CH}_3\text{
 |                          | **E2**                 | Strong base (e.g., NaOH, NaOEt)        | $\text{(CH}_3\text{)}_3\text{CBr} + \text{OH}^- \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{H}_2\text{O} + \text{Br}^-$ | Isobutene ($\text{(CH}_3\text{)}_2\text{C=CH}_2$) |
 |                          | **E1**                 | Weak base, polar protic solvent        | $\text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{HBr}$ | Isobutene ($\text{(CH}_3\text{)}_2\text{C=CH}_2$) |
 
+
 ### Determining the relationships between molecules
 
 <p align="center">
