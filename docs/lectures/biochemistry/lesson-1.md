@@ -187,6 +187,7 @@ Some of the key differences can be highlighted below as both functional and stru
 
 ### Nucleotides can also function as monomers
 
+**What even is a monomer?<br/>**
 A **monomer** is a small molecule that can join with other similar or identical molecules to form a **polymer**. Nucleotides serve as monomers for nucleic acids (DNA and RNA) and play crucial roles beyond building DNA and RNA strands.
 
 #### Functions of Nucleotides Beyond DNA and RNA Synthesis
@@ -211,7 +212,7 @@ A **phosphodiester linkage** is covalent bond that joins successive nucleotides 
 
 ### Base pairing permits the duplication of genetic information
 
-A **base pair** is a label given to the **hydrogen-bonding** patterns that emerge between complementary strands of nucleic acids. Each nucleotide in DNA pairs specifically with only one other nucleotide: adenine (A) pairs with thymine (T), and cytosine (C) pairs with guanine (G). This specific pairing means that the strand on the opposite side of each base pair serves as a template that complements and mirrors the sequence of the current strand, creating a **complementary strand** (e.g., one strand determines the sequence of the other).
+A **base pair** is a label given to the **hydrogen-bonding** patterns that emerge between complementary strands of nucleic acids. Each nucleotide in DNA pairs specifically with only one other nucleotide: adenine (A) pairs with thymine (T) $\rightarrow \text{A-T T-A}$ , and cytosine (C) pairs with guanine (G) $\rightarrow \text{G-C C-G}$. This specific pairing means that the strand on the opposite side of each base pair serves as a template that complements and mirrors the sequence of the current strand, creating a **complementary strand** (e.g., one strand determines the sequence of the other).
 
 <p align=center>
     <img src="assets/nucleotides-base-pairs.png" width=500>
@@ -241,7 +242,7 @@ In the DNA double helix, **hydrogen bonding** and **base structure** determine t
   - The **offset pairing** of the DNA strands creates the **major and minor grooves**. These grooves are essential as they allow protein interactions, enabling DNA replication, transcription, and other cellular processes.
   - the groove structure allows DNA to make some information highly accessible (major groove) for regulatory purposes, while other interactions are more generalized or protective (minor groove). This arrangement is crucial for efficient cellular function and precise control over genetic processes.
 
-### Secondary Structure of RNA
+### Secondary structure of RNA
 
 In the secondary structure of RNA, the overall shape and stability arise from A-form double helix regions and loops or bulges due to mismatches or unpaired bases.
 
@@ -257,3 +258,137 @@ In essence, these "zipped and unzipped" sections give RNA flexibility and unique
 <p align=center>
     <img src="assets/rna-a-form-double-helix.png" width=400>
 </p>
+
+### What does RNA do?
+
+There are some different classes of **RNA**
+
+- **ribosomal RNAs** (rRNAs) $\rightarrow$ components of ribosomes.
+- **messenger RNAs** (mRNAs) $\rightarrow$ intermediates in protein synthesis
+- **transfer RNAs** (tRNAs) $\rightarrow$ adapter molecules that translate the information in mRNA into a specific amino acid sequence
+  - literally the type of RNA that puts the mRNA into practice
+- **noncoding RNAs** (ncRNAs) $\rightarrow$ wide variety of functions.
+  - most of these are found involved in translation processes
+    - translation is the the process in a living organism by which proteins are produced via RNA.
+
+<p align=center>
+    <img src="assets/classes-of-RNA.png" width=400>
+</p>
+
+> 🔗 Resources
+> yourgenome: from DNA to Protein: https://www.youtube.com/watch?v=gG7uCskUOrA
+
+Ribonucleoprotein (RNP) particles called ribosomes are the 'factories' where translation takes place in the cell.
+
+$\alpha\text{-amino acids} $ are the amino acids in which amino and carboxyl groups are bound to the same carbon atom
+
+<p align=center>
+    <img src="assets/20-classes-amino-acids.png" width=500>
+</p>
+
+### Types of protein structures
+
+Each level of protein structure (primary, secondary, tertiary, and quaternary) contributes to the overall shape and function of the protein.
+
+<p align=center>
+    <img src="https://proteopedia.org/wiki/images/thumb/6/6e/Protein-structure-4-levels-III-flat.png/800px-Protein-structure-4-levels-III-flat.png">
+</p>
+
+#### Primary structure
+
+The first structure defines the unique order in which amino acids are linked together to form a protein. Proteins are constructed from a set of 20 amino acids that are represented in the image above.
+
+Structure for amino acids is generally like follows:
+
+- A carbon, the $\alpha$ carbon bonded to the four groups:
+  - A $\ce{H}$ atom
+  - A Carboxyl group $\ce{-COOH}$
+  - An amino group $\ce{NH2}$
+  - A "variable" group or "R" group, that could really be anything
+
+The "R" group varies among amino acids and determines the differences between these protein monomers.
+
+**NOTE**: The order of amino acids in a polypeptide chain is unique and specific to a particular protein. Altering a single amino acid causes a gene mutation, which most often results in a non-functioning protein.
+
+#### Secondary structure
+
+Secondary structure refers to the coiling or folding of a polypeptide chain that gives the protein its 3D shape.
+
+- $\alpha \space helix \rightarrow$ coiled spring and is secured by hydrogen bonding
+- $\beta \space pleated \space sheet\rightarrow$ held together by hydrogen bonding between polypeptide units of the folded chain that lie adjacent to one another.
+
+#### Tertiary structure
+
+This structure refers to the comprehensive 3D structure of the polypeptide chain of a protein. There are several bonds and forces holding a protein together
+
+- **Hydrophobic interactions**, probably the most relevant. The "R" group of the amino acid is either hydrophobic or hydrophilic. Hydrophilic "R" groups will seek contact with their aqueous environment, while hydrophobic "R" groups will avoid water and position towards the center.
+- **Hydrogen bonding** as reinforcement of the structure given by the latter.
+- Due to **protein folding**, ionic bonding can occur between the oppositely charged "R" groups that could form further bonds.
+
+Folding can also result in covalent bonding between the "R" groups of cysteine amino acids. This type of bonding forms what is called a **disulfide bridge**... _van der Waals forces also assist in the stabilization of protein structure._
+
+#### Quaternary Structure
+
+Quaternary Structure refers to the structure of a protein macromolecule formed by interactions between multiple polypeptide chains (forming dimers, trimers, tetramers, etc.)
+<br/>
+Each polypeptide chain is referred to as a subunit. Proteins with quaternary structure may consist of more than one of the same type of protein subunit. Such proteins can be dynamic, allowing conformational changes essential for function.
+
+- Allows complex formations like ion channels and receptors.
+- Facilitates regulation via allosteric effects, where binding at one site affects another.
+
+- **Example**:
+  - **Hemoglobin**: found in the blood, is an iron-containing protein that binds oxygen molecules. It contains four subunits: two alpha subunits and two beta subunits.
+  - Hemoglobin shows cooperative behavior, where oxygen binding to one subunit affects others.
+
+### Lipids
+
+These are not considered polymeers as they are not build from smaller subunits similar in composition/structure. As such, they have highly variable chemical structure, poor solubility in water. Used as energy stored and they're the structural foundation of membranes.
+
+**NOTE**: lipids are classified according to their level of complexity: simple, complex and derivative
+
+### Fatty acids
+
+Fatty acids are water-insoluble hydrocarbons user for cellular energy storage.
+
+**How come they store energy?**<br/>
+Fatty acids have a high energy density because their long hydrocarbon chains contain numerous $\ce{C-H}$ (carbon-hydrogen) bonds. These bonds are rich in energy because they are non-polar and relatively weak, making them easily broken down to release energy.
+
+- When oxidized during metabolism, these bonds release a significant amount of energy, more than carbohydrates and proteins per gram.
+
+Fatty acids can either be:
+
+- Saturated
+  - All carbons along the chain have the maximum amount of $\ce{H}$ atoms bonded to them, leading to no $\ce{C=C}$ double bonds.
+- Insaturated
+  - $\ce{C=C}$ double bonds are present
+
+Packing is the feature of fatty acids that allow them to "pack" together into increasingly steady structural form depending on the degree of the unsaturation.
+
+- Fully saturated fats $\rightarrow$ quasi perfect packing $\Rightarrow$ waxy at room temp.
+- Increasingly insaturated fats $\rightarrow$ more messy packing $\Rightarrow$ liquid tendency at room temp.
+
+<p align=center>
+    <img src="assets/fats-packing.png" width=400>
+</p>
+
+### Glycerophospholipids
+
+The main component of membranes in bacteria, plants and animals. **glycerophospholipids** (aka phosphoglycerides) are membrane lipids in which two fatty acids are attached in ester linkage to the first and seconds carbons of glycerol, and a highly polar or charged group is attached through a phosphodiester linkage to the third carbon.
+
+<p align=center>
+    <img src="assets/phosphoglyceride.png" width=600>
+</p>
+
+- **Glycerol** shown in red.
+- Carbons numbering in glycerol goes left to right.
+- **Blue** represent the group bonded to the glycerol via the *phosphodiester linkage*.
+
+### Micelle formations
+
+Spherical structures containing amphipathic molecules arranged with hydrophobic regions in the interior and hydrophilic head groups on the exterior.
+
+<p align=center>
+    <img src="assets/micelle-formation.png" width=300>
+</p>
+
+This formation is favoured when the cross sectional are of the head group is greater than that of the acyl side chain(s), leading to a sort of code shape if you will.
