@@ -392,3 +392,47 @@ Spherical structures containing amphipathic molecules arranged with hydrophobic 
 </p>
 
 This formation is favoured when the cross sectional are of the head group is greater than that of the acyl side chain(s), leading to a sort of code shape if you will.
+
+### The hydrophobic effect
+ 
+**What does it lead to in lipids?** The hydrophobic effect drives glycerophospholipids to form bilayers in water, where hydrophobic tails minimize contact with water by clustering inward while hydrophilic heads face outward. This self-organization creates an enclosed membrane structure (formed as a bilayer, where tails can be seen aggregating in the middle of the two head layers), essential for forming cellular compartments, facilitating communication, and regulating substance movement in and out of the cell.
+
+<p align=center>
+    <img src="assets/bilayer.png" width=300>
+</p>
+
+The bilayer formation is favoured in cases where the cross-sectional area of the head group is similar to the one of the acyl side chains.
+
+<p align=center>
+    <img src="assets/bilayer-function.png" width=500>
+</p>
+
+Proteins are interspersed within this lipid bilayer, either embedded within the membrane (**integral proteins**) or attached to its surface (**peripheral proteins**). These proteins can move laterally within the membrane, contributing to its fluidity and functionality.
+
+- The overall pattern results in a dynamic and flexible structure that supports various cellular functions, such as transport, signaling, and communication.
+
+### Triacylglycerols, storage of energy and insulation
+
+Triacyglycerols are the simplest lipids constructed from fatty acids
+- They are composed of three fatty acids, each in ester linkage with a single glycerol (esters of glycerol)
+
+
+**REMIND**
+- **An ester linkage** is a bond formed between an alcohol and a carboxylic acid, resulting in the release of water (a condensation reaction). In this bond, the hydroxyl group $\ce{-OH}$ of the carboxylic acid reacts with the hydroxyl group of the alcohol, leading to the formation of an ester functional group $\ce{-COO-}$. In the context of lipids, ester linkages are significant because they link fatty acids to glycerol in triglycerides and glycerophospholipids.
+- **An alcohol** is an organic compound that contains one or more hydroxyl groups $\ce{-OH}$ attached to a carbon atom.
+
+<p align=center>
+    <img src="assets/triacyglycerol.png" width=300>
+    <img src="assets/glycerol.png" width=200>
+</p>
+
+### Quick overview on carbs
+
+
+**Carbohydrates** are organic compounds made of carbon, hydrogen, and oxygen, typically in a 1:2:1 ratio. They are classified into three categories:
+
+1. **Monosaccharides**: Simple sugars like glucose and fructose, which serve as energy sources.
+2. **Disaccharides**: Composed of two monosaccharides, such as sucrose (table sugar) and lactose (milk sugar).
+3. **Polysaccharides**: Long chains of monosaccharides, including starch (energy storage in plants) and cellulose (structural support in plant cell walls).
+
+Carbohydrates are the most abundant biomolecules on Earth, crucial for energy storage and metabolism, and are produced in plants via photosynthesis, where carbon dioxide and water are converted into sugars using sunlight.
