@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Organic Chemistry, Academic Year 2024/2025 - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/organic-chemistry/lesson-6_1-10-2024.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#organic-chemistry-academic-year-20242025" class="nav-link">Organic Chemistry, Academic Year 2024/2025</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#fundamentals-of-stereochemistry-chirality-stereogenic-centers-descriptors-isomerism-and-optical-activity" class="nav-link">Fundamentals of Stereochemistry: Chirality, Stereogenic Centers, Descriptors, Isomerism, and Optical Activity</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#stereochemistry" class="nav-link">Stereochemistry</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</h1>
+<div class="toc">
+<ul>
+<li><a href="#organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</a></li>
+<li><a href="#fundamentals-of-stereochemistry-chirality-stereogenic-centers-descriptors-isomerism-and-optical-activity">Fundamentals of Stereochemistry: Chirality, Stereogenic Centers, Descriptors, Isomerism, and Optical Activity</a><ul>
+<li><a href="#stereochemistry">Stereochemistry</a><ul>
+<li><a href="#recall-constitutional-isomers">Recall: constitutional isomers</a></li>
+<li><a href="#chirality-and-achirality">Chirality and Achirality</a><ul>
+<li><a href="#concept-of-superimposability-and-enantiomers">Concept of superimposability and enantiomers</a></li>
+<li><a href="#achiral-molecules">Achiral Molecules</a></li>
+<li><a href="#chiral-molecules">Chiral Molecules</a></li>
+<li><a href="#stereogenic-centers">Stereogenic centers</a></li>
+<li><a href="#planes-of-symmetry">Planes of symmetry</a></li>
+<li><a href="#chirality-recap">Chirality recap</a></li>
+<li><a href="#looking-for-stereogenic-centers">Looking for stereogenic centers</a></li>
+</ul>
+</li>
+<li><a href="#enantiomers">Enantiomers</a><ul>
+<li><a href="#stereogenic-centers-in-cyclic-compounds">Stereogenic centers in cyclic compounds</a></li>
+<li><a href="#labelliing-stereogenic-centers-using-r-or-s">Labelliing stereogenic centers using R or S</a></li>
+</ul>
+</li>
+<li><a href="#how-to-actually-assign-r-or-s-quickly">HOW TO ACTUALLY ASSIGN R or S, QUICKLY</a></li>
+<li><a href="#example-summary">Example Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="fundamentals-of-stereochemistry-chirality-stereogenic-centers-descriptors-isomerism-and-optical-activity">Fundamentals of Stereochemistry: Chirality, Stereogenic Centers, Descriptors, Isomerism, and Optical Activity</h1>
+<h2 id="stereochemistry">Stereochemistry</h2>
+<p><strong>Stereochemistry</strong> refers to the three-dimensional structure of a molecule. As a consequence of stereochemistry apparently minor differences in 3D structure can result in vastly different properties. We can observe this by considering starch and cellulose which are both composed of the same repeating unit. </p>
+<p>In cellulose the <span class="arithmatex">\(\ce{O}\)</span>atom joins two rings using equatorial bonds, in stach the<span class="arithmatex">\(\ce{O}\)</span> atom joins two rings using one equatorial and one axial bond.</p>
+<p>Due to these differences in stereochemistry, humans can metabolize starch for energy, but cannot digest cellulose.</p>
+<p align="center">
+    <img src="assets/stach-vs-cellulose-structure.png" width=500 />
+    <img src="assets/stach-vs-cellulose-structure-3d.png" width=500 />
+</p>
+
+<h3 id="recall-constitutional-isomers">Recall: constitutional isomers</h3>
+<p>Isomers are different compunds having the same molecular formula but different structure. The two major classes of isomers are constitutional isomers and stereo isomers.</p>
+<ul>
+<li>
+<p>Constitutional/structural isomers have</p>
+<ul>
+<li>different IUPAC names</li>
+<li>same or different functional groups</li>
+<li>different physical properties</li>
+<li>different chemical properties</li>
+</ul>
+</li>
+<li>
+<p><strong>Stereoisomers</strong></p>
+<ul>
+<li>Differ only in the way the atoms are oriented in space</li>
+<li>Have identical IUPAC names (except for prefixes like "cis" and "trans")</li>
+<li>Always have the same functional groups</li>
+<li>Differ in configuration</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+    <img src="assets/const-vs-stereo.png" width=500 />
+</p>
+
+<h3 id="chirality-and-achirality">Chirality and Achirality</h3>
+<h4 id="concept-of-superimposability-and-enantiomers">Concept of superimposability and enantiomers</h4>
+<p><strong>Chirality</strong> in molecules refers to the property of having a non-superimposable mirror image, similar to how left and right hands are mirror images but cannot be perfectly aligned. Molecules that cannot be superimposed on their mirror images are called chiral.</p>
+<p align="center">
+    <img src="assets/non-superimposable-hands.png" width=500 />
+</p>
+
+<p><strong>Achirality</strong> in molecules refers to the property of having a superimposable mirror image, like a pair of identical socks. Molecules that can be perfectly aligned with their mirror images are considered achiral.</p>
+<p align="center">
+    <img src="assets/superimposable-socks.png" width=500 />
+</p>
+
+<h4 id="achiral-molecules">Achiral Molecules</h4>
+<p>We can now consider several molecules to determine whether or not they are <a href="https://en.wikipedia.org/wiki/Chirality_(chemistry)">chiral</a>.</p>
+<p align="center">
+    <img src="assets/achiaral-mols.png" width=500 />
+</p>
+
+<ul>
+<li>The bonds and atoms of <span class="arithmatex">\(\ce{H2O}\)</span> align perfectly with its mirror image, making it achiral.</li>
+<li>Similarly, <span class="arithmatex">\(\ce{CH2BrCl}\)</span> is also achiral as its mirror image can be rotated to perfectly align with itself.</li>
+</ul>
+<h4 id="chiral-molecules">Chiral Molecules</h4>
+<p>The molecule <span class="arithmatex">\(\ce{A}\)</span>and its mirror image labeled<span class="arithmatex">\(\ce{B}\)</span> are not superimposable.</p>
+<ul>
+<li>No matter how you rotate <span class="arithmatex">\(\ce{A}\)</span>and<span class="arithmatex">\(\ce{B}\)</span>, the atoms never align.</li>
+<li>Thus, <span class="arithmatex">\(\ce{CHBrClF}\)</span>is a chiral molecule, with<span class="arithmatex">\(\ce{A}\)</span>and<span class="arithmatex">\(\ce{B}\)</span> as distinct compounds.</li>
+</ul>
+<p align="center">
+    <img src="assets/chiral-mols.png" width=500 />
+</p>
+
+<p>A and B are stereoisomers—specifically, they are <strong>enantiomers</strong>. A carbon atom with four different groups is a tetrahedral <strong>stereogenic center</strong>.</p>
+<h4 id="stereogenic-centers">Stereogenic centers</h4>
+<p>In general, a molecule with no stereogenic centers will not be chiral (though there are exceptions)
+- With no stereogenic center a molecule will always be chiral
+- With two or more stereogenic centers a molecule may or may not be chiral</p>
+<blockquote>
+<p>The most common cause, albeit not the only one, of chirality in an organic molecule is the presence of a tetrahedral atom, generally a carbon, linked to four different groups (stereogenic center).</p>
+</blockquote>
+<p>In order for a molecule to be chiral, it must not have a plane of symmetry</p>
+<h4 id="planes-of-symmetry">Planes of symmetry</h4>
+<p>A plane of symmetry is a mirror plane that cuts the molecule in half, so that one half of the molecule is a reflection of the other half.</p>
+<p align="center">
+    <img src="assets/chirality-symmetry.png" width=500 />
+</p>
+
+<p>Achiral molecules usually contain a plane of symmetry but chiral molecules do not</p>
+<h4 id="chirality-recap">Chirality recap</h4>
+<p>Everything has a mirror image. The fundamental question in chirality is whether a molecule and its mirror image are superimposable. If they are not superimposable, the molecule is chiral and lacks a plane of symmetry.</p>
+<p>If the mirror images are superimposable, the molecule is achiral and will contain a plane of symmetry. While the terms "stereogenic center" and "chiral molecule" are related, they are distinct. <strong>A chiral molecule must have one or more stereogenic centers.</strong></p>
+<h4 id="looking-for-stereogenic-centers">Looking for stereogenic centers</h4>
+<p>To locate a stereogenic center, examine each tetrahedral carbon atom in a molecule, focusing on the four distinct groups—rather than the four atoms—attached to it.</p>
+<p>Always exclude carbon atoms that cannot be tetrahedral stereogenic centers:
+- <strong>CH₂ and CH₃ groups</strong>: These groups do not have four distinct substituents. For example, CH₂ has two identical hydrogen atoms, and CH₃ has three, making them incapable of forming a chiral center.
+- <strong>sp or sp² hybridized carbons</strong>: These carbons are not tetrahedral; they are linear (sp) or trigonal planar (sp²) and therefore cannot possess the three-dimensional geometry necessary for chirality.</p>
+<p align="center">
+    <img src="assets/choosing-stereogenic-centers.png" width=400 />
+</p>
+
+<p>Larger organic molecules can have two, three, or even hundreds of stereogenic centers</p>
+<h3 id="enantiomers">Enantiomers</h3>
+<p>Enantiomers are non-superimposable mirror image molecules. Any molecule with one stereogenic center exists as a pair of enantiomers. </p>
+<p align="center">
+    <img src="assets/enantionmers.png" width=400 />
+</p>
+
+<p>To draw both enantiomers of a chiral compound such as 2-butanol, use the typical convention for depicting a tetrahedron.</p>
+<ol>
+<li>For the first enantiomer, arbitrarily place the four groups—<span class="arithmatex">\(\ce{H}\)</span>, <span class="arithmatex">\(\ce{OH}\)</span>, <span class="arithmatex">\(\ce{CH3}\)</span>, and <span class="arithmatex">\(\ce{CH2CH3}\)</span>—on any bond to the stereogenic center.</li>
+<li>Then, draw the mirror image.</li>
+</ol>
+<p align="center">
+    <img src="assets/drawing-enantiomenrs.png" width=500 />
+</p>
+
+<p>In the example, molecules A and B represent the two enantiomers of 2-butanol. These mirror images are not superimposable, confirming their status as enantiomers.</p>
+<p align="center">
+    <img src="assets/some-other-image-that-was-there.png" width=300 />
+</p>
+
+<h4 id="stereogenic-centers-in-cyclic-compounds">Stereogenic centers in cyclic compounds</h4>
+<p>Stereogenic centers may also occur at carbon atoms that are part of a ring. To find stereogenic centers on ring carbons, always draw the rings as flat polygons, and look for tetrahedral carbons that are bonded to four different groups.</p>
+<p align="center">
+    <img src="assets/stereogenic-centers-cyclic-compunds.png" width=300 />
+</p>
+
+<p><strong>Examples and biologically active mols with stereogenic centers</strong></p>
+<p align="center">
+    <img src="assets/3-methylcyclohexane.png" width=400 />
+</p>
+
+<p>In <strong>3-methylcyclohexene</strong>, the <span class="arithmatex">\(\ce{CH3}\)</span>and<span class="arithmatex">\(\ce{H}\)</span> substituents that are above and below the plane of the ring are drawn with wedges and dashes as usual.</p>
+<p align="center">
+    <img src="assets/thalidomide.png" width=400 />
+</p>
+
+<p align="center">
+    <img src="assets/sucrose-and-paclitaxel.png" width=400 />
+</p>
+
+<h4 id="labelliing-stereogenic-centers-using-r-or-s">Labelliing stereogenic centers using R or S</h4>
+<p>Since enantiomers are distinct compounds with unique spatial arrangements, they are distinguished by adding the prefix <strong>R</strong> or <strong>S</strong> to their IUPAC names. This designation helps identify the specific 3D orientation of each enantiomer.</p>
+<p><strong>Steps to Assign R/S Configuration</strong></p>
+<p><strong>Rule 1:</strong> To assign an enantiomer as <strong>R</strong> or <strong>S</strong>, priorities must be given to each group attached to the stereogenic center, following these guidelines:
+- Prioritize each group based on the atomic number of the atom directly attached to the stereogenic center.
+- The atom with the <strong>highest atomic number</strong> receives the highest priority, labeled as <strong>1</strong>.</p>
+<p align="center">
+    <img src="assets/atomic-number-numering.png" width=200 />
+</p>
+
+<p>For example, if the groups attached to the stereogenic center are <span class="arithmatex">\(\ce{H}\)</span>, <span class="arithmatex">\(\ce{OH}\)</span>, <span class="arithmatex">\(\ce{CH3}\)</span>, and <span class="arithmatex">\(\ce{Cl}\)</span>:
+  - <span class="arithmatex">\(\ce{Br}\)</span> has the highest atomic number among the attached atoms, so it is assigned priority <strong>1</strong>.
+  - <span class="arithmatex">\(\ce{Cl}\)</span> has the next highest atomic number, giving it priority <strong>2</strong>.
+  - <span class="arithmatex">\(\ce{F}\)</span> comes next, with priority <strong>3</strong>.
+  - <span class="arithmatex">\(\ce{H}\)</span>, having the lowest atomic number, is assigned priority <strong>4</strong>.</p>
+<p><strong>Rule 2 for Assigning R/S Configuration</strong></p>
+<p>When two atoms attached to the stereogenic center are identical, assign priority based on the atomic number of the atoms bonded to these identical atoms. The atom with the higher atomic number among these bonded atoms determines the higher priority.</p>
+<p>Consider the stereogenic center in butan-2-ol, where the groups attached to the chiral carbon are <span class="arithmatex">\(\ce{OH}\)</span>, <span class="arithmatex">\(\ce{CH2CH3}\)</span>, <span class="arithmatex">\(\ce{CH3}\)</span>, and <span class="arithmatex">\(\ce{H}\)</span>.</p>
+<p align="center">
+    <img src="assets/stereogenic-center-labelling-bonds.png" width=500 />
+</p>
+
+<ul>
+<li><strong>Applying Rule 1</strong>:</li>
+<li><span class="arithmatex">\(\ce{OH}\)</span> has the highest atomic number and thus receives priority <strong>1</strong>.</li>
+<li>
+<p>Hydrogen (<span class="arithmatex">\(\ce{H}\)</span>), with the lowest atomic number, is given priority <strong>4</strong>.</p>
+</li>
+<li>
+<p><strong>Applying Rule 2 for <span class="arithmatex">\(\ce{CH3}\)</span>and<span class="arithmatex">\(\ce{CH2CH3}\)</span></strong>:</p>
+</li>
+<li>Both <span class="arithmatex">\(\ce{CH3}\)</span>and<span class="arithmatex">\(\ce{CH2CH3}\)</span> are initially similar because each group has a carbon directly attached to the stereogenic center.</li>
+<li>To break the tie, examine the atoms bonded to these carbons.<ul>
+<li>In <span class="arithmatex">\(\ce{CH2CH3}\)</span>, the carbon is bonded to two hydrogens and another carbon (higher atomic number).</li>
+<li>In <span class="arithmatex">\(\ce{CH3}\)</span>, the carbon is bonded to three hydrogens only.</li>
+</ul>
+</li>
+<li>Since <span class="arithmatex">\(\ce{CH2CH3}\)</span>has a carbon attached (higher atomic number than hydrogen), it receives priority <strong>2</strong>, while<span class="arithmatex">\(\ce{CH3}\)</span> is assigned priority <strong>3</strong>.</li>
+</ul>
+<p><strong>Rule 3 for Assigning R/S Configuration</strong></p>
+<p>If two isotopes of the same element are bonded to the stereogenic center, assign priorities based on their <strong>mass numbers</strong>, with the isotope of higher mass receiving the higher priority.</p>
+<p>When comparing isotopes of hydrogen:
+- <strong>Deuterium</strong> (<span class="arithmatex">\(\ce{D}\)</span>), with a mass number of 2 (1 proton and 1 neutron), has a higher priority than <strong>hydrogen</strong> (<span class="arithmatex">\(\ce{H}\)</span>), which has a mass number of 1 (1 proton only).
+- Therefore, if both deuterium and hydrogen are attached to a stereogenic center, deuterium will receive a higher priority than hydrogen.</p>
+<p>This rule ensures that isotopic differences are considered when determining the R/S configuration of a chiral center.</p>
+<blockquote>
+<p>💡 <strong>What are isotopes?</strong>
+Isotopes are different forms of the same chemical element that have the same number of protons but different numbers of neutrons in their nuclei. Because the number of protons defines the element, isotopes share the same atomic number but differ in mass number (the sum of protons and neutrons).
+In stereochemistry, isotopes are important because they allow us to differentiate between otherwise identical atoms based on their mass, affecting priority assignments in chiral centers.</p>
+</blockquote>
+<p><strong>Rule 4 for Assigning R/S Configuration: Multiple Bonds</strong></p>
+<p>When assigning priority to an atom involved in a multiple bond (double or triple bond), treat the multiply bonded atom as if it were connected to an equivalent number of singly bonded atoms.</p>
+<p>For example:
+- In a <span class="arithmatex">\(\ce{C=O}\)</span> double bond, the carbon is treated as if it is bonded to two separate oxygen atoms.
+- This equivalent bonding approach allows us to compare priorities effectively in complex molecules.</p>
+<p>Consider a molecule with a carbonyl group (<span class="arithmatex">\(\ce{C=O}\)</span>):
+- The carbon in <span class="arithmatex">\(\ce{C=O}\)</span> is considered to be bonded to two "virtual" oxygens.
+- Similarly, each oxygen in this group is considered bonded to two "virtual" carbons.</p>
+<p>This equivalent bonding rule helps in assigning priorities correctly when determining the R/S configuration in molecules with double or triple bonds.</p>
+<p align="center">
+    <img src="assets/virtual-bonds.png" width=500 />
+</p>
+
+<h3 id="how-to-actually-assign-r-or-s-quickly">HOW TO ACTUALLY ASSIGN R or S, QUICKLY</h3>
+<ol>
+<li><strong>Assign Priorities</strong>:</li>
+<li>Rank the four groups attached to the stereogenic center by atomic number (highest atomic number = priority 1).</li>
+<li>
+<p>If two groups have the same atom, apply Rule 2 to rank based on the next atoms along each branch.</p>
+</li>
+<li>
+<p><strong>Orient the Molecule</strong>:</p>
+</li>
+<li>Arrange the molecule so that the lowest priority group (4) is pointing away from you (on a dashed wedge).</li>
+<li>Visualize only the remaining three groups (1, 2, and 3) in the plane.</li>
+</ol>
+<p align="center">
+    <img src="assets/orienting-groups-for-labeling.png" width=500 />
+</p>
+
+<ol>
+<li><strong>Determine R or S</strong>:</li>
+<li>Trace a path from priority <span class="arithmatex">\(\text{ 1 } \rightarrow \text{ 2 } \rightarrow \text{ 3 }\)</span>.<ul>
+<li><strong>Clockwise</strong> = <strong>R</strong> (rectus).</li>
+<li><strong>Counterclockwise</strong> = <strong>S</strong> (sinister).</li>
+</ul>
+</li>
+</ol>
+<p align="center">
+    <img src="assets/cw-ccw-r-s.png" width=500 />
+</p>
+
+<h3 id="example-summary">Example Summary</h3>
+<ul>
+<li>If the circle from <span class="arithmatex">\(\text{ 1 } \rightarrow \text{ 2 } \rightarrow \text{ 3 }\)</span> is clockwise, label as <strong>R</strong>.</li>
+<li>If the circle from <span class="arithmatex">\(\text{ 1 } \rightarrow \text{ 2 } \rightarrow \text{ 3 }\)</span> is counterclockwise, label as <strong>S</strong>.</li>
+</ul>
+<p>The letter R or S preceeds the IUPAC name of the molecule using a prefix (S)- or (R)-</p>
+<p align="center">
+    <img src="assets/r-s-in-IUPAC.png" width=500 />
+</p>
+
+<p><strong>NOTE</strong>: If the lowest priority group is not facing towards back, rotate the molecule 120 degrees around a stationary bond axis.</p>
+<p align="center">
+    <img src="assets/rotating-mol-for-labelling.png" width=500 />
+</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

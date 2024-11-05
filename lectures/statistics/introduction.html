@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Introduction to Statistics - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="../organic-chemistry/index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/statistics/introduction.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#introduction-to-statistics" class="nav-link">Introduction to Statistics</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#course-information" class="nav-link">Course Information</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#course-details" class="nav-link">Course Details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#timetable" class="nav-link">Timetable</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#software" class="nav-link">Software</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#course-program" class="nav-link">Course Program</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#exam-and-assessment" class="nav-link">Exam and Assessment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#exam-details" class="nav-link">Exam details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#data-analysis-project-overview" class="nav-link">Data Analysis Project Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#data-requirements-and-data-sources" class="nav-link">Data Requirements and Data Sources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#project-steps" class="nav-link">Project Steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#course-bibliography" class="nav-link">Course Bibliography</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#course-resources" class="nav-link">Course Resources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="introduction-to-statistics">Introduction to Statistics</h1>
+<p><strong>A.Y. 2024/2025</strong><br />
+<strong>Bioinformatics and Computational Genomics</strong><br />
+<strong>Politecnico di Milano</strong></p>
+<h2 id="course-information">Course Information</h2>
+<p><strong>Instructor</strong>  </p>
+<blockquote>
+<p>Dott. Ing. Alessandra Menafoglio<br />
+MOX, Department of Mathematics<br />
+Building 14 (Nave), VI Floor<br />
+Email: alessandra.menafoglio@polimi.it  </p>
+</blockquote>
+<p><strong>Teaching Assistant</strong>  </p>
+<blockquote>
+<p>Dott. Ing. Giulia Patané<br />
+MOX, Department of Mathematics<br />
+Building 14 (Nave), V Floor<br />
+Email: giulia.patane@polimi.it  </p>
+</blockquote>
+<h2 id="course-details">Course Details</h2>
+<ul>
+<li><strong>Credits</strong>: 6 CFU</li>
+<li><strong>Course Goals</strong>:</li>
+<li>Summarize and visualize data.</li>
+<li>Understand tools and models for analyzing random phenomena.</li>
+<li>Learn fundamental methods of statistical inference.</li>
+<li>Apply statistical methods to real data using appropriate software.</li>
+</ul>
+<div class="toc">
+<ul>
+<li><a href="#introduction-to-statistics">Introduction to Statistics</a><ul>
+<li><a href="#course-information">Course Information</a></li>
+<li><a href="#course-details">Course Details</a></li>
+<li><a href="#timetable">Timetable</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#course-program">Course Program</a></li>
+<li><a href="#exam-and-assessment">Exam and Assessment</a></li>
+<li><a href="#exam-details">Exam details</a><ul>
+<li><a href="#grading-weights">Grading weights</a></li>
+<li><a href="#written-exam">Written Exam</a></li>
+<li><a href="#team-project">Team Project</a></li>
+</ul>
+</li>
+<li><a href="#data-analysis-project-overview">Data Analysis Project Overview</a><ul>
+<li><a href="#dataset-selection">Dataset Selection</a></li>
+<li><a href="#group-composition">Group Composition</a></li>
+<li><a href="#suggested-timeline">Suggested Timeline</a></li>
+</ul>
+</li>
+<li><a href="#data-requirements-and-data-sources">Data Requirements and Data Sources</a><ul>
+<li><a href="#data-requirements">Data Requirements</a></li>
+<li><a href="#data-sources">Data Sources</a></li>
+</ul>
+</li>
+<li><a href="#project-steps">Project Steps</a></li>
+<li><a href="#course-bibliography">Course Bibliography</a></li>
+<li><a href="#course-resources">Course Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="timetable">Timetable</h2>
+<ul>
+<li><strong>Monday</strong>: 10:30 - 13:15 (Room T.0.3)</li>
+<li><strong>Wednesday</strong>: 11:30 - 13:15 (Room 25.1.3)  </li>
+<li><strong>Additional Tutoring</strong>: Tuesday 15:15 - 17:15 (Room T.0.3)</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li><a href="https://www.r-project.org">www.r-project.org</a></li>
+<li><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">An introduction to R</a></li>
+</ul>
+<h2 id="course-program">Course Program</h2>
+<ul>
+<li><strong>Descriptive Statistics</strong>: Data types, frequency distributions, summary statistics (mean, median, variance), visualizations (histograms, boxplots).</li>
+<li><strong>Probability and Random Variables</strong>: Properties of probability, discrete and continuous distributions (Bernoulli, Binomial, Poisson, Gaussian).</li>
+<li><strong>Estimation and Hypothesis Testing</strong>: Confidence intervals, hypothesis testing, t-tests.</li>
+<li><strong>Comparing Samples</strong>: Comparing means of independent and dependent samples.</li>
+<li><strong>Regression Models</strong>: Linear models, parameter estimation, model evaluation, and residual analysis.</li>
+</ul>
+<h2 id="exam-and-assessment">Exam and Assessment</h2>
+<ul>
+<li><strong>Written Exam</strong>: Consists of two exercises in 2 hours. Graded on a scale of 0 to 30, with a passing score of 18.</li>
+<li><strong>Team Project</strong>: Involving real data analysis in teams of 2-4 students. The project will be evaluated during a final seminar.</li>
+</ul>
+<h2 id="exam-details">Exam details</h2>
+<blockquote>
+<p>Here a mere copy/paste of the exams details:</p>
+</blockquote>
+<h3 id="grading-weights">Grading weights</h3>
+<ul>
+<li>70% written exam</li>
+<li>30% project</li>
+</ul>
+<h3 id="written-exam">Written Exam</h3>
+<ul>
+<li><strong>Format</strong>: It will consist of 2 exercises to be solved autonomously in a maximum of 2 hours.</li>
+<li><strong>Evaluation</strong>: </li>
+<li>The student will decide whether to have their exam evaluated at the end.</li>
+<li>Scoring is from 0 to 30, with a maximum evaluation of 32/30.</li>
+<li>The exam is passed with a score ≥ 18/30.</li>
+<li>Evaluation considers clarity of exposition and correctness of computations.</li>
+<li><strong>Materials Allowed</strong>: </li>
+<li>Calculator, statistical tables, and a formulary of A4 format containing any material deemed useful by the student.</li>
+<li><strong>Prohibited Items</strong>: Books, notes, mobile phones, and other electronic devices.</li>
+</ul>
+<h3 id="team-project">Team Project</h3>
+<ul>
+<li><strong>Objective</strong>: Analyze a real dataset in teams of 2 to 4 students, using the models and methods introduced in the course.</li>
+<li><strong>Presentation</strong>: Projects will be presented at the end of the course in a seminar during an open workshop after the semester.</li>
+<li><strong>Evaluation</strong>: Each team will receive a score from 0 to 30.</li>
+<li><strong>Final Evaluation</strong>: The final course evaluation will be a weighted average of the scores, with weights of 0.7 for the written exam and 0.3 for the team project.</li>
+</ul>
+<hr />
+<h2 id="data-analysis-project-overview">Data Analysis Project Overview</h2>
+<p>Every student must participate in a data analysis project developed by an independently formed team of 2-4 members.</p>
+<h3 id="dataset-selection">Dataset Selection</h3>
+<ul>
+<li>Groups will autonomously choose the dataset to analyze.</li>
+<li>Approval of the dataset by a course teacher is required before starting the analysis.</li>
+<li>Deadline for approved dataset: <strong>October 14th</strong>.</li>
+</ul>
+<h3 id="group-composition">Group Composition</h3>
+<p>Each group must communicate its composition, leader, and project title to the Project Manager:
+- <strong>Francesco Brossa</strong>: francesco.brossa@mail.polimi.it</p>
+<h3 id="suggested-timeline">Suggested Timeline</h3>
+<ul>
+<li><strong>Selection of Dataset</strong>: Before October 14th</li>
+<li><strong>Explorative Analyses</strong>: Before November 15th</li>
+<li><strong>Inferential Analyses</strong>: Before December 30th</li>
+<li><strong>Project Review and Final Presentation</strong>: January</li>
+<li><strong>First Work in Progress</strong>: November 13</li>
+<li><strong>Final Presentation Date</strong>: January ?</li>
+</ul>
+<hr />
+<h2 id="data-requirements-and-data-sources">Data Requirements and Data Sources</h2>
+<h3 id="data-requirements">Data Requirements</h3>
+<ul>
+<li>At least two numerical variables.</li>
+<li>Observations structured into two or more groups (one or more categorical variables).</li>
+</ul>
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+<li>Useful websites:</li>
+<li><a href="http://dati.comune.milano.it/">Comune di Milano</a></li>
+<li><a href="https://www.dati.lombardia.it/">Regione Lombardia</a></li>
+<li><a href="http://www.istat.it/it/prodotti/banche-dati">ISTAT</a></li>
+<li><a href="http://ec.europa.eu/eurostat/data/database">EUROSTAT</a></li>
+<li><a href="http://www.nasa.gov/open/data.html">NASA</a></li>
+<li>Own data or data from others (check for confidentiality).</li>
+</ul>
+<hr />
+<h2 id="project-steps">Project Steps</h2>
+<ol>
+<li><strong>Identify Stakeholders</strong>: Company manager, competitors, students, etc.</li>
+<li><strong>Identify Research Questions</strong>: What problem do you want to solve based on the data?</li>
+<li><strong>Build Dataset</strong>: Select data, create labels, etc.</li>
+<li><strong>Data Analysis</strong>: Conduct explorative analysis, null hypothesis testing, regression.</li>
+<li><strong>Report Findings</strong>: Present answers to research questions using natural language, tables, and plots.</li>
+</ol>
+<hr />
+<h2 id="course-bibliography">Course Bibliography</h2>
+<ul>
+<li>Montgomery, D.C., Runger, G.C., Hubele, N.F. <em>Engineering Statistics</em>, Wiley, 5th Edition, 2010.</li>
+<li>Ieva, F., Masci, C., Paganoni, A.M. <em>Laboratorio di Statistica con R</em>, Pearson, 2016 [in Italian].</li>
+<li>Freedman, D., Pisani, R., Purves, R. <em>Statistics</em>, 4th Edition, W.W. Norton &amp; Company, 2007.</li>
+</ul>
+<h2 id="course-resources">Course Resources</h2>
+<ul>
+<li><a href="https://webeep.polimi.it/course/view.php?id=15729">Course Web Page</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

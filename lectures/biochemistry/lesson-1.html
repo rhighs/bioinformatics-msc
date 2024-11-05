@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Lesson 1 - An Introduction to Cell Biology: Key Concepts and Biomolecules - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="../organic-chemistry/index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/biochemistry/lesson-1.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#lesson-1-an-introduction-to-cell-biology-key-concepts-and-biomolecules" class="nav-link">Lesson 1 - An Introduction to Cell Biology: Key Concepts and Biomolecules</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#the-living-cell" class="nav-link">The Living Cell</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="lesson-1-an-introduction-to-cell-biology-key-concepts-and-biomolecules">Lesson 1 - An Introduction to Cell Biology: Key Concepts and Biomolecules</h1>
+<div class="toc">
+<ul>
+<li><a href="#lesson-1-an-introduction-to-cell-biology-key-concepts-and-biomolecules">Lesson 1 - An Introduction to Cell Biology: Key Concepts and Biomolecules</a><ul>
+<li><a href="#the-living-cell">The Living Cell</a><ul>
+<li><a href="#plasma-membrane">Plasma Membrane</a></li>
+<li><a href="#cytoplasm">Cytoplasm</a></li>
+<li><a href="#nucleus-and-the-genome">Nucleus and the Genome</a></li>
+<li><a href="#supramolecular-structures">Supramolecular structures</a></li>
+<li><a href="#the-main-elements-comprising-biomolecules">The main elements comprising biomolecules</a></li>
+<li><a href="#functional-groups">Functional groups</a></li>
+<li><a href="#the-four-classes-of-biomolecules">The four classes of biomolecules</a><ul>
+<li><a href="#informational-macromolecules">Informational Macromolecules</a></li>
+</ul>
+</li>
+<li><a href="#nucleic-acids">Nucleic acids</a></li>
+<li><a href="#differences-between-dna-and-rna">Differences between DNA and RNA</a></li>
+<li><a href="#nucleotides-can-also-function-as-monomers">Nucleotides can also function as monomers</a><ul>
+<li><a href="#functions-of-nucleotides-beyond-dna-and-rna-synthesis">Functions of Nucleotides Beyond DNA and RNA Synthesis</a></li>
+<li><a href="#cellular-metabolism-and-signal-transduction">Cellular Metabolism and Signal Transduction</a></li>
+</ul>
+</li>
+<li><a href="#phosphodiester-bonds-link-successive-nucleotides-in-nucleic-acids">Phosphodiester Bonds Link Successive Nucleotides in Nucleic Acids</a></li>
+<li><a href="#base-pairing-permits-the-duplication-of-genetic-information">Base pairing permits the duplication of genetic information</a></li>
+<li><a href="#dna-is-a-double-helix-that-stores-genetic-information">DNA is a double helix that stores genetic information</a></li>
+<li><a href="#secondary-structure-of-rna">Secondary structure of RNA</a></li>
+<li><a href="#what-does-rna-do">What does RNA do?</a></li>
+<li><a href="#types-of-protein-structures">Types of protein structures</a><ul>
+<li><a href="#primary-structure">Primary structure</a></li>
+<li><a href="#secondary-structure">Secondary structure</a></li>
+<li><a href="#tertiary-structure">Tertiary structure</a></li>
+<li><a href="#quaternary-structure">Quaternary Structure</a></li>
+</ul>
+</li>
+<li><a href="#lipids">Lipids</a></li>
+<li><a href="#fatty-acids">Fatty acids</a></li>
+<li><a href="#glycerophospholipids">Glycerophospholipids</a></li>
+<li><a href="#micelle-formations">Micelle formations</a></li>
+<li><a href="#the-hydrophobic-effect">The hydrophobic effect</a></li>
+<li><a href="#triacylglycerols-storage-of-energy-and-insulation">Triacylglycerols, storage of energy and insulation</a></li>
+<li><a href="#quick-overview-on-carbs">Quick overview on carbs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="the-living-cell">The Living Cell</h2>
+<ul>
+<li>Cells vary in complexity and can be highly specialized for their environment or function within a multicellular organism, they share remarkable similarities</li>
+<li>Animal and plat cells<ul>
+<li>5 to 100 <strong>micro</strong>meters in diameter</li>
+</ul>
+</li>
+<li>Unicellular microorganisms<ul>
+<li>1 to 2 <strong>micro</strong>meters in diameter</li>
+</ul>
+</li>
+</ul>
+<h3 id="plasma-membrane">Plasma Membrane</h3>
+<p>This is what defines the periphery of a cell and has the following main characterstics</p>
+<ul>
+<li>Thin</li>
+<li>Flexible</li>
+<li>Hydrophobic</li>
+<li>This is the characterstic that allows a cell to sort "self-assembly" and confine itself from the outer chaos</li>
+</ul>
+<p>The membrane includes the following components</p>
+<ul>
+<li>
+<p><strong>Transport proteins</strong></p>
+</li>
+<li>
+<p>Responsible for moving molecules across cell membranes.</p>
+</li>
+<li><strong>Passive transport</strong>: movement of substances down their concentration gradient (e.g., ion channels seen in <code>Genetica Dei Ricordi - Andrea Levi</code>).</li>
+<li><strong>Active transport</strong>: Pumping substances against their gradient using energy (e.g., sodium-potassium pump).<ul>
+<li>This includes transportation of large molecules (e.g. glucose and glucose transporters)</li>
+</ul>
+</li>
+<li>
+<p><strong>Ion transport</strong>: Regulatinon of Ion flow to maintain electrical and chemical balance (e.g., calcium or chloride channels).</p>
+</li>
+<li>
+<p><strong>Receptor proteins</strong></p>
+</li>
+<li>
+<p>Proteins that are responsible for cellular communications by detecting chemical signals from the extracellular environment.</p>
+</li>
+<li>
+<p>Essential for processes like immune response, cell growth, metabolism, and sensory perception.</p>
+</li>
+<li>
+<p><strong>Membrane enzymes</strong></p>
+</li>
+<li>Among these useful things, here are some of the most important<ul>
+<li><strong>Signal transduction</strong>: Membrane enzymes help relay signals from the outside to the inside</li>
+<li><strong>Metabolism</strong>: Some membrane enzymes participate in metabolic pathwways (e.g. <strong>ATP synthase</strong> in the mitochondrial membrane is responsible for producing ATP)</li>
+<li><strong>Transport regulation</strong>: Edit substances to facilitate their transport across the cell membrane. For instance, some enzymes modify molecules like glucose, making them easier to transport.</li>
+</ul>
+</li>
+</ul>
+<h3 id="cytoplasm">Cytoplasm</h3>
+<ul>
+<li>Internal volume enclosed by the plasma membrane</li>
+<li>
+<p>Composed of cytosol</p>
+</li>
+<li>
+<p>Higly concentrated solution, it is the fluid portion of the cytoplasm</p>
+</li>
+<li>It is a gel-like substance that contains water, dissolved ions, small molecules, and proteins.</li>
+<li>The cytosol serves as the site for many cellular processes, such as:<ul>
+<li>Metabolic reactions</li>
+<li>Signal transduction</li>
+<li>And the transport of materials.</li>
+</ul>
+</li>
+</ul>
+<p>The cytosol generally provides a medium in which organelles are suspended and facilitates the movement of molecules and ions throughout the cell. It's an isolated enviroment where all sort of cellular processes take place</p>
+<p>Among other things, the cytosol contains enzymes, RNA, amino acids, nucleotides, metabolites, coenzymes, and inorganic ions</p>
+<h3 id="nucleus-and-the-genome">Nucleus and the Genome</h3>
+<p><strong>What is the Genome?</strong></p>
+<ul>
+<li>A genome is the complete set of genetic material in an organism, including all of its DNA</li>
+<li>It contains all the instructions needed for growth, development, functioning, and reproduction. The genome includes not only genes, which code for proteins, but also non-coding regions that regulate gene expression and maintain structural integrity.</li>
+</ul>
+<p>What type of information does the various genome components encode?</p>
+<blockquote>
+<p><em>A summarization of what I understood by reading "The Self-Assembling Brain"</em>:</p>
+<ul>
+<li>The genome is better understood not just as a descriptive set of instructions, but as an algorithmic system—one that operates dynamically to produce complex biological outcomes. Rather than merely listing the static information of genes, the genome functions as an active program that interacts with the environment, executes processes, and adapts its output based on various conditions.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>In <strong>prokaryotes</strong> (bacteria and archaea), the genome is typically stored as a single, circular DNA molecule located in the nucleoid, an area of the cell without a membrane.</p>
+</li>
+<li>
+<p>In <strong>eukaryotes</strong>, the genome is organized into multiple linear DNA molecules, stored within a membrane-bound nucleus, with additional genetic material present in organelles like mitochondria and chloroplasts.</p>
+</li>
+</ul>
+<h3 id="supramolecular-structures">Supramolecular structures</h3>
+<p><img alt="Supramolecular structures" src="assets/supramolecular-structures.png" /></p>
+<p>Cells build supramolecular structures which are are large assemblies of molecules held together by noncovalent interactions, including hydrogen bonds, ionic interactions, van der Waals forces, and the hydrophobic effect.</p>
+<p>These structures are important because they are flexible and can form or break easily. Examples include:</p>
+<ul>
+<li><strong>Protein complexes</strong>: Groups of proteins working together.</li>
+<li><strong>Lipid bilayers</strong>: The main structure of cell membranes.</li>
+<li><strong>DNA double helix</strong>: Two strands of DNA held by hydrogen bonds.</li>
+<li><strong>Cell assemblies</strong>: Structures like ribosomes and chromatin in cells.</li>
+</ul>
+<h3 id="the-main-elements-comprising-biomolecules">The main elements comprising biomolecules</h3>
+<p><img alt="Periodic table - tendency in living stuff" src="assets/periodic-table.png" /></p>
+<p>The main elements in biochemical materials are <strong>carbon (C)</strong>, <strong>hydrogen (H)</strong>, <strong>oxygen (O)</strong>, and <strong>nitrogen (N)</strong>. These elements strongly tend to form covalent bonds, leading to a wide variety of chemical and biological compounds.</p>
+<ul>
+<li><strong>70% of the human body is made up of water (H₂O).</strong></li>
+<li><strong>Sulfur (S)</strong> is found in nearly all proteins.</li>
+<li><strong>Phosphorus (P)</strong> is crucial for metabolism and the structure of nucleic acids like DNA and RNA.</li>
+</ul>
+<h3 id="functional-groups">Functional groups</h3>
+<p>Functional groups are specific groups of atoms within molecules that determine the characteristic chemical reactions and properties of those molecules.</p>
+<p>In biomolecules, functional groups are essential for dictating how molecules interact with each other and perform biological functions</p>
+<p>These groups typically replace hydrogen atoms in hydrocarbons, giving rise to molecules with diverse chemical behaviors.</p>
+<ul>
+<li>
+<p><strong>Variety of carbon</strong> (<span class="arithmatex">\(\text{C}\)</span>): Carbon's ability to form covalent single, double, and occasionally triple bonds makes it incredibly versatile.</p>
+</li>
+<li>
+<p>In biological molecules, this means carbon can create stable, complex structures essential for life, such as chains and rings, which serve as backbones for biomolecules.</p>
+</li>
+<li>
+<p><strong>Formation of 4 stable single bonds</strong>: Carbon can form up to four stable single covalent bonds with other atoms, including other carbon atoms.</p>
+</li>
+<li>
+<p>This property allows the formation of long carbon chains and branched structures, which are foundational to many biomolecules like carbohydrates, lipids, and proteins.</p>
+</li>
+<li>
+<p>Biomolecules as hydrocarbons: Biomolecules can be thought of as hydrocarbons (compounds made of hydrogen and carbon). In most biomolecules, some of the hydrogen atoms are replaced by functional groups, such as:</p>
+<ul>
+<li>hydroxyl <span class="arithmatex">\(\text{-OH}\)</span></li>
+<li>carboxyl <span class="arithmatex">\(\text{-COOH}\)</span></li>
+<li>amino <span class="arithmatex">\(\text{-NH}_2\)</span></li>
+</ul>
+<p>Giving the molecules distinct properties and reactivity.</p>
+</li>
+</ul>
+<h3 id="the-four-classes-of-biomolecules">The four classes of biomolecules</h3>
+<p><img alt="Four classes" src="assets/four-classes-biomolecules.jpg" /></p>
+<ol>
+<li><strong>Nucleic Acids</strong>: DNA and RNA, which store and transmit genetic information.</li>
+<li><strong>Lipids</strong>: Fats and oils used for energy storage, insulation, and cell membranes.</li>
+<li><strong>Carbohydrates</strong>: Sugars and starches used for energy and structure.</li>
+<li><strong>Proteins</strong>: Made of amino acids; they act as enzymes, structural components, and in cell signaling.</li>
+</ol>
+<p>Macromolecules are the major constituents of a cell <span class="arithmatex">\(\rightarrow\)</span> these structures are polymers with molecular weight that go beyond <span class="arithmatex">\(\text{5000 Da } \text{(daltons } \leftrightarrow \text{g/mol)}\)</span>. They are assembled from relatively simple precursors:</p>
+<p><strong>Precursors</strong> refer to simpler molecules or building blocks that combine to form larger, more complex structures. Macromolecules like proteins, nucleic acids, and polysaccharides are constructed from these foundational precursors, linking together through chemical bonds to create the intricate structures necessary for cellular function.</p>
+<ol>
+<li>
+<p><strong>Proteins</strong> are large polymers made of amino acids, connected in specific sequences by peptide bonds. Their structure determines their roles, including catalyzing reactions, providing structural support, signaling, and transporting molecules within cells. The sequence of amino acids carries information that dictates the protein’s shape and function.</p>
+</li>
+<li>
+<p><strong>Nucleic Acids</strong> include DNA and RNA, which are polymers of nucleotides. Each nucleotide contains a nitrogenous base, a sugar, and a phosphate group. DNA stores genetic information, while RNA transmits this information for protein synthesis. The sequence of bases in nucleic acids encodes genetic instructions crucial for cellular processes.</p>
+</li>
+<li>
+<p><strong>Polysaccharides</strong> are long chains of simple sugars, such as glucose, and function in energy storage (like glycogen in animals and starch in plants) or provide structural support (like cellulose in plants). Though not all are informational, specific short polysaccharides (oligosaccharides) on cell surfaces help in cell recognition and signaling.</p>
+</li>
+<li>
+<p><strong>Oligomers</strong> are short chains of monomers, typically fewer than ten subunits. These can act as intermediates in forming larger macromolecules or function independently, especially in cellular signaling or molecular assembly.</p>
+</li>
+</ol>
+<h4 id="informational-macromolecules">Informational Macromolecules</h4>
+<p>The term “informational macromolecules” highlights that proteins, nucleic acids, and some oligosaccharides possess sequences that convey specific information. This sequence-dependent information is crucial for encoding biological functions, as seen in DNA’s genetic code, RNA’s message translation, and protein amino acid sequences that specify structure and function. This structured information enables the precise regulation of cellular activities and organismal development.</p>
+<h3 id="nucleic-acids">Nucleic acids</h3>
+<p><strong>Nucleic acids</strong> are molecules essential for storing, transmitting, and processing genetic information in cells.</p>
+<p><strong>What is a gene?</strong><br />
+A gene is a segment of a DNA molecule that contains the necessary information for synthesizing a functional biological product, either a protein or RNA.</p>
+<p><strong>Basic functions of DNA</strong>:</p>
+<ul>
+<li>Storage of biological information.</li>
+<li>Transmission of that information to subsequent generations.</li>
+</ul>
+<p><strong>Nucleotides</strong><br />
+Nucleotides are the building blocks of nucleic acids (DNA and RNA). They consist of three main components:</p>
+<ol>
+<li>A nitrogenous base, which can be either a <strong>pyrimidine</strong> (cytosine, thymine, or uracil) or a <strong>purine</strong> (adenine or guanine).</li>
+<li>A pentose sugar, either ribose (in RNA) or deoxyribose (in DNA).</li>
+<li>One or more phosphate groups.</li>
+</ol>
+<p align=center>
+    <img src="assets/phosphate-in-pentose-pyrimidine-purine.png" width=400>
+</p>
+
+<p>If a nucleotide lacks a phosphate group, it is called a <strong>nucleoside</strong>.</p>
+<h3 id="differences-between-dna-and-rna">Differences between DNA and RNA</h3>
+<ul>
+<li><strong>RNA</strong> is ribonucleic acid, which contains the pentose sugar ribose.</li>
+<li><strong>DNA</strong> is deoxyribonucleic acid, containing deoxyribose, which lacks one oxygen atom compared to ribose.</li>
+</ul>
+<p>Some of the key differences can be highlighted below as both functional and structural traits:</p>
+<ul>
+<li><strong>Sugar</strong>: DNA contains deoxyribose, while RNA contains ribose.</li>
+<li><strong>Nitrogenous Bases</strong>: DNA includes adenine, guanine, cytosine, and thymine; RNA has uracil instead of thymine.</li>
+<li><strong>Structure</strong>: DNA is usually double-stranded, forming a double helix, whereas RNA is typically single-stranded.</li>
+<li><strong>Function</strong>: DNA primarily stores genetic information, while RNA has multiple roles, including protein synthesis (mRNA, tRNA, and rRNA) and regulatory functions.</li>
+</ul>
+<p align=center>
+    <img src="assets/dna-rna-side-to-side.png" width=400>
+</p>
+
+<h3 id="nucleotides-can-also-function-as-monomers">Nucleotides can also function as monomers</h3>
+<p><strong>What even is a monomer?<br/></strong>
+A <strong>monomer</strong> is a small molecule that can join with other similar or identical molecules to form a <strong>polymer</strong>. Nucleotides serve as monomers for nucleic acids (DNA and RNA) and play crucial roles beyond building DNA and RNA strands.</p>
+<h4 id="functions-of-nucleotides-beyond-dna-and-rna-synthesis">Functions of Nucleotides Beyond DNA and RNA Synthesis</h4>
+<ul>
+<li>
+<p><strong>Energy Currency</strong>: ATP (adenosine triphosphate) is a nucleotide that serves as a primary energy carrier in cells. It captures chemical energy from food breakdown and releases it to fuel various cellular processes.</p>
+</li>
+<li>
+<p><strong>Enzyme Cofactors</strong>: Nucleotides form parts of enzyme cofactors, such as NAD⁺ (nicotinamide adenine dinucleotide) and FAD (flavin adenine dinucleotide). These cofactors assist in redox reactions critical for cellular respiration and energy production.</p>
+</li>
+<li>
+<p><strong>Signaling Molecules</strong>: cAMP (cyclic adenosine monophosphate) is a signaling molecule derived from ATP. It helps in transmitting signals within cells, such as those triggered by hormones, allowing cells to respond appropriately to external stimuli.</p>
+</li>
+</ul>
+<h4 id="cellular-metabolism-and-signal-transduction">Cellular Metabolism and Signal Transduction</h4>
+<p>Nucleotides are integral to cellular metabolism as they contribute to energy transfer, signal transmission, and the regulation of metabolic pathways. For example, cAMP acts as a "second messenger" in many signal transduction pathways, relaying messages from hormones outside the cell to elicit responses within the cell, such as enzyme activation or gene expression adjustments.</p>
+<h3 id="phosphodiester-bonds-link-successive-nucleotides-in-nucleic-acids">Phosphodiester Bonds Link Successive Nucleotides in Nucleic Acids</h3>
+<p align=center>
+    <img src="assets/phosphodiester-linkage-dna-rna.png" width=400>
+</p>
+
+<p>A <strong>phosphodiester linkage</strong> is covalent bond that joins successive nucleotides of both <strong>DNA</strong> and <strong>RNA</strong>. The linkage happens between the <strong>phosphate group</strong> of one nucleotide and the <strong>hydroxyl group</strong> of another neighbor nucleotide.</p>
+<h3 id="base-pairing-permits-the-duplication-of-genetic-information">Base pairing permits the duplication of genetic information</h3>
+<p>A <strong>base pair</strong> is a label given to the <strong>hydrogen-bonding</strong> patterns that emerge between complementary strands of nucleic acids. Each nucleotide in DNA pairs specifically with only one other nucleotide: adenine (A) pairs with thymine (T) <span class="arithmatex">\(\rightarrow \text{A-T T-A}\)</span> , and cytosine (C) pairs with guanine (G) <span class="arithmatex">\(\rightarrow \text{G-C C-G}\)</span>. This specific pairing means that the strand on the opposite side of each base pair serves as a template that complements and mirrors the sequence of the current strand, creating a <strong>complementary strand</strong> (e.g., one strand determines the sequence of the other).</p>
+<p align=center>
+    <img src="assets/nucleotides-base-pairs.png" width=500>
+</p>
+
+<h3 id="dna-is-a-double-helix-that-stores-genetic-information">DNA is a double helix that stores genetic information</h3>
+<p>Offset pairing of the two strands creates a major groove and a minor groove</p>
+<p align=center>
+    <img src="assets/minor-major-groove.png" width=400>
+</p>
+
+<p>In the DNA double helix, <strong>hydrogen bonding</strong> and <strong>base structure</strong> determine the pairing strength between the bases:</p>
+<ul>
+<li>
+<p><strong>Base Pairing</strong></p>
+</li>
+<li>
+<p><strong>Adenine (A)</strong> pairs with <strong>Thymine (T)</strong>, forming <strong>2 hydrogen bonds</strong>.</p>
+</li>
+<li>
+<p><strong>Guanine (G)</strong> pairs with <strong>Cytosine (C)</strong>, forming <strong>3 hydrogen bonds</strong>.</p>
+</li>
+<li>
+<p><strong>Reason for Bonding Differences</strong></p>
+</li>
+<li>
+<p><strong>G-C pairs</strong> are stronger due to the third hydrogen bond, making these pairs more stable and contributing to the DNA's structural integrity, especially in high-GC regions.</p>
+</li>
+<li>
+<p><strong>A-T pairs</strong> are slightly weaker because they have only two hydrogen bonds, which is sufficient for stable pairing but results in a slightly lower melting temperature in A-T-rich regions.</p>
+</li>
+<li>
+<p><strong>Groove Formation</strong></p>
+</li>
+<li>The <strong>offset pairing</strong> of the DNA strands creates the <strong>major and minor grooves</strong>. These grooves are essential as they allow protein interactions, enabling DNA replication, transcription, and other cellular processes.</li>
+<li>the groove structure allows DNA to make some information highly accessible (major groove) for regulatory purposes, while other interactions are more generalized or protective (minor groove). This arrangement is crucial for efficient cellular function and precise control over genetic processes.</li>
+</ul>
+<h3 id="secondary-structure-of-rna">Secondary structure of RNA</h3>
+<p>In the secondary structure of RNA, the overall shape and stability arise from A-form double helix regions and loops or bulges due to mismatches or unpaired bases.</p>
+<ul>
+<li>
+<p><strong>Bulges and Internal Loops</strong>:</p>
+</li>
+<li>
+<p><strong>Bulges</strong> occur when there are extra, unpaired bases on one strand, causing a bump in the structure.</p>
+</li>
+<li>
+<p><strong>Internal Loops</strong> form between unpaired bases on both strands, often in <strong>palindromic sequences</strong> where the RNA folds back on itself, creating gaps or "loops."</p>
+</li>
+<li>
+<p><strong>Functional Role</strong>: These irregularities (bulges and loops) are crucial for RNA's interactions and functions, exposing bases for binding with proteins, other RNAs, or small molecules, enabling RNA's diverse cellular roles.</p>
+</li>
+</ul>
+<p>In essence, these "zipped and unzipped" sections give RNA flexibility and unique functional sites.</p>
+<p align=center>
+    <img src="assets/rna-a-form-double-helix.png" width=400>
+</p>
+
+<h3 id="what-does-rna-do">What does RNA do?</h3>
+<p>There are some different classes of <strong>RNA</strong></p>
+<ul>
+<li><strong>ribosomal RNAs</strong> (rRNAs) <span class="arithmatex">\(\rightarrow\)</span> components of ribosomes.</li>
+<li><strong>messenger RNAs</strong> (mRNAs) <span class="arithmatex">\(\rightarrow\)</span> intermediates in protein synthesis</li>
+<li><strong>transfer RNAs</strong> (tRNAs) <span class="arithmatex">\(\rightarrow\)</span> adapter molecules that translate the information in mRNA into a specific amino acid sequence</li>
+<li>literally the type of RNA that puts the mRNA into practice</li>
+<li><strong>noncoding RNAs</strong> (ncRNAs) <span class="arithmatex">\(\rightarrow\)</span> wide variety of functions.</li>
+<li>most of these are found involved in translation processes<ul>
+<li>translation is the the process in a living organism by which proteins are produced via RNA.</li>
+</ul>
+</li>
+</ul>
+<p align=center>
+    <img src="assets/classes-of-RNA.png" width=400>
+</p>
+
+<blockquote>
+<p>🔗 Resources
+yourgenome: from DNA to Protein: https://www.youtube.com/watch?v=gG7uCskUOrA</p>
+</blockquote>
+<p>Ribonucleoprotein (RNP) particles called ribosomes are the 'factories' where translation takes place in the cell.</p>
+<p>$\alpha\text{-amino acids} $ are the amino acids in which amino and carboxyl groups are bound to the same carbon atom</p>
+<p align=center>
+    <img src="assets/20-classes-amino-acids.png" width=500>
+</p>
+
+<h3 id="types-of-protein-structures">Types of protein structures</h3>
+<p>Each level of protein structure (primary, secondary, tertiary, and quaternary) contributes to the overall shape and function of the protein.</p>
+<p align=center>
+    <img src="https://proteopedia.org/wiki/images/thumb/6/6e/Protein-structure-4-levels-III-flat.png/800px-Protein-structure-4-levels-III-flat.png">
+</p>
+
+<h4 id="primary-structure">Primary structure</h4>
+<p>The first structure defines the unique order in which amino acids are linked together to form a protein. Proteins are constructed from a set of 20 amino acids that are represented in the image above.</p>
+<p>Structure for amino acids is generally like follows:</p>
+<ul>
+<li>A carbon, the <span class="arithmatex">\(\alpha\)</span> carbon bonded to the four groups:</li>
+<li>A <span class="arithmatex">\(\ce{H}\)</span> atom</li>
+<li>A Carboxyl group <span class="arithmatex">\(\ce{-COOH}\)</span></li>
+<li>An amino group <span class="arithmatex">\(\ce{NH2}\)</span></li>
+<li>A "variable" group or "R" group, that could really be anything</li>
+</ul>
+<p>The "R" group varies among amino acids and determines the differences between these protein monomers.</p>
+<p><strong>NOTE</strong>: The order of amino acids in a polypeptide chain is unique and specific to a particular protein. Altering a single amino acid causes a gene mutation, which most often results in a non-functioning protein.</p>
+<h4 id="secondary-structure">Secondary structure</h4>
+<p>Secondary structure refers to the coiling or folding of a polypeptide chain that gives the protein its 3D shape.</p>
+<ul>
+<li><span class="arithmatex">\(\alpha \space helix \rightarrow\)</span> coiled spring and is secured by hydrogen bonding</li>
+<li><span class="arithmatex">\(\beta \space pleated \space sheet\rightarrow\)</span> held together by hydrogen bonding between polypeptide units of the folded chain that lie adjacent to one another.</li>
+</ul>
+<h4 id="tertiary-structure">Tertiary structure</h4>
+<p>This structure refers to the comprehensive 3D structure of the polypeptide chain of a protein. There are several bonds and forces holding a protein together</p>
+<ul>
+<li><strong>Hydrophobic interactions</strong>, probably the most relevant. The "R" group of the amino acid is either hydrophobic or hydrophilic. Hydrophilic "R" groups will seek contact with their aqueous environment, while hydrophobic "R" groups will avoid water and position towards the center.</li>
+<li><strong>Hydrogen bonding</strong> as reinforcement of the structure given by the latter.</li>
+<li>Due to <strong>protein folding</strong>, ionic bonding can occur between the oppositely charged "R" groups that could form further bonds.</li>
+</ul>
+<p>Folding can also result in covalent bonding between the "R" groups of cysteine amino acids. This type of bonding forms what is called a <strong>disulfide bridge</strong>... <em>van der Waals forces also assist in the stabilization of protein structure.</em></p>
+<h4 id="quaternary-structure">Quaternary Structure</h4>
+<p>Quaternary Structure refers to the structure of a protein macromolecule formed by interactions between multiple polypeptide chains (forming dimers, trimers, tetramers, etc.)
+<br/>
+Each polypeptide chain is referred to as a subunit. Proteins with quaternary structure may consist of more than one of the same type of protein subunit. Such proteins can be dynamic, allowing conformational changes essential for function.</p>
+<ul>
+<li>Allows complex formations like ion channels and receptors.</li>
+<li>
+<p>Facilitates regulation via allosteric effects, where binding at one site affects another.</p>
+</li>
+<li>
+<p><strong>Example</strong>:</p>
+</li>
+<li><strong>Hemoglobin</strong>: found in the blood, is an iron-containing protein that binds oxygen molecules. It contains four subunits: two alpha subunits and two beta subunits.</li>
+<li>Hemoglobin shows cooperative behavior, where oxygen binding to one subunit affects others.</li>
+</ul>
+<h3 id="lipids">Lipids</h3>
+<p>These are not considered polymeers as they are not build from smaller subunits similar in composition/structure. As such, they have highly variable chemical structure, poor solubility in water. Used as energy stored and they're the structural foundation of membranes.</p>
+<p><strong>NOTE</strong>: lipids are classified according to their level of complexity: simple, complex and derivative</p>
+<h3 id="fatty-acids">Fatty acids</h3>
+<p>Fatty acids are water-insoluble hydrocarbons user for cellular energy storage.</p>
+<p><strong>How come they store energy?</strong><br/>
+Fatty acids have a high energy density because their long hydrocarbon chains contain numerous <span class="arithmatex">\(\ce{C-H}\)</span> (carbon-hydrogen) bonds. These bonds are rich in energy because they are non-polar and relatively weak, making them easily broken down to release energy.</p>
+<ul>
+<li>When oxidized during metabolism, these bonds release a significant amount of energy, more than carbohydrates and proteins per gram.</li>
+</ul>
+<p>Fatty acids can either be:</p>
+<ul>
+<li>Saturated</li>
+<li>All carbons along the chain have the maximum amount of <span class="arithmatex">\(\ce{H}\)</span> atoms bonded to them, leading to no <span class="arithmatex">\(\ce{C=C}\)</span> double bonds.</li>
+<li>Insaturated</li>
+<li><span class="arithmatex">\(\ce{C=C}\)</span> double bonds are present</li>
+</ul>
+<p>Packing is the feature of fatty acids that allow them to "pack" together into increasingly steady structural form depending on the degree of the unsaturation.</p>
+<ul>
+<li>Fully saturated fats <span class="arithmatex">\(\rightarrow\)</span> quasi perfect packing <span class="arithmatex">\(\Rightarrow\)</span> waxy at room temp.</li>
+<li>Increasingly insaturated fats <span class="arithmatex">\(\rightarrow\)</span> more messy packing <span class="arithmatex">\(\Rightarrow\)</span> liquid tendency at room temp.</li>
+</ul>
+<p align=center>
+    <img src="assets/fats-packing.png" width=400>
+</p>
+
+<h3 id="glycerophospholipids">Glycerophospholipids</h3>
+<p>The main component of membranes in bacteria, plants and animals. <strong>glycerophospholipids</strong> (aka phosphoglycerides) are membrane lipids in which two fatty acids are attached in ester linkage to the first and seconds carbons of glycerol, and a highly polar or charged group is attached through a phosphodiester linkage to the third carbon.</p>
+<p align=center>
+    <img src="assets/phosphoglyceride.png" width=600>
+</p>
+
+<ul>
+<li><strong>Glycerol</strong> shown in red.</li>
+<li>Carbons numbering in glycerol goes left to right.</li>
+<li><strong>Blue</strong> represent the group bonded to the glycerol via the <em>phosphodiester linkage</em>.</li>
+</ul>
+<h3 id="micelle-formations">Micelle formations</h3>
+<p>Spherical structures containing amphipathic molecules arranged with hydrophobic regions in the interior and hydrophilic head groups on the exterior.</p>
+<p align=center>
+    <img src="assets/micelle-formation.png" width=300>
+</p>
+
+<p>This formation is favoured when the cross sectional are of the head group is greater than that of the acyl side chain(s), leading to a sort of code shape if you will.</p>
+<h3 id="the-hydrophobic-effect">The hydrophobic effect</h3>
+<p><strong>What does it lead to in lipids?</strong> The hydrophobic effect drives glycerophospholipids to form bilayers in water, where hydrophobic tails minimize contact with water by clustering inward while hydrophilic heads face outward. This self-organization creates an enclosed membrane structure (formed as a bilayer, where tails can be seen aggregating in the middle of the two head layers), essential for forming cellular compartments, facilitating communication, and regulating substance movement in and out of the cell.</p>
+<p align=center>
+    <img src="assets/bilayer.png" width=300>
+</p>
+
+<p>The bilayer formation is favoured in cases where the cross-sectional area of the head group is similar to the one of the acyl side chains.</p>
+<p align=center>
+    <img src="assets/bilayer-function.png" width=500>
+</p>
+
+<p>Proteins are interspersed within this lipid bilayer, either embedded within the membrane (<strong>integral proteins</strong>) or attached to its surface (<strong>peripheral proteins</strong>). These proteins can move laterally within the membrane, contributing to its fluidity and functionality.</p>
+<ul>
+<li>The overall pattern results in a dynamic and flexible structure that supports various cellular functions, such as transport, signaling, and communication.</li>
+</ul>
+<h3 id="triacylglycerols-storage-of-energy-and-insulation">Triacylglycerols, storage of energy and insulation</h3>
+<p>Triacyglycerols are the simplest lipids constructed from fatty acids
+- They are composed of three fatty acids, each in ester linkage with a single glycerol (esters of glycerol)</p>
+<p><strong>REMIND</strong>
+- <strong>An ester linkage</strong> is a bond formed between an alcohol and a carboxylic acid, resulting in the release of water (a condensation reaction). In this bond, the hydroxyl group <span class="arithmatex">\(\ce{-OH}\)</span> of the carboxylic acid reacts with the hydroxyl group of the alcohol, leading to the formation of an ester functional group <span class="arithmatex">\(\ce{-COO-}\)</span>. In the context of lipids, ester linkages are significant because they link fatty acids to glycerol in triglycerides and glycerophospholipids.
+- <strong>An alcohol</strong> is an organic compound that contains one or more hydroxyl groups <span class="arithmatex">\(\ce{-OH}\)</span> attached to a carbon atom.</p>
+<p align=center>
+    <img src="assets/triacyglycerol.png" width=300>
+    <img src="assets/glycerol.png" width=200>
+</p>
+
+<h3 id="quick-overview-on-carbs">Quick overview on carbs</h3>
+<p><strong>Carbohydrates</strong> are organic compounds made of carbon, hydrogen, and oxygen, typically in a 1:2:1 ratio. They are classified into three categories:</p>
+<ol>
+<li><strong>Monosaccharides</strong>: Simple sugars like glucose and fructose, which serve as energy sources.</li>
+<li><strong>Disaccharides</strong>: Composed of two monosaccharides, such as sucrose (table sugar) and lactose (milk sugar).</li>
+<li><strong>Polysaccharides</strong>: Long chains of monosaccharides, including starch (energy storage in plants) and cellulose (structural support in plant cell walls).</li>
+</ol>
+<p>Carbohydrates are the most abundant biomolecules on Earth, crucial for energy storage and metabolism, and are produced in plants via photosynthesis, where carbon dioxide and water are converted into sugars using sunlight.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Organic Chemistry, Academic Year 2024/2025 - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/organic-chemistry/lesson-3_20-09-2024.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#organic-chemistry-academic-year-20242025" class="nav-link">Organic Chemistry, Academic Year 2024/2025</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#brnsted-lowry-acids-and-bases-lewis-acids-and-bases" class="nav-link">Brønsted-Lowry Acids and Bases, Lewis Acids and Bases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-an-acid" class="nav-link">What is an acid?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-a-base" class="nav-link">What is a base?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#brnsted-lowry-acids-and-bases" class="nav-link">Brønsted-Lowry Acids and Bases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</h1>
+<div class="toc">
+<ul>
+<li><a href="#organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</a><ul>
+<li><a href="#brnsted-lowry-acids-and-bases-lewis-acids-and-bases">Brønsted-Lowry Acids and Bases, Lewis Acids and Bases</a></li>
+<li><a href="#what-is-an-acid">What is an acid?</a></li>
+<li><a href="#what-is-a-base">What is a base?</a></li>
+<li><a href="#brnsted-lowry-acids-and-bases">Brønsted-Lowry Acids and Bases</a><ul>
+<li><a href="#brnsted-lowry-acids-ha">Brønsted-Lowry acids (HA)</a></li>
+<li><a href="#brnsted-lowry-bases-ceb">Brønsted-Lowry bases (\(\ce{B:}\))</a></li>
+<li><a href="#acidic-and-basic-sites-in-morphine">Acidic and basic sites in morphine</a></li>
+<li><a href="#reactions-of-brnsted-lowry-acids-and-bases">Reactions of Brønsted-Lowry acids and bases</a><ul>
+<li><a href="#what-actually-happens">What actually happens</a></li>
+</ul>
+</li>
+<li><a href="#general-rules-of-reactivity">General rules of reactivity</a><ul>
+<li><a href="#acid-strength-and-textpk_a">Acid strength and \(\text{pK}_a\)</a></li>
+<li><a href="#why-water-acts-as-a-base-in-this-reaction">Why water acts as a base in this reaction</a></li>
+<li><a href="#what-is-a-solvent">What is a solvent?</a></li>
+</ul>
+</li>
+<li><a href="#acid-base-equilibrium">Acid-Base equilibrium</a></li>
+<li><a href="#acidity-constant">Acidity constant</a></li>
+<li><a href="#acidity-of-some-common-compounds">Acidity of Some Common Compounds</a></li>
+<li><a href="#outcome-of-acid-base-reactions">Outcome of Acid-Base reactions</a></li>
+<li><a href="#steps-into-solving-acid-base-reactions-equilibria">Steps into solving acid-base reactions equilibria</a></li>
+<li><a href="#factors-that-determine-acid-strength">Factors that determine acid strength</a></li>
+<li><a href="#element-effects-trends-in-the-periodic-table">Element effects - Trends in the periodic table</a><ul>
+<li><a href="#trend-of-electronegativity-across-a-period">Trend of electronegativity across a period</a></li>
+</ul>
+</li>
+<li><a href="#notes-on-electronegativity">Notes on electronegativity</a><ul>
+<li><a href="#general-electronegativity-trends-on-the-periodic-table">General electronegativity trends on the periodic table</a></li>
+<li><a href="#how-electronegativity-relates-to-acidity">How electronegativity relates to acidity</a></li>
+</ul>
+</li>
+<li><a href="#a-little-side-note-on-calculating-electronegativity">A little side note on calculating electronegativity</a><ul>
+<li><a href="#trend-of-electronegativity-down-a-column">Trend of electronegativity down a column</a></li>
+</ul>
+</li>
+<li><a href="#inductive-effects">Inductive effects</a><ul>
+<li><a href="#inductive-effects-on-trifluoroethanol">Inductive effects on Trifluoroethanol</a></li>
+</ul>
+</li>
+<li><a href="#resonance-effects">Resonance effects</a></li>
+<li><a href="#hybridization-effects">Hybridization effects</a><ul>
+<li><a href="#why-higher-s-character-means-more-stability">Why higher s-character means more stability</a></li>
+</ul>
+</li>
+<li><a href="#summary-of-factors-that-determine-acid-strength">Summary of Factors that Determine Acid Strength</a></li>
+<li><a href="#determining-the-relative-acidity-of-protons">Determining the relative acidity of protons</a></li>
+<li><a href="#characteristics-of-strong-organic-bases">Characteristics of strong organic bases</a><ul>
+<li><a href="#other-common-bases-in-orhanic-chemistry">Other common bases in orhanic chemistry</a></li>
+<li><a href="#aspirin">Aspirin</a></li>
+</ul>
+</li>
+<li><a href="#lewis-bases">Lewis bases</a></li>
+<li><a href="#lewis-acids">Lewis acids</a></li>
+<li><a href="#lewis-acids-and-bases-examples">Lewis acids and bases examples</a></li>
+<li><a href="#lewis-acid-base-reactions">Lewis acid-base reactions</a></li>
+<li><a href="#elecrophiles-and-nuclephiles">Elecrophiles and Nuclephiles</a></li>
+<li><a href="#lewis-acid-base-reations-forming-a-new-covalent-bond">Lewis acid-base reations forming a new covalent bond</a></li>
+<li><a href="#alkene-cehcl-reaction">Alkene-\(\ce{HCl}\) reaction</a><ul>
+<li><a href="#why-does-cyclohexene-break-its-double-bond">Why does cyclohexene break its double bond?</a></li>
+<li><a href="#why-does-chlorine-does-not-follow-the-hydrogen-in-the-bonding">Why does Chlorine does not follow the hydrogen in the bonding?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="brnsted-lowry-acids-and-bases-lewis-acids-and-bases">Brønsted-Lowry Acids and Bases, Lewis Acids and Bases</h2>
+<h2 id="what-is-an-acid">What is an acid?</h2>
+<p>An acid in its broad sense, is a substance that can donate proton (<span class="arithmatex">\(\ce{H^+}\)</span> ions) or accept electron pairs.</p>
+<h2 id="what-is-a-base">What is a base?</h2>
+<p>Depending on the definition, a base contrary to an acid: is a protons acceptor or can donate electron pairs.</p>
+<h2 id="brnsted-lowry-acids-and-bases">Brønsted-Lowry Acids and Bases</h2>
+<ul>
+<li>A hydrogen without its only electron is called a <strong><em>"proton"</em></strong></li>
+<li>A Brønsted-Lowry acid is a proton donor; it must have a proton.</li>
+<li>A Brønsted-Lowry base is a proton acceptor; it must be able to form a bond to a proton.</li>
+</ul>
+<h3 id="brnsted-lowry-acids-ha">Brønsted-Lowry acids (HA)</h3>
+<ul>
+<li>All Brønsted-Lowry acids contain a proton</li>
+<li>The net carghe may be zero, <span class="arithmatex">\(\ce{(+)}\)</span>or<span class="arithmatex">\(\ce{(-)}\)</span></li>
+</ul>
+<p>Some Brønsted-Lowry acids shown here</p>
+<ul>
+<li><span class="arithmatex">\(\ce{HCl}\)</span></li>
+<li><span class="arithmatex">\(\ce{H2SO4}\)</span></li>
+<li><span class="arithmatex">\(\ce{HSO4^-}\)</span></li>
+<li><span class="arithmatex">\(\ce{H20}\)</span></li>
+<li><span class="arithmatex">\(\ce{H30^+}\)</span></li>
+</ul>
+<p><img alt="" src="assets/aceting-acid.png" /></p>
+<h3 id="brnsted-lowry-bases-ceb">Brønsted-Lowry bases (<span class="arithmatex">\(\ce{B:}\)</span>)</h3>
+<ul>
+<li>All Brønsted-Lowry acids contain a lone pair of electrons or a <span class="arithmatex">\(\pi\)</span> bond.</li>
+<li>The net charge may be zero</li>
+</ul>
+<p><img alt="alt-text" src="assets/bronsted-bases.png" title="Hover text" /></p>
+<h3 id="acidic-and-basic-sites-in-morphine">Acidic and basic sites in morphine</h3>
+<p>Some molecules contain both hydrogen atoms and lone pairs, and thus can act either as acids or bases depending on the particular reaction</p>
+<p><img alt="" src="assets/morphine.png" /></p>
+<ul>
+<li><span class="arithmatex">\(\ce{H}\)</span>atoms on<span class="arithmatex">\(\ce{O}\)</span> make morphine an acid.</li>
+<li>Lone pairs and <span class="arithmatex">\(\pi\)</span> bonds (in blue above) make morphine a base.</li>
+</ul>
+<p>The image is quite strange, so here is a 3D representation which will hopefully make this easier to visualize: <a href="https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=3D-Conformer">Pubmed Morphine 3D</a></p>
+<h3 id="reactions-of-brnsted-lowry-acids-and-bases">Reactions of Brønsted-Lowry acids and bases</h3>
+<ul>
+<li>A Brønsted-Lowry acid base reaction results in the transfer of a proton from an acid to a base</li>
+<li>The electron pair of the base <span class="arithmatex">\(\ce{B:}\)</span> forms a new bond to the proton of the acid</li>
+<li>The acid <span class="arithmatex">\(\ce{H-A}\)</span>loses a proton, leaving the electron pair in the<span class="arithmatex">\(\ce{H-A}\)</span>bond on<span class="arithmatex">\(\ce{A}\)</span>. This forms the conjugate base of the acid.</li>
+</ul>
+<p><img alt="" src="assets/acid-base-reaction.png" /></p>
+<p>The double reaction arrow notation (equilibrium) is used between starting materials and products to indicate that the reaction can proceed in both directions.</p>
+<ul>
+<li>A <strong>conjugate base</strong> is what remains of the acidic part that was altered after losing it's proton</li>
+<li>
+<p>Similalrly, a <strong>conjugate acid</strong> is what you obtain by bonding the lost proton the the basic compound, (simply, it is formed when the base gains a proton).</p>
+</li>
+<li>
+<p><strong>Acid</strong> <span class="arithmatex">\(\text{HA}\)</span> donates a proton, forming:
+  $$
+  \text{HA} \rightarrow \text{H}^+ + \text{A}^-
+  $$</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{HA}\)</span> is the <strong>acid</strong>, and <span class="arithmatex">\(\text{A}^-\)</span> is the <strong>conjugate base</strong>.</p>
+</li>
+<li>
+<p><strong>Base</strong> <span class="arithmatex">\(\text{B}\)</span> accepts a proton, forming:
+  $$
+  \text{B} + \text{H}^+ \rightarrow \text{BH}^+
+  $$</p>
+</li>
+<li><span class="arithmatex">\(\text{B}\)</span> is the <strong>base</strong>, and <span class="arithmatex">\(\text{BH}^+\)</span> is the <strong>conjugate acid</strong>.</li>
+</ul>
+<p>In reactions, the movement of electrons can be illustrated using <strong>curved arrow</strong> notation. Because two electron pairs are involved in this reaction below two arrows are needed.</p>
+<p><img alt="" src="assets/acid-base-curved-arrow.png" /></p>
+<ul>
+<li>When <span class="arithmatex">\(\ce{NH2^-}\)</span>reacts with<span class="arithmatex">\(\ce{H2O}\)</span>, the amide ion will abstract a proton proton <span class="arithmatex">\(\ce{H^+}\)</span> from water.</li>
+<li>The <strong>proton (H⁺)</strong> from water, which is accepted by the nitrogen in ammonia.</li>
+</ul>
+<h4 id="what-actually-happens">What actually happens</h4>
+<ul>
+<li><strong>The lone pair of electrons on the nitrogen</strong> in <span class="arithmatex">\(\ce{NH2^-}\)</span> is used to form a bond with the proton (<span class="arithmatex">\(\ce{H^+}\)</span>) from water.</li>
+<li>The nitrogen in the amide ion (<span class="arithmatex">\(\ce{NH2^-}\)</span>) now <strong>shares</strong> its lone pair with the proton (<span class="arithmatex">\(\ce{H^+}\)</span>), resulting in the formation of a new <span class="arithmatex">\(\ce{N-H}\)</span>bond. This forms<span class="arithmatex">\(\ce{NH3}\)</span> (ammonia).</li>
+<li>The lone pair of electrons from nitrogen is now <strong>shared</strong> with the hydrogen atom (<span class="arithmatex">\(\ce{H^+}\)</span>) to form the new N-H bond in ammonia (<span class="arithmatex">\(\ce{NH3}\)</span>).</li>
+<li>As water donates a proton, it is left as <span class="arithmatex">\(\ce{OH^-}\)</span> (hydroxide ion).</li>
+<li>As water donates its proton (<span class="arithmatex">\(\ce{H^+}\)</span>), it leaves behind its <strong>electron</strong> (which was part of the <span class="arithmatex">\(\ce{O-H}\)</span> bond). This electron remains on the oxygen, forming the hydroxide ion (<span class="arithmatex">\(\ce{OH^-}\)</span>).</li>
+<li>The nitrogen in <span class="arithmatex">\(\ce{NH2^-}\)</span>becomes <strong>neutral</strong>, and water becomes<span class="arithmatex">\(\ce{OH^-}\)</span> after losing its proton.</li>
+</ul>
+<h3 id="general-rules-of-reactivity">General rules of reactivity</h3>
+<ul>
+<li>Electron-rich species react with electron-deficient species</li>
+<li>Bases are electron rich</li>
+<li>Acids are electron deficient; the <span class="arithmatex">\(\ce{H}\)</span> of an acid has a partial positive charge</li>
+<li>Therefore, acids and bases react with one another</li>
+</ul>
+<h4 id="acid-strength-and-textpk_a">Acid strength and <span class="arithmatex">\(\text{pK}_a\)</span></h4>
+<p>Acid strength is the tendency of an acid to donate a proton. The more readily a compound donates a proton, the stronger an acid is.</p>
+<p><img alt="" src="assets/acid-base-solvent-reaction.png" /></p>
+<h4 id="why-water-acts-as-a-base-in-this-reaction">Why water acts as a base in this reaction</h4>
+<p>In this particular case, <strong>H-A</strong> is a stronger acid than water. Water, with its lone pair of electrons on oxygen, can accept a proton, acting as a base. The proton (H⁺) is transferred from <strong>H-A</strong> to water, forming the hydronium ion (<span class="arithmatex">\(\ce{H3O^+}\)</span>) and the conjugate base (<span class="arithmatex">\(\ce{A^-}\)</span>).</p>
+<p><strong>NOTE</strong>:
+This ability of being both an acid or a base depending on the context is known as being <strong>amphoteric</strong>. In the example from the image, water is acting as a <strong>base</strong>, but it can also act as an acid in other situations.</p>
+<h4 id="what-is-a-solvent">What is a solvent?</h4>
+<ul>
+<li>A solvent is a substance that dissolves other substances (called solutes) to form a solution.</li>
+<li>Water (<span class="arithmatex">\(\ce{H2O}\)</span>) is a very common solvent in many chemical reactions, including acid-base reactions, due to its polarity and ability to dissolve many substances. In the reaction above between an acid (<span class="arithmatex">\(\ce{H-A}\)</span>) and water in the image, water is acting as the solvent because it provides the medium in which the reaction occurs.</li>
+</ul>
+<p><strong>IT DOESN’T NECESSARILY PARTICIPATE IN THE CHEMICAL REACTION AS A REACTANT (though sometimes it does, like water in this case).</strong></p>
+<h3 id="acid-base-equilibrium">Acid-Base equilibrium</h3>
+<ul>
+<li>Acidity is measured by an equilibrium constant</li>
+<li>When a Brønsted-Lowry acid <span class="arithmatex">\(\ce{H-A}\)</span> is dissolved in water, an acid base reaction occurs and an equilibrium constant can be written for the reaction.</li>
+</ul>
+<div class="arithmatex">\[
+K_{\text{eq}} = \frac{[\text{products}]}{[\text{starting materials}]} = \frac{[\ce{H3O^+}][\ce{A^-}]}{[\ce{HA}][\ce{H2O}]}
+\]</div>
+<h3 id="acidity-constant">Acidity constant</h3>
+<p>The concentration of the solvent <span class="arithmatex">\(\ce{H2O}\)</span>is essentially constant, so the equation can be rearranged and a new equilibrium constant, called the <strong>acidity contant</strong><span class="arithmatex">\(\text{K}_a\)</span> is defined</p>
+<div class="arithmatex">\[
+K*a = [\ce{H2O}] K*{\text{eq}} = \frac{[\ce{H3O^+}][\ce{A^-}]}{[\ce{HA}]}
+\]</div>
+<blockquote>
+<p>The square brackets <span class="arithmatex">\(\text{[ &lt;mol&gt; ]}\)</span> in chemical equations represent the concentration of a substance, typically in moles per liter (M) or mol/L. This notation is used to express how much of a substance is present in a given volume of solution.</p>
+</blockquote>
+<p>It is generally more convenient when describing acid strength to use <span class="arithmatex">\(\text{pK}_a\)</span>values than<span class="arithmatex">\(\text{K}_a\)</span> values.</p>
+<div class="arithmatex">\[
+\text{p}K_a = -\log K_a
+\]</div>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\text{K}_a\)</span>of typical organic acids</th>
+<th style="text-align: center;"><span class="arithmatex">\(\text{K}_a\)</span> of typical organic acids</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\text{10}^{-5} \rightarrow \text{10}^{-50}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{+5} \rightarrow \text{+50}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">Larger number, stronger acid</td>
+<td style="text-align: center;">Smaller number, stronger acid</td>
+</tr>
+<tr>
+<td style="text-align: center;">Smaller number, weaker acid</td>
+<td style="text-align: center;">Larger number, weaker acid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The smaller the <span class="arithmatex">\(\text{pK}_a\)</span>, the stronger the acid.</strong></p>
+<p>Here is the table and the text from the image formatted in <strong>Markdown</strong>:</p>
+<h3 id="acidity-of-some-common-compounds">Acidity of Some Common Compounds</h3>
+<p><strong>Selected pKₐ values</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Acid</strong></th>
+<th><strong><span class="arithmatex">\(\text{pK}_a\)</span></strong></th>
+<th><strong>Conjugate base</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\ce{H-Cl}\)</span></td>
+<td>–7</td>
+<td><span class="arithmatex">\(\ce{Cl^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3CO2-H}\)</span></td>
+<td>4.8</td>
+<td><span class="arithmatex">\(\ce{CH3CO2^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{HO-H}\)</span></td>
+<td>15.7</td>
+<td><span class="arithmatex">\(\ce{HO^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3CH2O-H}\)</span></td>
+<td>16</td>
+<td><span class="arithmatex">\(\ce{CH3CH2O^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{HC \equiv CH}\)</span></td>
+<td>25</td>
+<td><span class="arithmatex">\(\ce{HC\equiv C^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{H-H}\)</span></td>
+<td>35</td>
+<td><span class="arithmatex">\(\ce{H^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{H2N-H}\)</span></td>
+<td>38</td>
+<td><span class="arithmatex">\(\ce{H2N^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH2=CH2}\)</span></td>
+<td>44</td>
+<td><span class="arithmatex">\(\ce{CH2=CH^-}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3-H}\)</span></td>
+<td>50</td>
+<td><span class="arithmatex">\(\ce{CH3^-}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>NOTE</em></strong></p>
+<ul>
+<li><strong>Acidity</strong> is increasing from bottom to top</li>
+<li><strong>Basicity</strong> is increasing from top to bottom</li>
+</ul>
+<h3 id="outcome-of-acid-base-reactions">Outcome of Acid-Base reactions</h3>
+<ul>
+<li>The position of the equilibrium depends on the relative strengths of the acids and bases</li>
+<li>Equilibrium always favors formation of the weaker acid</li>
+</ul>
+<p><img alt="" src="assets/weak-acid-formation.png" /></p>
+<p><strong>NOTE</strong>: because the <span class="arithmatex">\(\text{pK}_a\)</span> of the second acid (25) is lower than that of the conjugate acid (38), equilibrium favors the products (see half left arrow above).</p>
+<h3 id="steps-into-solving-acid-base-reactions-equilibria">Steps into solving acid-base reactions equilibria</h3>
+<p><img alt="" src="assets/acetylene-amide-ion-reaction.png" /></p>
+<ul>
+<li>
+<p><strong>Step 1</strong>: Identify the base in the starting materials. Assume <span class="arithmatex">\(\ce{-NH2}\)</span>the base because it bears a net negative charge. That makes<span class="arithmatex">\(\ce{HC#CH}\)</span> (acetylene) the acid.</p>
+</li>
+<li>
+<p><strong>Step 2</strong>: Draw the products of proton transfer and identify the conjugate acid and base in the products. Acetylene gives up its proton to <span class="arithmatex">\(\ce{-NH2}\)</span></p>
+</li>
+<li>
+<p><strong>Step 3</strong>: Compare the <span class="arithmatex">\(\text{pK}_a\)</span>values of the acid and the conjugate acid.Equilibrium favors the formation of the weaker acid with the higher<span class="arithmatex">\(\text{pK}_a\)</span>value. The<span class="arithmatex">\(\text{pK}_a\)</span>of<span class="arithmatex">\(\text{NH3}\)</span> is higher, therefore products are favored.</p>
+</li>
+</ul>
+<h3 id="factors-that-determine-acid-strength">Factors that determine acid strength</h3>
+<p><strong>NOTE</strong>: Anything that stabilizes a conjugate base <span class="arithmatex">\(\ce{(A:)^-}\)</span>make the starting acid<span class="arithmatex">\(\ce{H-A}\)</span> more acidic.</p>
+<p>Four factors affect the acidity of <span class="arithmatex">\(\ce{H-A}\)</span>. These are the following:</p>
+<ol>
+<li>
+<p><strong>Element Effects</strong>: The identity of the atom directly bonded to the acidic hydrogen significantly affects acidity.</p>
+</li>
+<li>
+<p>Across a period (left to right), electronegativity increases, so a more electronegative atom stabilizes the negative charge on A⁻ better, leading to a stronger acid.</p>
+</li>
+<li>
+<p>Down a group, the size of the atom increases, and larger atoms can better accommodate the negative charge, also making the acid stronger.</p>
+</li>
+<li>
+<p><strong>Inductive Effects</strong>: Electronegative atoms or groups attached to the molecule can withdraw electron density through sigma bonds (induction), helping to stabilize the negative charge on the conjugate base. This effect decreases with distance from the acidic site, but the presence of electronegative atoms like fluorine can still increase acidity by stabilizing the conjugate base.</p>
+</li>
+<li>
+<p><strong>Resonance Effects</strong>: If the conjugate base <span class="arithmatex">\(\ce{A^-}\)</span> has resonance structures that delocalize the negative charge over multiple atoms, the conjugate base is more stable, which increases the acidity of the starting acid.</p>
+</li>
+<li>
+<p>For example, carboxylic acids are more acidic than alcohols because the conjugate base (carboxylate) is stabilized by resonance.</p>
+</li>
+<li>
+<p><strong>Hybridization Effects</strong>: The hybridization of the atom bonded to the acidic hydrogen affects acidity.</p>
+</li>
+<li>More s-character in the hybrid orbitals increases acidity because a higher s-character means the electrons are held closer to the nucleus, stabilizing the negative charge on the conjugate base. For example, <span class="arithmatex">\(\text{sp}\)</span>-hybridized carbon (as in alkynes) is more acidic than <span class="arithmatex">\(\text{sp}^2\)</span>(alkenes) or<span class="arithmatex">\(\text{sp}^3\)</span> (alkanes) hybridized carbon.</li>
+</ol>
+<blockquote>
+<p><em>Note on stability</em>
+The more stable the conjugate base, the more easily the acid can lose its proton, and therefore, the stronger the acid.</p>
+</blockquote>
+<p><strong>Some keynotes includes</strong></p>
+<ul>
+<li>Always draw the conjugate bases</li>
+<li>Determine which conjugate base is more stable</li>
+<li>The more stable the conjugate base, the more acidic the acid</li>
+</ul>
+<h3 id="element-effects-trends-in-the-periodic-table">Element effects - Trends in the periodic table</h3>
+<p>Why does H2O have a much lower pKa than CH4?</p>
+<p><img alt="" src="assets/h2o-stronger-acid-than-ch4.png" /></p>
+<p>Easy <span class="arithmatex">\(\Rightarrow\)</span> since oxygen is much more electronegative than carbon, it more readily accepts a negative charge.</p>
+<p><img alt="" src="assets/increasing-electronegativity.png" /></p>
+<p>Yes, across a row of the periodic table, the acidity of H–A increases as the electronegativity of the atom <strong>A</strong> increases. This trend occurs because more electronegative atoms stabilize the negative charge on the conjugate base (A⁻) better after the acid (H–A) donates a proton (H⁺). A more stable conjugate base makes it easier for the acid to lose its proton, thus increasing the acidity.</p>
+<h4 id="trend-of-electronegativity-across-a-period">Trend of electronegativity across a period</h4>
+<p>As you move <strong>from left to right across a row</strong> of the periodic table, the electronegativity of the atoms increases. This is due to the following reasons:</p>
+<ul>
+<li><strong>Increasing nuclear charge</strong>: As the atomic number increases across a period, the number of protons in the nucleus also increases. This pulls the electrons more strongly towards the nucleus, increasing electronegativity.</li>
+<li><strong>Smaller atomic radius</strong>: Moving from left to right across a period also leads to a decrease in atomic radius (since electrons are added to the same shell but the nucleus pulls them closer), which further enhances the atom's ability to attract electrons.</li>
+</ul>
+<blockquote>
+<h3 id="notes-on-electronegativity">Notes on electronegativity</h3>
+<p>Electronegativity values are often reported using the <strong>Pauling scale</strong>, named after <a href="https://en.wikipedia.org/wiki/Linus_Pauling">Linus Pauling</a>.</p>
+<h4 id="general-electronegativity-trends-on-the-periodic-table">General electronegativity trends on the periodic table</h4>
+<ul>
+<li>The most electronegative elements are found at the top right of the periodic table (excluding the noble gases), with <strong>fluorine</strong> being the most electronegative element.</li>
+<li><strong>Metals</strong> on the left side of the periodic table (like sodium, potassium) have very low electronegativity because they tend to lose electrons easily.</li>
+</ul>
+<h4 id="how-electronegativity-relates-to-acidity">How electronegativity relates to acidity</h4>
+<ul>
+<li>As <strong>electronegativity of A increases</strong>, the ability of A to stabilize the negative charge on A⁻ increases after the loss of a proton. This makes the acid (H–A) stronger.</li>
+<li>For example, across the period from <strong>C</strong> (in CH₄) to <strong>N</strong> (in NH₃) to <strong>O</strong> (in H₂O) to <strong>F</strong> (in HF), the acidity of H–A increases dramatically because the conjugate bases become more stabilized due to the increasing electronegativity of A.</li>
+</ul>
+<h3 id="a-little-side-note-on-calculating-electronegativity">A little side note on calculating electronegativity</h3>
+<ul>
+<li><strong>Pauling's approach</strong>: Pauling calculated electronegativity using bond dissociation energies between different atoms. Moreover, the difference in electronegativity between two atoms can be inferred from the bond energy difference between a heteronuclear bond (A–B) and the average of the homonuclear bonds (A–A and B–B).</li>
+</ul>
+<p>$$
+    | \chi_A - \chi_B | \propto \text{(Bond energy of A–B)} - \frac{1}{2} \left( \text{Bond energy of A–A} + \text{Bond energy of B–B} \right)
+    $$</p>
+<p><strong>NOTE</strong>: <span class="arithmatex">\(\chi\)</span> (chi) is used as the symbol for <em>electronegatity</em></p>
+</blockquote>
+<h4 id="trend-of-electronegativity-down-a-column">Trend of electronegativity down a column</h4>
+<p><img alt="" src="assets/bigger-more-stable.png" /></p>
+<ul>
+<li><strong>Down a column of the periodic table</strong>, the <strong>size of the atom</strong> becomes the dominant factor in determining acidity, not electronegativity. Larger atoms can better stabilize the negative charge on the conjugate base because the charge is spread over a greater volume.</li>
+<li><strong>Charge stabilization</strong>: Positive or negative charge is more stable when it is spread over a larger area or volume. For larger atoms, the negative charge on the conjugate base is distributed over a greater space, reducing charge density and making the conjugate base more stable.</li>
+</ul>
+<p><img alt="" src="assets/bigger-more-acidic.png" /></p>
+<h3 id="inductive-effects">Inductive effects</h3>
+<ul>
+<li>An inductive effect is the pull of electron density through <span class="arithmatex">\(\sigma\)</span> bonds caused by electronegativity differences of atoms.</li>
+<li>More electronegative atoms stabilize regions of high electron density by an electron withdrawing inductive effect, basically pulling electrons closer to them.</li>
+<li>The more electronegative the atom and the closer it is to the site of the negative charge <span class="arithmatex">\(\Rightarrow\)</span> the greater the effect.</li>
+<li>The acidity of <span class="arithmatex">\(\ce{H-A}\)</span> increases with the presence of electron withdrawing groups in A.</li>
+</ul>
+<h4 id="inductive-effects-on-trifluoroethanol">Inductive effects on Trifluoroethanol</h4>
+<p>Note that <a href="https://pubchem.ncbi.nlm.nih.gov/compound/6409#section=3D-Conformer">2,2,2-trifluoroethanol</a> is more acidic than ethanol.</p>
+<p><img alt="" src="assets/ethanol-trifluoroethanol-acidity.png" /></p>
+<p><span class="arithmatex">\(\Rightarrow\)</span> This is because the three electronegative fluorine atoms stabilize the negatively charged conjugate base.</p>
+<p><strong>REMEMBER</strong>: the conjugate base is what remains of the initial acid after the reaction took place</p>
+<p><img alt="" src="assets/trifluoroethanol-polarity.png" /></p>
+<p><span class="arithmatex">\(\ce{CF3}\)</span> is polarized creating a pulling force towards its center from the methylene group, ultimately making the alcohol tail more prone to give away it's proton. This is the reason why <strong>trifluoroethanol</strong> is more acidic than plain ethanol.</p>
+<h3 id="resonance-effects">Resonance effects</h3>
+<p>Delocalization of charge through resonance influences acidity. Acetic acid is more acidic than ethanol, even though both conjugate bases have the negative charge on the same element, <span class="arithmatex">\(\ce{O}\)</span>.</p>
+<p><img alt="" src="assets/acetic-acid-vs-ethanol-acidity.png" /></p>
+<ol>
+<li>
+<p>Acetic Acid <span class="arithmatex">\(\ce{CH3COOH}\)</span>:</p>
+</li>
+<li>
+<p>When acetic acid donates a proton (H⁺), it forms the acetate ion <span class="arithmatex">\(\ce{CH3COO^-}\)</span> as its conjugate base.</p>
+</li>
+<li>The negative charge on the oxygen in the acetate ion is <strong>delocalized</strong> through <strong>resonance</strong>. There are two resonance structures in which the negative charge is shared equally between the two oxygen atoms.
+     $$
+     \ce{CH3-C(=O)O^-} \leftrightarrow \ce{CH3-C(O^-)O}
+     $$</li>
+</ol>
+<p>This <strong>delocalization of the negative charge</strong> over both oxygen atoms stabilizes the conjugate base (acetate ion) significantly.</p>
+<p><img alt="" src="assets/acetic-acid-resonance-structure.png" /></p>
+<ol>
+<li>
+<p>Ethanol <span class="arithmatex">\(\ce{CH3CH2OH}\)</span>:</p>
+</li>
+<li>
+<p>When ethanol loses a proton, it forms the ethoxide ion <span class="arithmatex">\(\ce{CH3CH2O^⁻}\)</span> as its conjugate base.</p>
+</li>
+<li>In this case, the negative charge is localized entirely on one oxygen atom because no resonance is possible.</li>
+</ol>
+<p>Structure of ethoxide ion:
+   $$
+   \ce{CH3CH2O^-}
+   $$
+   The negative charge is concentrated on a single oxygen atom, making the ethoxide ion less stable compared to the acetate ion.</p>
+<ul>
+<li>In <strong>acetic acid</strong>, the <strong>negative charge</strong> on the conjugate base is <strong>delocalized</strong> between two oxygen atoms through resonance, greatly stabilizing the conjugate base.</li>
+<li>In <strong>ethanol</strong>, the negative charge on the conjugate base is <strong>localized</strong> on a single oxygen atom, making the ethoxide ion less stable.</li>
+</ul>
+<p><img alt="" src="assets/visualizing-hydrid-density-for-stability.png" /></p>
+<h3 id="hybridization-effects">Hybridization effects</h3>
+<p>Consider the relative acidities of three different compounds containing <span class="arithmatex">\(\text{C-H}\)</span> bonds</p>
+<p><img alt="" src="assets/acidity-increaing-trend.png" /></p>
+<h4 id="why-higher-s-character-means-more-stability">Why higher s-character means more stability</h4>
+<ul>
+<li>The closer the electrons are to the nucleus, the less reactive they become because they are more shielded from external forces. This stabilizes the negative charge, making the conjugate base more stable.</li>
+<li>A more stable conjugate base (where the negative charge is well stabilized) means that the original acid can more easily donate its proton, because the resulting negative charge won't cause as much instability.</li>
+</ul>
+<p>Here is the content formatted into a <strong>Markdown table</strong>:</p>
+<hr />
+<h3 id="summary-of-factors-that-determine-acid-strength">Summary of Factors that Determine Acid Strength</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Factor</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Element effects</strong></td>
+<td>The acidity of HA increases both left-to-right across a row and down a column of the periodic table.</td>
+<td><span class="arithmatex">\(\ce{CH4}\)</span>and<span class="arithmatex">\(\ce{H2O}\)</span> (more acidic)</td>
+</tr>
+<tr>
+<td><strong>Inductive effects</strong></td>
+<td>The acidity of HA increases with the presence of electron-withdrawing groups in A.</td>
+<td><span class="arithmatex">\(\ce{CH3CH2O-H}\)</span>and<span class="arithmatex">\(\ce{CF3CH2O-H}\)</span> (more acidic)</td>
+</tr>
+<tr>
+<td><strong>Resonance effects</strong></td>
+<td>The acidity of HA increases when the conjugate base <span class="arithmatex">\(\ce{A^-}\)</span>is resonance stabilized.</td>
+<td><span class="arithmatex">\(\ce{CH3CH2O-H}\)</span>and<span class="arithmatex">\(\ce{CH3CO2-H}\)</span> (more acidic)</td>
+</tr>
+<tr>
+<td><strong>Hybridization effects</strong></td>
+<td>The acidity of HA increases as the percent s-character of <span class="arithmatex">\(\ce{A^-}\)</span>increases.</td>
+<td><span class="arithmatex">\(\ce{CH2=CH2}\)</span>and<span class="arithmatex">\(\ce{HC \equiv CH}\)</span> (more acidic)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="determining-the-relative-acidity-of-protons">Determining the relative acidity of protons</h3>
+<ul>
+<li>
+<p><strong>Step 1</strong>: identify the atoms bonded to the hydrogen, and use periodic trends to assign relative acidity</p>
+<ul>
+<li>The most common <span class="arithmatex">\(\ce{H-A}\)</span>bonds in organic compounds are<span class="arithmatex">\(\ce{C-N}\)</span>, <span class="arithmatex">\(\ce{N-H}\)</span>and<span class="arithmatex">\(\ce{O-H}\)</span></li>
+<li>Acidity increases left to right accross a row, the relative acidity of these bonds is <span class="arithmatex">\(\ce{C-N &lt; N-H &lt; O-H}\)</span></li>
+<li><span class="arithmatex">\(\ce{H}\)</span>atoms bonded to C atoms are usually less acidic than<span class="arithmatex">\(\ce{H}\)</span> atoms bonded to any heteroatom</li>
+</ul>
+</li>
+<li>
+<p><strong>Step 2</strong>: if the two <span class="arithmatex">\(\ce{H}\)</span> atoms in question are bonded to the same element, draw the conjugate bases and look for other points of difference.</p>
+<ul>
+<li>Do electron-withdrawing groups stabilize the conjugate base?</li>
+<li>Is the conjugate base resonance stabilized?</li>
+<li>How is the conjugate base hybridized?</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="assets/commonly-used-acids.png" /></p>
+<p>The familiar acids <span class="arithmatex">\(\ce{HCl}\)</span>and<span class="arithmatex">\(\ce{H2SO4}\)</span>are often used in organic reactions. Various organic acids are also commonly used (e.g., acetic acid and p-toluenesulfonic acid<span class="arithmatex">\(\ce{TsOH}\)</span>).</p>
+<p>Here also a list of commonly used bases in organic chemistry, mostly negatively charged bases.</p>
+<p><img alt="" src="assets/commonly-used-bases.png" /></p>
+<h3 id="characteristics-of-strong-organic-bases">Characteristics of strong organic bases</h3>
+<p>Strong bases have weak conjugate acids with high <span class="arithmatex">\(\text{pKa}\)</span>values, usually<span class="arithmatex">\(\text{&gt; 12}\)</span>. Strong bases have a net negative charge, but not all negatively charged species are strong bases. For example, none of the halides <span class="arithmatex">\(\ce{Fe^-}\)</span>, <span class="arithmatex">\(\ce{Cl^-}\)</span>, <span class="arithmatex">\(\ce{Br^-}\)</span>or<span class="arithmatex">\(\ce{I^-}\)</span> is a strong base.</p>
+<p>Carbanions, negatively charged carbon atoms, are especially strong bases. A common example is butyllithium</p>
+<div class="arithmatex">\[
+\ce{CH3CH2CH2{\ddot{\ C^-}}H2 Li+}
+\]</div>
+<h4 id="other-common-bases-in-orhanic-chemistry">Other common bases in orhanic chemistry</h4>
+<ul>
+<li>Amines are organic bases; due to having a lone pair on the <span class="arithmatex">\(\ce{N}\)</span> atom<ul>
+<li>Amines are organic compounds and functional groups that contain nitrogen atom bonded to one or more <em>carbon-containing</em> group (alkyl or aryl): derivatives of ammonia <span class="arithmatex">\(\ce{NH3}\)</span>where one or more<span class="arithmatex">\(\ce{H}\)</span> was replaced by <em>carbon-based</em> groups</li>
+</ul>
+</li>
+<li>
+<p>They are weaker, since they have a neutral charge unlike stronger bases having a negative net charge</p>
+</li>
+<li>
+<p>Triehtylamine</p>
+</li>
+</ul>
+<p><img alt="" src="assets/triethylamine.png" /></p>
+<ul>
+<li>Pyridine</li>
+</ul>
+<p><img alt="" src="assets/pyridine.png" /></p>
+<h4 id="aspirin">Aspirin</h4>
+<p>Aspirin is a well known drug (acetylsalicylic acid), it functions as analgesic, anti-pyretic and anti-inflammatory agent.</p>
+<p><img alt="" src="assets/aspiring-neutral-and-ionic.png" /></p>
+<ol>
+<li>
+<p>In <strong>ionic form</strong>, it is soluble in the aqueous blood stream and transported to tissues where it is needed.</p>
+</li>
+<li>
+<p>When protonated, it becomes netrual and can pass through cell membranes to ihnibit certain chemical reactions.</p>
+</li>
+</ol>
+<h3 id="lewis-bases">Lewis bases</h3>
+<p><strong>NOTE</strong>: lewis definitions are simpler as they only consider describing reactions as a mean of electrons transfer.</p>
+<p>A lewis base is an electron pair donor. Lewis bases are structurally the same as Brønsted-Lowry bases. Both have an available electron pair:
+- A lone pair
+- An electron pair in a <span class="arithmatex">\(\pi\)</span> bond
+    -  The <span class="arithmatex">\(\pi\)</span>bonds have <strong>electron density above and below</strong> the axis connecting the nuclei of the bonded atoms. These electrons in the<span class="arithmatex">\(\pi\)</span>bond are less tightly held than those in a<span class="arithmatex">\(\sigma\)</span> bond, making them more reactive and available for donation in chemical reactions.</p>
+<p>A Brønsted-Lowry base always donates an electron pair to a proton, but a Lewis base donates it to anything that is <strong>electron deficient</strong>.</p>
+<p>Generally, this rule is applied</p>
+<div class="arithmatex">\[
+    \text{Brønsted-Lowry base} \Rightarrow \text{Lewis base}
+\]</div>
+<p>but not the opposite</p>
+<div class="arithmatex">\[
+    \text{Brønsted-Lowry base} \space \cancel{\Leftarrow} \space \text{Lewis base}
+\]</div>
+<p>Being a Brønsted-Lowry base implies being a Lewis base, but this does not hold true for the opposite. This is because a Brønsted-Lowry specifically involves a proton transfer. Specifically, they <strong>accept a proton</strong>.</p>
+<h3 id="lewis-acids">Lewis acids</h3>
+<ul>
+<li>A lewis acid is an electron pair acceptor <span class="arithmatex">\(\Rightarrow\)</span> any species that is electron deficient and capable of <strong>accepting an electron pair is also a Lewis acid</strong>.</li>
+</ul>
+<p>Just like before, being a Brønsted-Lowry acid implies being a Lewis acid, but the opposite is not necessarily true. Thus:</p>
+<div class="arithmatex">\[
+    \text{Brønsted-Lowry acid} \Rightarrow \text{Lewis acid}
+\]</div>
+<div class="arithmatex">\[
+    \text{Brønsted-Lowry acid} \space \cancel{\Leftarrow} \space \text{Lewis acid}
+\]</div>
+<ul>
+<li>Common Lewis acids contain elements from the <strong>Group 3A</strong> because they do <strong>NOT</strong> posses a filled valence shell.</li>
+</ul>
+<h3 id="lewis-acids-and-bases-examples">Lewis acids and bases examples</h3>
+<p><img alt="Lewis acids and bases" src="assets/lewis-acids-and-bases-examples.png" /></p>
+<h3 id="lewis-acid-base-reactions">Lewis acid-base reactions</h3>
+<ul>
+<li>In a Lewis acid-base reaction, a Lewis base donates an electron pair to a Lewis acid. </li>
+</ul>
+<p><img alt="" src="assets/lewis-acid-with-water.png" /></p>
+<p><strong>NOTE</strong>: boron is electro deficient, it really wants that pair of electrons.</p>
+<p>For example, in the reaction of <span class="arithmatex">\(\ce{BF3}\)</span>(Boron Trifluoride) with<span class="arithmatex">\(\ce{H2O}\)</span>, the latter donates an electron pair to <span class="arithmatex">\(\ce{BF3}\)</span>to form a new bond. Creating a polarity in the<span class="arithmatex">\(\sigma\)</span>bond leaving the exygen slight<span class="arithmatex">\(\text{+}\)</span>and the Boron slightly<span class="arithmatex">\(\ce{-}\)</span> having gained one extra electron.</p>
+<p>Great observation! The negative charge on boron in the image represents the <strong>formal charge</strong> after the formation of the coordinate covalent bond with the oxygen from water.</p>
+<ul>
+<li><strong>Reaction with Water</strong>:</li>
+<li>
+<p>Water, acting as a Lewis base, donates a lone pair from the oxygen to boron. This forms a <strong>coordinate covalent bond</strong>, where both electrons in the bond come from oxygen.</p>
+</li>
+<li>
+<p><strong>Formal Charge in Boron after the reaction</strong>:
+   The formal charge on an atom can be calculated using this formula:
+   $$
+   \text{Formal charge} = \text{Valence electrons} - \left(\frac{\text{bonding electrons}}{2} + \text{non-bonding electrons}\right)
+   $$</p>
+</li>
+<li>Boron has 3 valence electrons (group 13 element).</li>
+<li>Bonding electrons include all those that are part of a bond, e.g. each single bond with Fluorine contributes with two electrons as well as the bond with oxygen.
+     $$
+     \text{Formal charge on boron} = 3 - \left(\frac{8}{2} + 0\right) = 3 - 4 = -1
+     $$</li>
+<li>Thus, boron gains a <strong>formal negative charge of (-1)</strong> because it is now "assigned" one more electron than it originally had in its neutral state.<ul>
+<li><strong>NOTE</strong>: This <strong>does not</strong> mean that boron is negatively charged in the sense of gaining an actual electron, but rather that in the context of formal charges, it has "access" to one more electron than expected based on its original number of valence electrons.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="assets/BF3-vacant-p-orbital.png" /></p>
+<p>The vacancy in the unhybridized p orbital is crucial to understanding why <span class="arithmatex">\(\ce{BF3}\)</span> is a Lewis acid. Because boron is electron-deficient, it can accept a pair of electrons into this empty p orbital.</p>
+<h3 id="elecrophiles-and-nuclephiles">Elecrophiles and Nuclephiles</h3>
+<p>The general pattern of Lewis acid-base reaction is about electron-rich species interating with electron-poor ones. A lewis acid is also called an <strong>electrophile</strong>. When a lewis base interacts with an electrophile that is not a proton, the base is called a <strong>nucleophile</strong>.</p>
+<ul>
+<li><span class="arithmatex">\(\ce{BF3} \rightarrow\)</span> electrophile</li>
+<li><span class="arithmatex">\(\ce{H2O} \rightarrow\)</span> nucleophile</li>
+</ul>
+<h3 id="lewis-acid-base-reations-forming-a-new-covalent-bond">Lewis acid-base reations forming a new covalent bond</h3>
+<p>The electron pair from the Lewis base is used to form a new covalent bond with the Lewis acid, and this results in the formation of a <strong>Lewis acid-base complex</strong>.</p>
+<p><img alt="" src="assets/lewis-acid-base-reaction-covalent-bond.png" /></p>
+<ul>
+<li>In some Lewis acid-base reactions, one bond is <strong>formed</strong> and one bond is <strong>broken</strong>.<ul>
+<li><strong>Identify</strong> the Lewis acid and base first.</li>
+<li>The <strong>Lewis acid</strong> is the electron pair <strong>acceptor</strong> (usually electron-deficient).</li>
+<li>The <strong>Lewis base</strong> is the electron pair <strong>donor</strong> (usually with a lone pair of electrons).</li>
+<li><strong>Draw a curved arrow</strong> from the electron pair of the base to the electron-deficient atom of the acid.</li>
+<li>This arrow shows the <strong>movement of electrons</strong> from the base to the acid, forming a new bond.</li>
+<li><strong>Count</strong> electron pairs and break a bond when needed to keep the correct number of valence electrons.</li>
+</ul>
+</li>
+<li>In reactions where a bond must be broken to avoid exceeding the octet rule, ensure you adjust the bonding and lone pairs accordingly.</li>
+</ul>
+<h3 id="alkene-cehcl-reaction">Alkene-<span class="arithmatex">\(\ce{HCl}\)</span> reaction</h3>
+<p>The reaction between cyclohexene and HCl can be treated as a Lewis acid-base interaction. <span class="arithmatex">\(\ce{HCl}\)</span>acts as the Lewis acid, and <strong>cyclohexene</strong> (having a<span class="arithmatex">\(\pi\)</span> bond) is the <strong>Lewis base</strong>.</p>
+<p><img alt="" src="assets/cyclohexene-hcl.png" /></p>
+<p>The electron pair in the <span class="arithmatex">\(\pi\)</span>bond of the Lewis base forms a new bond to the proton of the Lewis acid, generating a carbocation. The<span class="arithmatex">\(\ce{H-Cl}\)</span>bond must break, giving its two electrons to<span class="arithmatex">\(\ce{Cl}\)</span>, forming <span class="arithmatex">\(\ce{Cl^-}\)</span>. Because two electron pairs are involved two curved arrows are used below.</p>
+<p><img alt="" src="assets/cyclohexene-hcl-reaction.png" /></p>
+<h4 id="why-does-cyclohexene-break-its-double-bond">Why does cyclohexene break its double bond?</h4>
+<p>Cyclohexene breaks its double bond during the reaction with HCl because the π bond electrons are loosely held and reactive, not because cyclohexene is electron-deficient to begin with. The reason for the double bond breaking lies in the reactivity of the π bond in the presence of an electrophile.</p>
+<p><strong>NOTE</strong>: in the reaction of cyclohexene with <span class="arithmatex">\(\ce{HCl}\)</span>, the single bond with the proton could happen at any of the two ends of the double bond since the result would be the same.</p>
+<h4 id="why-does-chlorine-does-not-follow-the-hydrogen-in-the-bonding">Why does Chlorine does not follow the hydrogen in the bonding?</h4>
+<p>Chlorine does not follow hydrogen in the bonding because it is <strong>highly electronegative</strong> and prefers to keep the electrons for itself. When cyclohexene donates electrons to the proton (<strong>H⁺</strong>), the <strong>H-Cl bond polarizes further</strong>, pulling the bonding electrons towards chlorine. Since chlorine is already stable as <strong>Cl⁻</strong> (with a full octet), it <strong>rejects further bonding</strong> and releases the proton, breaking the bond.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

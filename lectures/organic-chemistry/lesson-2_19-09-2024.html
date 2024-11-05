@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Organic Chemistry, Academic Year 2024/2025 - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/organic-chemistry/lesson-2_19-09-2024.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#organic-chemistry-academic-year-20242025" class="nav-link">Organic Chemistry, Academic Year 2024/2025</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#atomic-structure-and-chemical-bonding" class="nav-link">Atomic Structure and Chemical Bonding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#atomic-structure" class="nav-link">Atomic Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#atomic-orbitals" class="nav-link">Atomic Orbitals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chemical-bonding" class="nav-link">Chemical bonding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lewis-structures" class="nav-link">Lewis structures</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#resonance-structures" class="nav-link">Resonance structures</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</h1>
+<div class="toc">
+<ul>
+<li><a href="#organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</a><ul>
+<li><a href="#atomic-structure-and-chemical-bonding">Atomic Structure and Chemical Bonding</a></li>
+<li><a href="#atomic-structure">Atomic Structure</a><ul>
+<li><a href="#charged-ions">Charged ions</a></li>
+</ul>
+</li>
+<li><a href="#atomic-orbitals">Atomic Orbitals</a><ul>
+<li><a href="#s-orbital">S Orbital</a></li>
+<li><a href="#p-orbitals">P Orbitals</a></li>
+<li><a href="#shells-subshells-and-energy-levels">Shells, subshells and energy levels</a></li>
+<li><a href="#bohrs-atomic-model">BOHR's Atomic model</a></li>
+<li><a href="#subshells-shapes">Subshells shapes</a></li>
+<li><a href="#orbitals-and-sub-orbitals-or-shells-and-subshells-of-bound-electrons">Orbitals and sub-orbitals (or shells and subshells) of Bound Electrons</a></li>
+<li><a href="#notes-on-the-periodic-table">Notes on the periodic table</a></li>
+</ul>
+</li>
+<li><a href="#chemical-bonding">Chemical bonding</a><ul>
+<li><a href="#ionic-bonds">Ionic bonds</a></li>
+<li><a href="#before-the-transfer">Before the Transfer:</a></li>
+<li><a href="#after-the-electron-transfer">After the Electron Transfer:</a></li>
+<li><a href="#why-do-they-have-opposite-charges">Why Do They Have Opposite Charges?</a></li>
+<li><a href="#summary-of-the-charge-creation">Summary of the Charge Creation:</a></li>
+<li><a href="#covalent-bonding">Covalent bonding</a></li>
+<li><a href="#concept-of-polarity">Concept of Polarity:</a></li>
+<li><a href="#polarity-in-molecules">Polarity in Molecules:</a></li>
+<li><a href="#valence-electrons">Valence electrons</a></li>
+</ul>
+</li>
+<li><a href="#lewis-structures">Lewis structures</a><ul>
+<li><a href="#how-to-draw-lewis-structures">How to draw lewis structures</a></li>
+<li><a href="#exceptions-to-the-octet-rule">Exceptions to the octet rule</a></li>
+</ul>
+</li>
+<li><a href="#resonance-structures">Resonance structures</a><ul>
+<li><a href="#principles-of-resonance-theory">Principles of resonance theory</a></li>
+<li><a href="#curved-arrow-notation">Curved arrow notation</a></li>
+<li><a href="#atoms-without-octets">Atoms without octets</a></li>
+<li><a href="#isomers">Isomers</a></li>
+<li><a href="#drawing-organic-molecules-condensed-structures">Drawing organic molecules, condensed structures</a></li>
+<li><a href="#drawing-skeletal-structures">Drawing skeletal structures</a></li>
+<li><a href="#interpreting-skeletal-structures">Interpreting skeletal structures</a></li>
+<li><a href="#skeletal-structures-with-charged-carbon-atoms">Skeletal structures with charged carbon atoms</a></li>
+<li><a href="#top-scenario-positively-charged-carbon-carbocation">Top Scenario (positively charged carbon, carbocation):</a></li>
+<li><a href="#bottom-scenario-negatively-charged-carbon-carbanion">Bottom Scenario (negatively charged carbon, carbanion):</a><ul>
+<li><a href="#electron-count-in-carbon">Electron Count in Carbon</a></li>
+<li><a href="#bonding-with-hydrogens">Bonding with Hydrogens</a></li>
+<li><a href="#remaining-electrons-lone-pair">Remaining Electrons (Lone Pair)</a></li>
+</ul>
+</li>
+<li><a href="#why-not-just-one-electron">Why not just one electron?</a></li>
+<li><a href="#lone-pairs-on-heteroatoms">Lone pairs on heteroatoms</a></li>
+<li><a href="#determining-molecular-shape">Determining molecular shape</a><ul>
+<li><a href="#bonds-length-decreases-accross-a-row-of-the-periodic-table-as-the-size-of-the-atom-decreases">Bonds length decreases accross a row of the periodic table as the size of the atom decreases</a></li>
+<li><a href="#bond-length-increases-down-a-column-of-the-periodic-table-as-the-size-of-an-atom-increases">Bond length increases down a column of the periodic table as the size of an atom increases</a></li>
+</ul>
+</li>
+<li><a href="#molecular-geometry">Molecular geometry</a><ul>
+<li><a href="#two-groups-around-an-atom">Two groups around an atom</a></li>
+<li><a href="#three-groups-around-an-atom">Three groups around an atom</a></li>
+<li><a href="#four-groups-around-an-atom">Four groups around an atom</a></li>
+</ul>
+</li>
+<li><a href="#drawing-3d-molecular-structures">Drawing 3D Molecular structures</a><ul>
+<li><a href="#equivalent-reprensations-for-methane">Equivalent reprensations for methane</a></li>
+<li><a href="#non-bonded-pairs-of-electrons-are-counted-as-groups">Non bonded pairs of electrons are counted as groups</a></li>
+</ul>
+</li>
+<li><a href="#the-3d-structure-of-water">The 3D structure of water</a></li>
+<li><a href="#orbitals-and-bonding">Orbitals and bonding</a><ul>
+<li><a href="#hydrogen">Hydrogen</a></li>
+<li><a href="#methane-and-divalent-carbon">Methane and divalent carbon</a></li>
+</ul>
+</li>
+<li><a href="#sigmaandpi-bonds">\(\sigma\)and\(\pi\) bonds</a></li>
+<li><a href="#bond-types-in-single-double-and-triple-bonds">Bond types in single, double, and triple bonds:</a><ul>
+<li><a href="#bonding-via-textsp3-hybrid-oribitals">Bonding via \(\text{sp}^3\) hybrid oribitals</a></li>
+<li><a href="#how-to-determine-hybridization">How to determine hybridization?</a></li>
+</ul>
+</li>
+<li><a href="#three-types-of-hybrid-orbitals">Three types of Hybrid Orbitals</a></li>
+<li><a href="#hybridization-in-ethane-ethylene-and-acetylene">Hybridization in ethane, ethylene and acetylene</a><ul>
+<li><a href="#ethane-cech3ch3">Ethane \(\ce{CH3CH3}\)</a></li>
+<li><a href="#ethylene-cech2ch2">Ethylene \(\ce{CH2CH2}\)</a></li>
+<li><a href="#textsp-hybrid-orbitals">\(\text{sp}\) hybrid orbitals</a></li>
+<li><a href="#acetylene-cec2h2">Acetylene \(\ce{C2H2}\)</a></li>
+</ul>
+</li>
+<li><a href="#triple-bonds">Triple Bonds</a><ul>
+<li><a href="#properties-of-triple-bonds">Properties of Triple Bonds</a></li>
+<li><a href="#bonds-and-hybdrization-overview-table">Bonds and hybdrization overview table</a></li>
+</ul>
+</li>
+<li><a href="#bond-length-and-bond-strength">Bond length and bond strength</a><ul>
+<li><a href="#carbon-hydrogen-bonds">Carbon-Hydrogen bonds</a></li>
+<li><a href="#percent-s-character">Percent s-character</a></li>
+</ul>
+</li>
+<li><a href="#electronegativity">Electronegativity</a></li>
+<li><a href="#bond-polarity">Bond polarity</a><ul>
+<li><a href="#nonpolar-bonds">Nonpolar bonds</a></li>
+<li><a href="#polar-bonds">Polar bonds</a></li>
+</ul>
+</li>
+<li><a href="#polar-molecules">Polar molecules</a></li>
+<li><a href="#nonpolar-molecules">Nonpolar molecules</a></li>
+<li><a href="#essential-polarity-rules">Essential polarity rules</a></li>
+<li><a href="#rules">Rules:</a></li>
+<li><a href="#example">Example:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="atomic-structure-and-chemical-bonding">Atomic Structure and Chemical Bonding</h2>
+<ol>
+<li>Atomic structure</li>
+<li>Atomic orbitals</li>
+<li>Chemical bonding</li>
+<li>Lewis structures</li>
+<li>Resonance structures</li>
+<li>3D structures</li>
+<li>Hybrid orbitals</li>
+<li>Bond polarity</li>
+</ol>
+<h2 id="atomic-structure">Atomic Structure</h2>
+<p><img alt="atomic structure" src="assets/atomic-struct.png" /></p>
+<p>An atom consists of a nucleus at its center, which contains protons (positively charged) and neutrons (neutral).</p>
+<p>Surrounding the nucleus are electrons (negatively charged), which move in regions called electron shells or orbitals. These shells represent different energy levels, with the electrons <strong>closest to the nucleus having lower energy</strong> and those <strong>further away having higher energy</strong>.</p>
+<p><strong>Identity and behavior</strong>:
+The number of protons defines the element, while the arrangement of electrons influences the atom's chemical behavior.</p>
+<ul>
+<li>
+<p>Atomic number</p>
+</li>
+<li>
+<p>The atomic number of an element is the number of protons in the nucleus of an atom of that element</p>
+</li>
+<li>
+<p>Mass number</p>
+</li>
+<li>The mass number is the number of protons plus neutrons in the nucleus
+    <img alt="mass number" src="assets/mass-number.png" /></li>
+</ul>
+<p>The atomic weight of a particular element is the weighted average of the mass of all its isotopes reported in atomic
+mass unit (amu).</p>
+<ul>
+<li>This difference in neutron count causes the isotopes to have different atomic masses (mass number = protons + neutrons), while still being the same element.</li>
+</ul>
+<p>For this particular reason the atomic mass of a given element is calculated as a weighted average.</p>
+<p>💡 What is an isotope of a given element?</p>
+<blockquote>
+<ul>
+<li><em>An isotope of an element refers to atoms of the same element that have the same number of protons but different numbers of neutrons. This means that isotopes of an element have the same atomic number (same number of protons) but different mass numbers (total number of protons and neutrons). For example, carbon has two common isotopes: Carbon-12 (6 protons and 6 neutrons) and Carbon-14 (6 protons and 8 neutrons).</em></li>
+</ul>
+</blockquote>
+<h3 id="charged-ions">Charged ions</h3>
+<p>An ion is an atom that has gained or lost one or more electrons, resulting in a net charge</p>
+<ul>
+<li>Cations</li>
+<li>Ions with a positive because they have <strong>lost</strong> electons.</li>
+<li>Anions</li>
+<li>Ions with a negative charge because they have <strong>gained</strong> an electron.</li>
+</ul>
+<h2 id="atomic-orbitals">Atomic Orbitals</h2>
+<p>Atomic orbitals are regions around an atom's nucleus where there is a high probability of finding an electron. Orbitals are described by quantum mechanics and represent the wave-like behavior of electrons around the nucleus. Each orbital has a specific shape and energy level.</p>
+<h3 id="s-orbital">S Orbital</h3>
+<p><strong>s orbitals</strong> are spherical because the probability distribution of finding an electron is the same in every direction around the nucleus. This spherical symmetry results from the mathematical solutions to the Schrödinger equation for an electron in a hydrogen atom.</p>
+<h3 id="p-orbitals">P Orbitals</h3>
+<p><strong>p orbitals</strong> are a type of atomic orbital with a dumbbell or figure-eight shape, and they are more complex than s orbitals</p>
+<p>An element presenting p orbitals arrangements is comprised of 3 p orbital, one for each 3-Dimensional axis repectively: Px, Py and Pz.</p>
+<ul>
+<li>Each p orbital has two lobes extending outwards starting from the nucleus, resembling a dumbbell shape.</li>
+<li>These lobes represent regions where the probability of finding an electron is highest.</li>
+<li>Between the two lobes, at the nucleus, there is a node, where the probability of finding an electron is zero.</li>
+<li>Each p orbital can hold a maximum of two electrons with opposite spins.</li>
+<li>This has something to do with the <em>Pauli Exclusion Principle</em> which is stuff coming from Quantum Mechanics. The priciple states that:
+    &gt; <em>"No two electrons in the same orbital can have the same quantum numbers"</em> for whatever this means...</li>
+</ul>
+<p>You can literally imagine the shape as dictating where there's a high probability of finding an electron.</p>
+<p><img alt="s and p orbitals" src="assets/s-p-orbitals.png" /></p>
+<h3 id="shells-subshells-and-energy-levels">Shells, subshells and energy levels</h3>
+<ul>
+<li>Energy levels are labeled by the pricipal quantum number <em>n</em> (1, 2, 3 and so on...).</li>
+<li>As you go up in energy levels the energy increases and so does the capacity to hold more electrons.</li>
+<li>
+<p>The total number of electrons in an energy level is given by 2n^2</p>
+</li>
+<li>
+<p>First shell can hold 2(1**2) = 2 electrons</p>
+</li>
+<li>Second shell can hold 2(2**2) = 8 electrons</li>
+<li>
+<p>Third shell can hold 2(3**2) = 18 electrons</p>
+</li>
+<li>
+<p>Each energy level contains one or more subshells (s, p, d and f). These subshells are represented in the diagram:</p>
+</li>
+<li>
+<p>1st shell: 1s (can hold 2 electrons).</p>
+</li>
+<li>2nd shell: 2s and 2p (together can hold 8 electrons: 2 in 2s and 6 in 2p).</li>
+<li>3rd shell: 3s, 3p, and 3d (together can hold 18 electrons: 2 in 3s, 6 in 3p, and 10 in 3d).</li>
+<li>
+<p>...</p>
+</li>
+<li>
+<p>Each subshell has a certain amount of orbitals and each orbital can hold two electrons</p>
+</li>
+</ul>
+<p><img alt="Electrons fitting in each energy level till the 4th" src="assets/electrons-fitting-energy-levels.png" /></p>
+<blockquote>
+<p>💡 Videos and resources</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=UDmrRWeFWwU">Gumball Degree: Shells, Subshells, and Orbitals</a>: simple video on bohr's model</li>
+<li><a href="https://www.youtube.com/watch?v=igEGO8h3N-A">Some guy rendering p type subshells</a></li>
+<li><a href="https://www.youtube.com/watch?v=23bNW4G9DZk">Three Twentysix: What ARE atomic orbitals?</a>: great video explaining the concept of electron density and why subshells are represented as shapes, which aren't really electron containers but rather a density plot of the places where an electron is most likely to be found around it's atom.</li>
+<li><a href="https://www.youtube.com/watch?v=W2Xb2GFK2yc">minutephysics: A Better Way To Picture Atoms</a></li>
+<li><a href="https://www.youtube.com/watch?v=Nr40fnfHccQ">Sci Pills: Atomic orbitals 3D</a>: Shows realistic 3D pictures of the simplest atomic orbitals of hydrogen</li>
+<li><a href="https://www.youtube.com/watch?v=IlkY-HtjrkA">Atom wave functions (animation)</a></li>
+</ul>
+</blockquote>
+<h3 id="bohrs-atomic-model">BOHR's Atomic model</h3>
+<p><img alt="BOHR's atomic model" src="assets/bohrs_atomic_model.jpeg" /></p>
+<p><img alt="BOHR's atomic model 2" src="assets/bohrs-atomic-model.png" /></p>
+<h3 id="subshells-shapes">Subshells shapes</h3>
+<p><img alt="Subshells shapes" src="assets/subshell-shapes.svg" /></p>
+<h3 id="orbitals-and-sub-orbitals-or-shells-and-subshells-of-bound-electrons">Orbitals and sub-orbitals (or shells and subshells) of Bound Electrons</h3>
+<p><img alt="Orbitals and sub-orbitals" src="assets/Chemistry_OrbitalDiagrams.png" /></p>
+<p>u/BayGO said on <a href="https://www.reddit.com/r/explainlikeimfive/comments/amxfba/comment/efrxjai">reddit</a>:</p>
+<blockquote>
+<p><em>"A Suborbital</em> simply refers to the "type" (shape) of the orbital that the electron is orbiting around."*</p>
+</blockquote>
+<h3 id="notes-on-the-periodic-table">Notes on the periodic table</h3>
+<ul>
+<li>First row</li>
+<li>There is only one orbital in the first shell</li>
+<li>Each orbital can hold a maximum of two electrons</li>
+<li>There are two elements in the first row<ol>
+<li><strong>H</strong> (Hydrogen 1s^1)</li>
+<li><strong>He</strong> (Helium 12^2)</li>
+</ol>
+</li>
+<li>Second row</li>
+<li>Each element in the second row of the periodic table also has four orbitals available to accept additional electrons:<ul>
+<li>one 2s orbital.</li>
+<li>and three 2p orbitals.</li>
+</ul>
+</li>
+<li>There is a maximum capacity of eight valence electrons for elements in the second row.</li>
+</ul>
+<p><img alt="Second row valence" src="assets/second-row-valence.png" /></p>
+<p>From the slides:</p>
+<blockquote>
+<p>In orbitals at the same energy, electrons are distributed one per orbital, then the second is added</p>
+</blockquote>
+<p>This really means that electrons prefering falling into an empty orbital at the same energy level rather that pairing up in an already occupied orbital. This is due to reduced electron-electron repulsion.</p>
+<p>Going deeper:
+<i></p>
+<blockquote>
+<p>When electrons are placed singly in different orbitals of the same subshell, they will all have the same spin direction (either all up or all down).</p>
+<p>Electrons have a property called spin, which is like a small magnetic field. It can be thought of as spinning in one of two possible directions, often represented as:</p>
+<ul>
+<li>Up spin (denoted as ↑)</li>
+<li>Down spin (denoted as ↓)
+  <img alt="Parallel spin p subshell" src="assets/parallel-spin-filling.png" /> &gt; </i></li>
+</ul>
+</blockquote>
+<p><img alt="Electronic configurations" src="assets/electronic-configurations.png" /></p>
+<h2 id="chemical-bonding">Chemical bonding</h2>
+<p>In this context, <strong>bonding</strong> refers to the joining of two atoms in a stable arrangement. Through bonding, atoms gain, lose or share electrons to attain the electronic configuration of the noble gas closest to them in the periodic table.</p>
+<blockquote>
+<p>💡 What is a noble gas?
+<em>A noble gas is an element whose outermost energy level (also called "valence shell") is completely filled with electrons.</em></p>
+</blockquote>
+<p>Atoms can either form ionic or covalent bonds to attain a complete outershell, e.g. seeking stability.</p>
+<ul>
+<li><strong>Ionic bonds</strong> result from the transfer of an electron from one atom to another.</li>
+<li><strong>Covalent bonds</strong> result from the sharing of electrons between two nuclei.</li>
+</ul>
+<h3 id="ionic-bonds">Ionic bonds</h3>
+<p>These generally occur when elements from the far left side of the periodic table combine with elements from the far right side, ignoring noble gases.</p>
+<p>A positively charged cation formed from the element on the left side attracts a negatively charged anion from the element right on side</p>
+<blockquote>
+<p>💡 Why do <strong>Na</strong> and <strong>Cl</strong> keep staying close together after the ionic bonds (the electron was transferred), aren't they supposed to be stable and thus not needing to stay close?</p>
+<blockquote>
+<p>Great question! Let’s clarify why sodium (<span class="arithmatex">\(\text{Na}\)</span>) and chlorine (<span class="arithmatex">\(\text{Cl}\)</span>) still have opposite charges <strong>after</strong> the electron transfer. The key here lies in understanding how the electron transfer affects the <strong>total number of protons and electrons</strong> in each atom, and how this creates the charges.</p>
+</blockquote>
+<h3 id="before-the-transfer">Before the Transfer:</h3>
+<ul>
+<li><strong>Sodium (Na)</strong>:</li>
+<li>Atomic number = 11 (11 protons, which are positively charged).</li>
+<li>It also has 11 electrons (negatively charged) in a neutral state.</li>
+<li>In this state, sodium has <strong>no net charge</strong> because the <strong>positive protons</strong> and <strong>negative electrons</strong> cancel each other out.</li>
+<li><strong>Chlorine (Cl)</strong>:</li>
+<li>Atomic number = 17 (17 protons).</li>
+<li>It also has 17 electrons in a neutral state.</li>
+<li>Similarly, chlorine has <strong>no net charge</strong> because its positive and negative charges balance out.</li>
+</ul>
+<h3 id="after-the-electron-transfer">After the Electron Transfer:</h3>
+<ol>
+<li>
+<p><strong>Sodium (Na)</strong> <strong>loses</strong> 1 electron:</p>
+</li>
+<li>
+<p>Now sodium has <strong>11 protons</strong> (still positively charged) but <strong>only 10 electrons</strong> (since it lost one electron).</p>
+</li>
+<li>
+<p>This means sodium has <strong>1 more proton</strong> than it has electrons. Since protons are positive, sodium becomes a <strong>positively charged ion</strong> (<span class="arithmatex">\(\text{Na}^+\)</span>) because it now has an <strong>excess positive charge</strong>.</p>
+</li>
+<li>
+<p><strong>Chlorine (Cl)</strong> <strong>gains</strong> 1 electron:</p>
+</li>
+<li>Chlorine has <strong>17 protons</strong> but now <strong>18 electrons</strong> (since it gained an electron from sodium).</li>
+<li>This means chlorine has <strong>1 more electron</strong> than it has protons. Since electrons are negative, chlorine becomes a <strong>negatively charged ion</strong> (<span class="arithmatex">\(\text{Cl}^-\)</span>) because it now has an <strong>excess negative charge</strong>.</li>
+</ol>
+<h3 id="why-do-they-have-opposite-charges">Why Do They Have Opposite Charges?</h3>
+<ul>
+<li><strong>Sodium (<span class="arithmatex">\(\text{Na}^+\)</span>)</strong> becomes <strong>positively charged</strong> because it has <strong>more protons than electrons</strong> after losing one electron.</li>
+<li><strong>Chlorine (<span class="arithmatex">\(\text{Cl}^-\)</span>)</strong> becomes <strong>negatively charged</strong> because it has <strong>more electrons than protons</strong> after gaining that electron.</li>
+</ul>
+<p>Thus, the loss or gain of electrons directly results in an imbalance between protons (positive) and electrons (negative), creating these charges. Sodium is positive because it lost a negative electron, and chlorine is negative because it gained that electron.</p>
+<h3 id="summary-of-the-charge-creation">Summary of the Charge Creation:</h3>
+<ul>
+<li><strong>Sodium (Na)</strong> loses 1 electron, leaving it with <strong>more protons than electrons</strong>, giving it a <strong>positive charge</strong> (<span class="arithmatex">\(\text{Na}^+\)</span>).</li>
+<li><strong>Chlorine (Cl)</strong> gains 1 electron, leaving it with <strong>more electrons than protons</strong>, giving it a <strong>negative charge</strong> (<span class="arithmatex">\(\text{Cl}^-\)</span>).</li>
+</ul>
+<p>These opposite charges result in a <strong>strong electrostatic attraction</strong> between the <span class="arithmatex">\(\text{Na}^+\)</span> and <span class="arithmatex">\(\text{Cl}^-\)</span> ions, which forms the ionic bond.</p>
+</blockquote>
+<h3 id="covalent-bonding">Covalent bonding</h3>
+<p>Covalent bonding occurs with elements like carbon in the middle of the table with elements that have similar electronegativity.</p>
+<ul>
+<li>
+<p>In a covalent bond, atoms share one or more pairs of electrons. Each atom contributes at least one electron to the bond and these electrons are shared <strong>equally</strong> or <strong>unequally</strong>, depending on the atoms involved.</p>
+</li>
+<li>
+<p><strong>Equally</strong></p>
+<ul>
+<li>Electrons are shared <strong>equally</strong> between atoms with similar or identical electronegativities, resulting in no significant charge difference.<br />
+<strong>Example</strong>: <strong>Hydrogen molecule <span class="arithmatex">\(\text{H}_2\)</span></strong> – Both hydrogen atoms share electrons equally because they have the same electronegativity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Unequally</strong></p>
+<ul>
+<li>Electrons are shared <strong>unequally</strong> between atoms with different electronegativities, causing partial charges on the atoms (δ− and δ+).<br />
+<strong>Example</strong>: <strong>Water <span class="arithmatex">\(\text{H}_2\text{O}\)</span></strong> – Oxygen is more electronegative than hydrogen, leading to unequal sharing of electrons, with oxygen gaining a partial negative charge and hydrogen a partial positive charge.</li>
+</ul>
+</li>
+<li>
+<p>A covalent bond is a two-electron bond and a compound with covalent bonds is called a <strong>Molecule</strong>.</p>
+</li>
+</ul>
+<h3 id="concept-of-polarity">Concept of Polarity:</h3>
+<p><strong>Polarity</strong> refers to the unequal sharing of electrons in a bond, leading to regions of slight positive and negative charge, creating a dipole. A bond or molecule is <strong>polar</strong> if it has such charge separation, while it is <strong>nonpolar</strong> if the electrons are evenly distributed.</p>
+<ol>
+<li>
+<p><strong>Polar Bonds</strong>:</p>
+</li>
+<li>
+<p>In a <strong>polar covalent bond</strong>, one atom attracts the shared electrons more strongly than the other. This creates a <strong>dipole moment</strong>, where:</p>
+<ul>
+<li>The atom that attracts electrons more strongly becomes slightly <strong>negative</strong> (partial negative charge, δ−).</li>
+<li>The other atom becomes slightly <strong>positive</strong> (partial positive charge, δ+).</li>
+</ul>
+</li>
+<li>The bond is said to be <strong>polar</strong> because there is a separation of charge, creating "poles" (one positive, one negative).</li>
+</ol>
+<p><strong>Example</strong>: In water <span class="arithmatex">\(\text{H}_2\text{O}\)</span>, oxygen is more electronegative than hydrogen, so the electrons are pulled closer to oxygen, making oxygen δ− and hydrogen δ+.</p>
+<ol>
+<li>
+<p><strong>Nonpolar Bonds</strong>:</p>
+</li>
+<li>
+<p>In a <strong>nonpolar covalent bond</strong>, the electrons are shared <strong>equally</strong> between the atoms, so there is <strong>no charge separation</strong> and no dipole moment.</p>
+</li>
+<li>These bonds occur between atoms with the same or very similar electronegativity.</li>
+</ol>
+<p><strong>Example</strong>: In a molecule of oxygen <span class="arithmatex">\(\text{O}_2\)</span>, both oxygen atoms share electrons equally, so the bond is nonpolar.</p>
+<h3 id="polarity-in-molecules">Polarity in Molecules:</h3>
+<ul>
+<li><strong>Polar molecules</strong>: Molecules with an overall charge separation due to polar bonds and an asymmetrical shape. Water <span class="arithmatex">\(\text{H}_2\text{O}\)</span> is polar because of its bent shape and polar bonds.</li>
+<li><strong>Nonpolar molecules</strong>: Molecules where the bonds are either nonpolar, or polar bonds cancel out due to a symmetrical arrangement. <span class="arithmatex">\(\text{CO}_2\)</span> (carbon dioxide) is nonpolar because its linear shape causes the polar bonds to cancel each other out.</li>
+</ul>
+<blockquote>
+<p>💡 Videos and resources</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=g-tE6MN-wrE">Creative Learning: Mastering Chemical Bonding: Explained with 3D Animation</a></li>
+<li><a href="https://www.youtube.com/watch?v=_sUIhpULamM">IslandSchoolHongKong: covalent bond animation</a></li>
+<li><a href="https://www.youtube.com/watch?v=qc1TGwedSIc">AtomicSchool: Chemical Bonding Introduction: Hydrogen Molecule, Covalent Bond &amp; Noble Gases</a></li>
+<li><a href="https://www.youtube.com/watch?v=G9K6PMGt4LM">AtomicSchool: Oxygen, Nitrogen &amp; Carbon and Covalent Chemical Bonds</a></li>
+<li><a href="https://al2me6.github.io/evanescence/">Hydrogenic Orbitals visualizer</a></li>
+<li><a href="https://www.falstad.com/qmmo/">Molecular Orbital visualizer</a></li>
+</ul>
+</blockquote>
+<p>Hydrogen forms one covalent bond, when two hydrogen atoms are joined in a bond, each has a filled valence shell of two electrons.</p>
+<p><img alt="Hydrogen covalent bond" src="assets/h-covalent-bond.png" /></p>
+<h3 id="valence-electrons">Valence electrons</h3>
+<ul>
+<li>
+<p><strong>Octet Rule</strong>
+  The octet rule states that atoms tend to form bonds in such a way that they achieve a total of 8 electrons in their outermost (valence) shell, which makes them chemically stable. This configuration mimics the electron arrangement of noble gases, which are naturally stable due to having a full outer shell.</p>
+</li>
+<li>
+<p>Second row elements can have no more that eight electrons around them. For neutral molecules, this has two consequences:</p>
+</li>
+<li>
+<p><strong>Atoms with one, two, three or four valence electrons</strong> form one, two, three or four bonds, respectively in neutral molecules (e.g. <span class="arithmatex">\(\text{BF}_3\)</span>, <span class="arithmatex">\(\text{CH}_4\)</span>)</p>
+<ul>
+<li>In boron trifluoride <span class="arithmatex">\(\text{BF}_3\)</span>, each fluorine atom shares 1 electron with boron, completing fluorine’s octet and giving boron 3 shared electrons in its valence shell.</li>
+<li>Fluorine has an atomic number of 9, meaning it has 9 electrons: 2 in the first energy level and 7 in the second (valence) shell.</li>
+<li>The second shell can hold a maximum of 8 electrons, so fluorine is 1 electron short of completing its octet.</li>
+<li>Boron is one of the exceptions to the octet rule, meaning it can form stable compounds with fewer than 8 electrons in its valence shell. In <span class="arithmatex">\(\text{BF}_3\)</span>, boron doesn't need a full octet to be chemically stable.</li>
+<li>Atoms with 1–4 valence electrons form as many bonds as they have valence electrons because <strong>they only have that many electrons available to share</strong>. These atoms are "sharing" their valence electrons with other atoms to reach the octet rule, or 8 electrons in their outer shell.</li>
+<li><strong>The number of bonds they can form is directly tied to the number of valence electrons they have to offer.</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Atoms with five or more valence electrons</strong> form enough bonds to give an octet (e.g. <span class="arithmatex">\(\text{NH}_3\)</span>)</p>
+<ul>
+<li>In this case, the predicted number of bonds is given by = 8 - #{valence electrons}</li>
+<li>These atoms (like nitrogen, oxygen, and fluorine) are already close to 8 electrons in their valence shell.</li>
+<li>Since they already have most of the electrons they need (5, 6, or 7), they are more reactive and eager to form bonds with other atoms to quickly complete their octet.</li>
+<li>Oxygen, with <strong>6 valence electrons</strong>, needs <strong>2 more electrons</strong> to complete its octet. It easily achieves this by forming <strong>two covalent bonds</strong>, where each bond involves sharing one pair of electrons with another atom, allowing oxygen to reach the stable 8-electron configuration.</li>
+<li>It is always possible for an element having &gt;= 5 valence electrons to reach the octet via covalent bonding.</li>
+</ul>
+</li>
+</ul>
+<h2 id="lewis-structures">Lewis structures</h2>
+<p>Lewis structures are dot representations for molocules</p>
+<ul>
+<li>
+<p><strong>General rules for drawing Lewis structures</strong>:</p>
+</li>
+<li>
+<p>Draw only the valence electrons</p>
+</li>
+<li>Give every second-row element no more than eight electrons</li>
+<li>
+<p>Give each hydrogen two electrons</p>
+</li>
+<li>
+<p>Each atom is represented by its chemical symbol</p>
+</li>
+<li>C for Carbon, H for hydrogen, O for Oxygen</li>
+<li>Dots around the atomic symbol represent the valence electrons</li>
+<li>Covalent bonds (shared pairs of electrons) are represented by lines between atoms, where each line represents a pair of shared electrons.</li>
+<li>A single bond is one pair (one line)</li>
+<li>A double bond is two pairs (two lines)</li>
+<li>A triple bond is three pairs (three lines)</li>
+<li>Unshared pairs of electrons that are not involved in bonding are shown as pairs of dots next to the atomic symbol (<strong>lone pairs</strong>)</li>
+</ul>
+<p><img alt="lewis repr" src="assets/lewis-repr.png" /></p>
+<h3 id="how-to-draw-lewis-structures">How to draw lewis structures</h3>
+<ul>
+<li>
+<p><strong>Step 1</strong>: Arrange atoms next to each other that you think are bonded together.</p>
+</li>
+<li>
+<p>Always place Hydrogen and halogens on the periphery because they only form one bond each.
+    <img alt="How to not bond Hs" src="assets/lewis-how-to-not-bond-H.png" /></p>
+</li>
+<li>
+<p>Place no more atoms around an atom than the number of bonds it usually forms.
+    <img alt="How to place elements correctly" src="assets/lewis-n-atoms-correct.png" /></p>
+</li>
+<li>
+<p><strong>Step 2</strong>: Count the electrons</p>
+</li>
+<li>
+<p>Count the number of valence electrons from all atoms</p>
+</li>
+<li>Add one electron for each negative charge<ul>
+<li>e.g. For <span class="arithmatex">\(\text{NO}_3^-\)</span> (nitrate ion) there is a -1 charge, so you add one additional electron to the total count.</li>
+</ul>
+</li>
+<li>Subtract one electron for each positive charge<ul>
+<li>e.g. For <span class="arithmatex">\(\text{NH}_4^+\)</span> (ammonium ion) there is a +1 charge, so you subtract one electron from the total count.</li>
+</ul>
+</li>
+<li>
+<p>This gives the total number of electrons that must be used in drawing the Lewis structure.</p>
+</li>
+<li>
+<p><strong>Step 3</strong>: Arrange the electrons around the atoms.</p>
+</li>
+<li>Place a bond between every two atoms, giving two electrons to each H and no more than eight to any second row atom.<ul>
+<li>For each bond between atoms, place a single line (representing a pair of shared electrons).</li>
+<li>Each hydrogen (H) should receive two electrons (a single bond), while atoms in the second row of the periodic table (like carbon, nitrogen, or oxygen) should not exceed eight electrons (the octet rule).</li>
+</ul>
+</li>
+<li>Use all remaining electrons to fill octets with lone pairs.<ul>
+<li>After placing bonds, assign any remaining electrons as lone pairs on the atoms to complete their octet.</li>
+<li>Hydrogen atoms already have their 2 electrons from the single bond, so focus on completing the octets for the other atoms.</li>
+</ul>
+</li>
+<li>If all valence electrons are used and atoms do not have an octet, form multiple bonds.</li>
+</ul>
+<p><strong>Ethylene structure</strong> <span class="arithmatex">\(\text{C}_2\text{H}_4\)</span></p>
+<pre><code>    H   H
+    |   |
+H — C = C — H
+    |   |
+    H   H
+</code></pre>
+<ul>
+<li><strong>Step 4</strong>: Assign formal charges to all atoms</li>
+<li><strong>Formal Charge</strong> is the charge assigned to individual atoms in a Lewis structure</li>
+<li>Formal charge is calculated as follows:<ul>
+<li><code>formal charge = #{valence electrons} - #{electrons owned by the atom}</code>
+  or</li>
+<li><code>formal charge = #{valence electrons} - (#{non-bonding electrons + #{bonding electrons}/2 })</code></li>
+</ul>
+</li>
+<li>The number of electrons <strong>owned</strong> by an atom is determined by its number of bonds and lone pairs.</li>
+</ul>
+<p>The number of electrons <strong>owned</strong> by different atoms is indicated in the following examples</p>
+<ul>
+<li><strong>C</strong> with four bonds</li>
+<li>C <strong>shares</strong> eight electrons</li>
+<li>C <strong>owns</strong> four electrons</li>
+</ul>
+<pre><code>  |
+— C —
+  |
+</code></pre>
+<ul>
+<li><strong>C</strong> molecule with double bond and sided single bonds</li>
+<li>Each C <strong>shares</strong> eight electrons</li>
+<li>Each C <strong>owns</strong> four electrons</li>
+</ul>
+<pre><code>\     /
+ C = C
+/     \
+</code></pre>
+<ul>
+<li><strong>C</strong> with three bonds and a lone pair</li>
+<li>C has six shared electrons</li>
+<li>C has two unshared electrons (lone pair)</li>
+<li>C <strong>owns</strong> five electrons</li>
+</ul>
+<pre><code>  |
+— C :
+  |
+</code></pre>
+<p>This arrangement creates a <code>formal charge</code> of value <code>-1</code>.</p>
+<h3 id="exceptions-to-the-octet-rule">Exceptions to the octet rule</h3>
+<ol>
+<li><strong>Incomplete octet</strong></li>
+</ol>
+<p>Some atoms are stable with fewer than 8 electrons in their valence shell. This is common for elements that have only a few valence electrons and are unable to to form enought bonds to react the octet.</p>
+<ul>
+<li><strong>B</strong> (Boron): this element often forms compounds like <span class="arithmatex">\(\text{BF}_3\)</span> (boron trifluoride), where it only has 6 electrons in its valence shell, not 8. Boron is stable in this electron-deficient state.</li>
+<li>
+<p><strong>Be</strong> (Beryllium): this other element forms compounds like <span class="arithmatex">\(\text{BeCl}_2\)</span> where it has only 4 electrons in its valence shell.</p>
+</li>
+<li>
+<p><strong>Expanded octet</strong>
+   Seen in elements like phosphorus, sulfur, and xenon, where they can have more than 8 electrons by using d-orbitals.</p>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ Not covered here as out of scope.</p>
+</blockquote>
+<ol>
+<li><strong>Odd number of electrons</strong></li>
+</ol>
+<p>Some molecules have an odd number of electrons, meaning it's impossible for every atom to have 8 electrons. These molecules are called <strong>radicals</strong> and are stable despite having unpaired electrons.</p>
+<ul>
+<li><span class="arithmatex">\(\text{NO}_2\)</span> (Nitrogen dioxide): Within this molecule, <strong>nitrogen</strong> has 5 valence electrons, and the molecule has a total of 17 electrons. This leaves on electron unpaired, making it radical.</li>
+<li>Nitrogen does not have 8 electrons in its valence shell.</li>
+<li><span class="arithmatex">\(\text{NO}\)</span> (Nitric Oxide): A molecule with has 11 electrons and does not follow the octet rule due to the odd number of electrons.</li>
+</ul>
+<p><img alt="octet rule exceptions" src="assets/octet-exceptions.png" /></p>
+<h2 id="resonance-structures">Resonance structures</h2>
+<p>Some molecules cannot be adequately represented by a single Lewis structure</p>
+<p><img alt="Resonance structure example" src="assets/resonance-example.png" /></p>
+<ul>
+<li>These structures are called <strong>resonance structures</strong> or <strong>resonance forms</strong>.</li>
+<li>A double headed arrow is used to separate the two resonance structures.</li>
+</ul>
+<p><strong>Resonance structures</strong> are two Lewis structures having the same atoms placement but a different arrangement of electrons.</p>
+<blockquote>
+<p><em>Resonance structures are different possible Lewis structures for the same molecule that have the same arrangement of atoms but different distributions of electrons, particularly the location of double bonds or lone pairs.</em></p>
+</blockquote>
+<h3 id="principles-of-resonance-theory">Principles of resonance theory</h3>
+<ul>
+<li><strong>Resonance structures are not real</strong>: An individual resonance structure does not accurately represent the structure of a molecule or ion. Only the hybrid does.</li>
+<li>Resonance structures are not in equilibrium with each other.</li>
+<li>Resonance structures are not isomers: Two isomers differ in the arrangement of both atoms and electrons, whereas resonance structures differ only in the arrangement of electrons.</li>
+</ul>
+<p><strong>What really is resonance?</strong>
+Resonance is the phenomenon where the true electronic structure of a molecule cannot be represented by just one Lewis structure. Instead, the real structure is a weighted average (or blend) of all possible resonance structures.</p>
+<ul>
+<li>Resonance helps stabilize molecules by allowing the electron density to be distributed over a larger area.</li>
+</ul>
+<p><strong>What is a resonance hybrid?</strong>
+The resonance hybrid is the actual structure of the molecule that results from averaging all the possible resonance structures. It represents the delocalized electron distribution across the molecule.</p>
+<p><a href="https://www.youtube.com/watch?v=9B5FGPDwX_E">See how to visualize it</a></p>
+<ul>
+<li>Neither of the resonance structures is an accurate representation for <span class="arithmatex">\(\text{(NCONH)}^-\)</span></li>
+<li>The true structure is actually a composite of the two structures represented above and is called a <strong>resonance hybrid</strong></li>
+<li>The hybrid shows characteristics of both structures.</li>
+<li>Resonance allows certain electron pairs to be delocalized over two or more atoms, and this delocalization adds stability.</li>
+<li>A molecule with two or more resonance forms is said to be <strong>resonance stabilized</strong>.</li>
+</ul>
+<h3 id="curved-arrow-notation">Curved arrow notation</h3>
+<ul>
+<li>Curved arrow notation is a convention that shows how electron position differs between two resonance forms</li>
+<li>Curved arrow notation shows the movement of an electron pair.</li>
+<li>The tail of the arrow always begins at the electron pair, either in a bond or lone pair.</li>
+<li>The head points to where the electron pair moves.</li>
+</ul>
+<p><img alt="Arrow notation example" src="assets/arrow-notation.png" /></p>
+<ul>
+<li>Two different resonance structures can be drawn when a lone pair is located on an atom directly bonded to a double bond.</li>
+<li>If an atom having a lone pair in single bonded to another atom having a some double bond.<ul>
+<li>That double bond is lost into a in single bond.</li>
+<li>The doubly bonded end gains a lone pair.</li>
+<li>The bofore singly bonded atom now gains another bond, making it effectively a double bond.</li>
+</ul>
+</li>
+</ul>
+<p>Two different resonance structures can be drawn when a lone pair is located on an atom directly bonded to a double bond.</p>
+<p><img alt="Two resonance structures example" src="assets/two-resonance.png" /></p>
+<h3 id="atoms-without-octets">Atoms without octets</h3>
+<p>Resonance structures can have an atom with fewer than 8 electrons</p>
+<p><img alt="valid resonance atom without octec" src="assets/atoms-with-octets-valid.png" /></p>
+<p>But they cannot have a second row element with more than 8 electrons</p>
+<blockquote>
+<p>Second-row elements (like carbon, nitrogen, oxygen, etc.) cannot have more than 8 electrons in resonance structures because they follow the octet rule, which states that these elements can accommodate a maximum of 8 electrons in their valence shell. This is due to the fact that second-row elements have only the 2s and 2p orbitals, which can hold a total of 8 electrons (2 in the s orbital and 6 in the p orbitals).</p>
+</blockquote>
+<p><img alt="invalid resonance atom without octec" src="assets/atoms-with-octet-rule-invalid.png" /></p>
+<h3 id="isomers">Isomers</h3>
+<p>Sometimes, more than one than one arrangement of atoms (Lewis structure) is possible for a given molecular formula</p>
+<p><img alt="Ethanol and dimethyl ether" src="assets/ethanol-dimethil-ether.png" /></p>
+<p>Isomers are basically different molecules having the same molecular formula. Ethanol and dimethyl ether are constitutional isomers.</p>
+<h3 id="drawing-organic-molecules-condensed-structures">Drawing organic molecules, condensed structures</h3>
+<p>All atoms are drawn in, but the two-electron bond lines are generally omitted</p>
+<p><img alt="condensed structures examples" src="assets/condensed-structures.png" /></p>
+<p>Instead of writing $ \text{CH}_3 \text{CH}_3 \text{CH}_3 \text{CH}<span class="arithmatex">\(we can simply group the methyl groups as\)</span> \text{(} \text{CH}_3 \text{)}_3 $</p>
+<p>finally getting to <span class="arithmatex">\(\text{(} \text{CH}_3 \text{)}_3 \text{CH}\)</span>, which simpler and easier to understand.</p>
+<p>Condensed structures simplify molecules by omitting bond lines and lone pairs, while showing atoms next to those they are bonded to. Key points:</p>
+<ol>
+<li><strong>Atoms next to their bonded partners</strong>: E.g., <strong><span class="arithmatex">\(\text{CH}_3 \text{CH}_2 \text{CH}_3\)</span></strong> for propane.</li>
+<li><strong>Parentheses for groups</strong>: E.g., <strong>$ \text{(CH}_3 \text{)}_2 \text{CHOH}$</strong> for isopropanol.</li>
+<li><strong>No lone pairs shown</strong>, but implied for atoms like O and N.</li>
+</ol>
+<p><img alt="condensed structures examples" src="assets/examples-of-condensed-structures.png" /></p>
+<h3 id="drawing-skeletal-structures">Drawing skeletal structures</h3>
+<ul>
+<li>Assume there is a carbon atom at the junction of any two lines or at the end of any line.</li>
+<li>
+<p>Assume there are enough hydrogens around each carbon to make it tetravalent.</p>
+</li>
+<li>
+<blockquote>
+<p>What does tetravalent mean?
+    &gt; <strong>Tetravalent</strong> means that an atom can form four chemical bonds. In this case, a carbon atom, being tetravalent, will always have four bonds, which can be with other carbon atoms, hydrogens, or other elements. In skeletal structures, when you assume there is a carbon atom at a junction or end of a line, it means you don't draw the carbon explicitly but assume it has enough bonds to other atoms or hydrogens to satisfy its tetravalency.</p>
+</blockquote>
+</li>
+<li>
+<p>Draw in all heteroatoms and the hydrogens directly bonded to them.</p>
+</li>
+</ul>
+<p><img alt="skeletal structures" src="assets/skeletal-structures.png" /></p>
+<h3 id="interpreting-skeletal-structures">Interpreting skeletal structures</h3>
+<p><img alt="interpreting skeletal structures" src="assets/interpreting-skeletal-structures.png" /></p>
+<h3 id="skeletal-structures-with-charged-carbon-atoms">Skeletal structures with charged carbon atoms</h3>
+<ul>
+<li>A charge on a carbon atom takes the place of one hydrogen atom</li>
+<li>The charge determines the number of lone pairs. Negatively charged carbon atoms have one <strong>lone pair</strong> and positively charged atoms have none<blockquote>
+<p>A lone pair forms when an atom has valence electrons that are not involved in bonding with other atoms. These electrons remain localized on the atom, paired due to their opposite spins.</p>
+</blockquote>
+</li>
+</ul>
+<p>In this image, two different scenarios are illustrated, one involving a <strong>positively charged carbon atom (carbocation)</strong> and the other involving a <strong>negatively charged carbon atom (carbanion)</strong>. The main point being shown is how adding a hydrogen atom affects the lone pair of electrons on these charged carbon atoms.</p>
+<p><img alt="Carbocation, Carbanion examples" src="assets/carbonation.png" /></p>
+<h3 id="top-scenario-positively-charged-carbon-carbocation">Top Scenario (positively charged carbon, carbocation):</h3>
+<ol>
+<li><strong>Carbocation</strong>: The carbon atom initially has a <strong>positive charge</strong>, meaning it has lost an electron, leaving it with only <strong>three bonds</strong> and no lone pair.</li>
+<li><strong>Adding One Hydrogen Atom</strong>: When a hydrogen atom is added to the positively charged carbon, it forms a <strong>new bond</strong> between the carbon and hydrogen. However, since the carbon already had three bonds and no extra electrons (due to the positive charge), adding this bond <strong>does not create a lone pair</strong> on the carbon.</li>
+<li>Result: <strong>No lone pair</strong> on the carbon, and it has a full valence of bonds.</li>
+</ol>
+<h3 id="bottom-scenario-negatively-charged-carbon-carbanion">Bottom Scenario (negatively charged carbon, carbanion):</h3>
+<ol>
+<li><strong>Carbanion</strong>: In this case, the carbon atom has a <strong>negative charge</strong>, meaning it has an extra electron (in addition to its usual four valence electrons). This extra electron sits as a <strong>lone pair</strong> on the carbon.</li>
+<li><strong>Adding One Hydrogen Atom</strong>: When a hydrogen atom is added to the negatively charged carbon, a new bond forms between the carbon and the hydrogen. Now, the carbon still has one <strong>lone pair of electrons</strong> left after the bond forms because it originally had five valence electrons (four from carbon and one from the negative charge).</li>
+<li>Result: <strong>One lone pair</strong> remains on the carbon, as shown by the two dots.</li>
+</ol>
+<h4 id="electron-count-in-carbon">Electron Count in Carbon</h4>
+<ul>
+<li>A neutral carbon atom has <strong>4 valence electrons</strong>.</li>
+<li>In the methyl anion <span class="arithmatex">\(\text{CH}_3^-\)</span>, the carbon atom gains <strong>one additional electron</strong> due to the negative charge, bringing the total number of valence electrons on carbon to <strong>5</strong>.</li>
+<li>The additional electron in the methyl anion comes from outside the molecule, typically provided by a reducing agent or from the surrounding environment in a chemical reaction.</li>
+<li>This is how anions generally form: <strong><em>by gaining an extra electron</em></strong></li>
+</ul>
+<h4 id="bonding-with-hydrogens">Bonding with Hydrogens</h4>
+<ul>
+<li>The carbon in <span class="arithmatex">\(\text{CH}_3^-\)</span> forms <strong>three single bonds</strong> with three hydrogen atoms. Each of these bonds involves sharing one electron from carbon and one electron from hydrogen.</li>
+<li>After forming these bonds, <strong>3 of the 5 valence electrons</strong> from carbon are involved in bonding.</li>
+</ul>
+<h4 id="remaining-electrons-lone-pair">Remaining Electrons (Lone Pair)</h4>
+<ul>
+<li>Carbon now has <strong>2 remaining electrons</strong> after forming the three bonds.</li>
+<li>These 2 remaining electrons are not involved in any bonding, so they form a <strong>lone pair</strong> of electrons.</li>
+</ul>
+<h3 id="why-not-just-one-electron">Why not just one electron?</h3>
+<ul>
+<li>If there were only <strong>one</strong> non-bonding electron left, the molecule would be a <strong>radical</strong>, not an anion. But in the case of <span class="arithmatex">\(\text{CH}_3^-\)</span>, we have a complete <strong>pair</strong> of non-bonding electrons (2 electrons), which gives the carbon atom its negative charge.</li>
+<li>A lone pair always consists of <strong>two electrons</strong> because electrons pair up due to their spin, and these two non-bonding electrons stay together as a lone pair.</li>
+</ul>
+<h3 id="lone-pairs-on-heteroatoms">Lone pairs on heteroatoms</h3>
+<ul>
+<li>Skeletal structures often leave out lone pairs on heteroatoms, <strong><em>don't forget about them</em></strong></li>
+<li>Use formal charge to determine the number of lone pairs.</li>
+</ul>
+<p><img alt="Lone pairs left out" src="assets/lone-pairs-left-out.png" /></p>
+<h3 id="determining-molecular-shape">Determining molecular shape</h3>
+<h4 id="bonds-length-decreases-accross-a-row-of-the-periodic-table-as-the-size-of-the-atom-decreases">Bonds length decreases accross a row of the periodic table as the size of the atom decreases</h4>
+<p><img alt="Bond length increase" src="assets/bond-length-increase.png" /></p>
+<ul>
+<li>Bond lengths decrease across a row of the periodic table as the size of the atom decreases. This trend occurs because <strong>atoms get smaller as you move from left to right</strong> across a period due to an increase in the effective nuclear charge.</li>
+<li>As <strong>more protons</strong> are added to the nucleus, the <strong>electrons are pulled closer</strong>, resulting in a smaller atomic radius.</li>
+<li>When atoms are <strong>smaller</strong>, their nuclei are <strong>closer together</strong> in a bond, leading to a shorter bond length. Additionally, as atomic size decreases, the bond strength tends to increase because the overlapping atomic orbitals are more <strong>tightly bound</strong> due to the <strong>smaller size</strong> and <strong>greater effective nuclear charge</strong>, further contributing to a shorter bond length.</li>
+<li>For example, in a period, the bond length of carbon-carbon bonds is shorter than that of boron-boron bonds because carbon is to the right of boron and has a smaller atomic radius.</li>
+</ul>
+<h4 id="bond-length-increases-down-a-column-of-the-periodic-table-as-the-size-of-an-atom-increases">Bond length increases down a column of the periodic table as the size of an atom increases</h4>
+<p><img alt="Bond length increase column" src="assets/bond-length-increase-column.png" /></p>
+<ul>
+<li>
+<p>As you move down a group in the periodic table, <strong>atoms have more electron shells</strong>, and the <strong>outermost electrons are farther from the nucleus</strong>. This results in a <strong>larger atomic radius</strong>. When atoms are larger, the nuclei are farther apart in a bond, leading to a longer bond length.</p>
+</li>
+<li>
+<p>Because the electrons in the outermost shells experience more <strong>shielding</strong> from inner electrons, the effective nuclear charge is lower, further contributing to the increase in atomic size.</p>
+</li>
+<li>
+<p>For example, in Group 17 (the halogens), the bond length of a hydrogen-fluorine (H-F) bond is shorter than that of a hydrogen-iodine (H-I) bond. This is because iodine is much larger than fluorine, and thus, the bond length increases as the size of the iodine atom increases.</p>
+</li>
+</ul>
+<blockquote>
+<p>💡 <strong>What is the shielding effect?</strong>
+A fenomenon in which ih the inner electrons between the nucleus and the outer (valence) electrons act as a "shield." These inner electrons repel the outer electrons due to their negative charge, reducing the full attractive force exerted by the positively charged nucleus on the valence electrons. As a result, the outer electrons experience a weaker effective nuclear charge (the net positive charge felt by the electrons) than they would if the inner electrons were not present.</p>
+</blockquote>
+<p><strong>Average bond length</strong>
+| Bond | Length (pm) | Bond | Length (pm) | Bond | Length (pm) |
+|--------|-------------|--------|-------------|--------|-------------|
+| H-H | 74 | H-F | 92 | C-F | 133 |
+| C-H | 109 | H-Cl | 127 | C-Cl | 177 |
+| N-H | 101 | H-Br | 141 | C-Br | 194 |
+| O-H | 96 | H-I | 161 | C-I | 213 |</p>
+<h3 id="molecular-geometry">Molecular geometry</h3>
+<ul>
+<li>The number of groups surrounding a particular atom determines its geometry. A group is either an atom or a lone pair of electrons</li>
+<li>The most stable arrangement keeps these groups as far away from each other as possible. This is exemplified by Valence Shell Electron Pair Repulsion (VSEPR) theory.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Number of Groups</th>
+<th>Geometry</th>
+<th>Bond Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Linear</td>
+<td>180°</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Trigonal Planar</td>
+<td>120°</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Tetrahedral</td>
+<td>109.5°</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>geometry of a molecule</strong> is determined by the number of "groups" around a central atom. A <strong>group</strong> can be:</p>
+<ul>
+<li>An <strong>atom</strong> bonded to the central atom</li>
+<li>A <strong>lone pair of electrons</strong> that the central atom possesses</li>
+</ul>
+<p>The arrangement of these groups around the central atom aims to <strong>minimize repulsion</strong> between them, which leads to a stable geometry. This concept is the foundation of <strong>Valence Shell Electron Pair Repulsion (VSEPR) theory</strong>.</p>
+<ol>
+<li>
+<p><strong>Valence Shell Electron Pair Repulsion (VSEPR) Theory</strong>:</p>
+</li>
+<li>
+<p>The theory states that the electron pairs (bonding pairs and lone pairs) surrounding an atom will position themselves as far apart as possible to minimize repulsion.</p>
+</li>
+<li>
+<p>This helps determine the shape (geometry) of the molecule.</p>
+</li>
+<li>
+<p><strong>Types of Geometries</strong>:</p>
+</li>
+<li>
+<p><strong>Linear</strong> (180° bond angle):</p>
+<ul>
+<li>Occurs when there are <strong>two groups</strong> around the central atom.</li>
+<li>Example: Carbon dioxide (<span class="arithmatex">\(\ce{CO2}\)</span>) has two oxygen atoms bonded to the carbon atom, resulting in a linear shape.</li>
+</ul>
+</li>
+<li>
+<p><strong>Trigonal Planar</strong> (120° bond angle):</p>
+<ul>
+<li>Happens when there are <strong>three groups</strong> around the central atom.</li>
+<li>Example: Boron trifluoride ( <span class="arithmatex">\(\ce{BF3}\)</span> ), where three fluorine atoms are bonded to boron in a flat triangle.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tetrahedral</strong> (109.5° bond angle):</p>
+<ul>
+<li>This shape forms when there are <strong>four groups</strong> around the central atom.</li>
+<li>Example: Methane (<span class="arithmatex">\(\ce{CH4}\)</span>), where four hydrogen atoms are arranged symmetrically around a carbon atom.</li>
+</ul>
+</li>
+<li>
+<p><strong>Effect of Lone Pairs:</strong></p>
+</li>
+<li>Lone pairs take up more space than bonding pairs because they are closer to the nucleus. As a result, the presence of lone pairs slightly reduces bond angles.</li>
+<li>For example, water (<span class="arithmatex">\(\ce{H2O}\)</span>) has a tetrahedral electron geometry, but because of two lone pairs on the oxygen atom, the bond angle is reduced from 109.5° to around 104.5°, giving the molecule a bent shape.</li>
+</ol>
+<blockquote>
+<p>🔗 Resources
+<a href="https://www.youtube.com/watch?v=5uwcTOSyMDI">Hannah Nandor: VESPR Theory</a></p>
+</blockquote>
+<h4 id="two-groups-around-an-atom">Two groups around an atom</h4>
+<ul>
+<li>Two groups</li>
+<li>Linear carbons connected via triple bond</li>
+</ul>
+<p><img alt="Two groups around an atom" src="assets/two-groups-around-atom.png" /></p>
+<h4 id="three-groups-around-an-atom">Three groups around an atom</h4>
+<ul>
+<li>Three groups</li>
+<li>Trigonal planar carbons, connected via double bond</li>
+</ul>
+<p><strong>Ethylene</strong></p>
+<p><img alt="Three groups around an atom" src="assets/three-groups-around-atom.png" /></p>
+<h4 id="four-groups-around-an-atom">Four groups around an atom</h4>
+<p><img alt="Four groups around an atom" src="assets/four-groups-around-atom.png" /></p>
+<p>The image on the left shows the <strong>tetrahedral geometry</strong> of methane ( <span class="arithmatex">\(\ce{CH4}\)</span>) with bond angles of <strong>109.5°</strong>, which is the preferred arrangement for four groups around a central atom like carbon.</p>
+<ul>
+<li>The tetrahedral geometry is predicted by <strong>Valence Shell Electron Pair Repulsion (VSEPR) theory</strong>, which states that electron pairs (bonding and lone pairs) will arrange themselves as far apart as possible to minimize repulsion.</li>
+</ul>
+<p>The image on the right shows a <strong>square planar arrangement</strong> with bond angles of <strong>90°</strong>, which does not occur in methane or similar molecules with four groups around the central atom. This is because:</p>
+<ol>
+<li>
+<p><strong>Electron Repulsion</strong>: A square planar arrangement forces the bonding groups (hydrogen atoms) closer together, resulting in bond angles of 90°. This creates much more repulsion between the bonding pairs of electrons, as they are not as far apart as they could be. VSEPR theory predicts that atoms and electron pairs will arrange themselves in a way that minimizes this repulsion.</p>
+</li>
+<li>
+<p><strong>Tetrahedral Geometry</strong>: In a tetrahedral geometry (left), the bond angles of 109.5° are much larger than 90°, allowing for less repulsion between the bonding groups. The tetrahedral arrangement is the most stable configuration for four groups around a central atom like carbon because it maximizes the distance between the groups.</p>
+</li>
+</ol>
+<p>The square planar arrangement in the right-hand image is not observed because it would lead to significantly greater electron repulsion, making the molecule less stable.</p>
+<p align="center">
+  <img style="width: 200px;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Methane-3D-balls.png/595px-Methane-3D-balls.png" />
+</p>
+
+<h3 id="drawing-3d-molecular-structures">Drawing 3D Molecular structures</h3>
+<ul>
+<li>A <strong>solid line</strong> is used for a bond in the plane.</li>
+<li>A wedge is used for a bond in front of the plane.</li>
+<li>A dashed line is used for a bond behind the plane</li>
+</ul>
+<p align="center">
+  <img src="assets/drawing-3d-structures.png" />
+</p>
+
+<h4 id="equivalent-reprensations-for-methane">Equivalent reprensations for methane</h4>
+<ul>
+<li>The molecule can be turned in many different ways, generating equivalent representations.</li>
+<li>It is a 3d structure, not matter the orientation</li>
+</ul>
+<p>The following drawing all represent the same thing, a methane molecule</p>
+<p><img alt="Methane representations" src="assets/methane-representations.png" /></p>
+<p>Wedges and dashed wedges are used to denote groups that are really aligned one behind another, order does not matter</p>
+<p><img alt="H atoms aligned" src="assets/h-atoms-aligned.png" title="H Atoms aligned" /></p>
+<h4 id="non-bonded-pairs-of-electrons-are-counted-as-groups">Non bonded pairs of electrons are counted as groups</h4>
+<ul>
+<li>In ammonia <span class="arithmatex">\(\ce{NH3}\)</span> one of the four groups attached to the central N atom is a lone pair.</li>
+<li>The group geometry is a tetrahedron</li>
+<li>The molecular shape is referred to as <strong>trigonal pyramidal</strong></li>
+</ul>
+<h3 id="the-3d-structure-of-water">The 3D structure of water</h3>
+<ul>
+<li>In water, <span class="arithmatex">\(\ce{H2O}\)</span> two four groups are attached to the central O atom lone pairs.</li>
+<li>The group geometry is a tetrahedron</li>
+<li>The molecular shape is referred as <strong>bent</strong></li>
+<li>In water, the oxygen <span class="arithmatex">\(\ce{O}\)</span> has two bonding pairs and two lone pairs of electrons. According to VESPR theory, electron pairs around the central atom repel each other and try to maximize the distance between themselves to minimize repulsion.</li>
+<li>The oxygen atom is surrounded by four electron groups<ul>
+<li>Two single bonds</li>
+<li>Two lone pairs</li>
+</ul>
+</li>
+<li>Lone pairs exert a greater force than single bonds can do</li>
+<li>Shape is a actually <strong>bent</strong>, because the lone pairs occupy more space thus forcing the <span class="arithmatex">\(\ce{H}\)</span> atoms to get closer. Bringing the angle between them from an expected <code>109.5°</code> to <code>104.5°°</code></li>
+</ul>
+<p>As a general note, many structures having lone pairs the bonded atoms are compressed into a smaller space with a smaller bond angle.</p>
+<blockquote>
+<p>🏞️ Visualizing</p>
+<ul>
+<li>Imagine the oxygen atom at the center of a tetrahedron.</li>
+<li>Two of the tetrahedral positions are taken by lone pairs of electrons.</li>
+<li>The other two positions are taken by the two hydrogen atoms.
+  This gives a bent shape because the lone pairs occupy more space than the bonding pairs, causing the hydrogen atoms to be closer together.</li>
+</ul>
+</blockquote>
+<h3 id="orbitals-and-bonding">Orbitals and bonding</h3>
+<h4 id="hydrogen">Hydrogen</h4>
+<p>When the <span class="arithmatex">\(\text{1s}\)</span> orbital of one H atom overlaps with the <span class="arithmatex">\(\text{1s}\)</span> orbital of another <span class="arithmatex">\(\ce{H}\)</span> atom, a sigma <span class="arithmatex">\(\sigma\)</span>bond concentrating e-density between the two nuclei is formed. All single bonds are also referred to as<span class="arithmatex">\(\sigma\)</span> bonds.</p>
+<p><img alt="H2 sigma bonding" src="assets/H2-bonds.png" /></p>
+<p>The bonding is cylindrically symmetrical because the electrons forming the bond are distributed symmetrically about an imaginary line connecting the two nuclei.</p>
+<h4 id="methane-and-divalent-carbon">Methane and divalent carbon</h4>
+<blockquote>
+<p>NOTE: The lowest energy arrangement of electrons for an atom is called its ground state</p>
+</blockquote>
+<p>To account for the bonding patterns observed in more complext molecules, we must take a closer look at how the second ring orbitals of atoms in the second row are being used.</p>
+<ul>
+<li>In addition to its two core electrons, carbon has 4 valence electrons.</li>
+<li>In its <strong>ground state</strong>, carbon places it's valence electrons in the following manner:</li>
+<li>2 electrons in the 2s orbital</li>
+<li><strong>one electron each</strong> in the 2p orbital</li>
+</ul>
+<p>According to these observations, carbon should form only two bonds because it has only two unpaired valence electrons. However, the resulting species <span class="arithmatex">\(\ce{CH2}\)</span> is very unstable (it wants more electrons so bad) and cannot be isolated under typical lab conditions. (<span class="arithmatex">\(\ce{CH2}\)</span> would not have an octet of electrons)</p>
+<blockquote>
+<p>The term <strong><em>"isolated"</em></strong> refers to the ability to separate and maintain a chemical species in a pure, stable form under standard laboratory conditions. When a molecule or compound is said to be "isolated," it means that it can exist on its own without rapidly reacting or decomposing, and it can be studied independently. Isolating <span class="arithmatex">\(\ce{CH2}\)</span> would mean that this molecule (methylene) can be separated, kept stable, and observed in a lab without breaking down or reacting with other substances.
+However, <span class="arithmatex">\(\ce{CH2}\)</span> is highly reactive because <strong>it lacks a full octet</strong>, making it very unstable. As a result, it cannot be isolated under typical conditions as it <strong>reacts almost immediately with other molecules or atoms in an attempt to achieve stability</strong> (e.g. forming more bonds to complete its octet). This inability to be isolated means that the <span class="arithmatex">\(\ce{CH2}\)</span> species can't be bottled or handled easily as a stable, stand-alone molecule in the lab.</p>
+</blockquote>
+<p><img alt="sp3 hybridization density" src="assets/sp3-hybridizatoin-density.png" />
+<img alt="shape and orientation" src="assets/shape-and-orientation-sp3.png" /></p>
+<p>Seeking electrons, <span class="arithmatex">\(\ce{CH2}\)</span> wants to become stable by staisfying the octet rule. It does so by <span class="arithmatex">\(\text{sp}^3\)</span> hybridization a process in which one <span class="arithmatex">\(\text{s}\)</span>and 3<span class="arithmatex">\(\text{p}\)</span> orbitals combine to form up a new hybrid orbital.</p>
+<ul>
+<li>One 2s orbital and three 2p orbitals from the same atom mix together to form four new, identical hybrid orbitals. These four hybrid orbitals are arranged in a <strong>tetrahedral geometry</strong> around the central atom, with bond angles of approximately 109.5° between them.</li>
+<li>These hybrid orbitals overlap with the 1s orbitals of hydrogen atoms to form four strong <span class="arithmatex">\(\sigma\ bonds\)</span>, resulting in a stable tetrahedral structure.</li>
+</ul>
+<p><img alt="hybridization overview" src="assets/hybridization-overview.png" /></p>
+<p><strong><em>Hybridization</em></strong> is the combination of two or more atomic orbitals to form the same number of hybrid orbitals, each having the same shape and energy.</p>
+<blockquote>
+<p>Videos</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_fYR5iWrzrw">Doctor Klioze: Ammonia, ammonium and sp3 orbital hybridization</a></li>
+<li><a href="https://www.youtube.com/watch?v=pdJeQUd2g_4">Ibridazione degli orbitali atomici - Legami Sigma e Pi - Sp Sp2 Sp3</a></li>
+</ul>
+<h3 id="sigmaandpi-bonds"><span class="arithmatex">\(\sigma\)</span>and<span class="arithmatex">\(\pi\)</span> bonds</h3>
+<ul>
+<li><span class="arithmatex">\(\sigma\)</span>: Formed by <strong>end-to-end overlap</strong> of orbitals along the bond axis. It is the strongest type of covalent bond and is present in <strong>all single, double, and triple bonds</strong>.</li>
+<li><span class="arithmatex">\(\pi\)</span>: Formed by <strong>side-to-side overlap</strong> of unhybridized p orbitals, only found in <strong>double and triple bonds</strong>, and adds to the bond strength and rigidity.</li>
+</ul>
+<h3 id="bond-types-in-single-double-and-triple-bonds">Bond types in single, double, and triple bonds:</h3>
+<ol>
+<li>
+<p><strong>Single Bond</strong>:</p>
+</li>
+<li>
+<p><strong>Composition</strong>: One <span class="arithmatex">\(\sigma\)</span> bond.</p>
+</li>
+<li>
+<p><strong>Geometry</strong>: Allows <strong>free rotation</strong> around the bond axis (e.g., ethane, <span class="arithmatex">\(\ce{C2H6}\)</span>).</p>
+</li>
+<li>
+<p><strong>Double Bond</strong>:</p>
+</li>
+<li>
+<p><strong>Composition</strong>: One <span class="arithmatex">\(\sigma\)</span>bond + one<span class="arithmatex">\(\pi\)</span> bond.</p>
+</li>
+<li>
+<p><strong>Geometry</strong>: <strong>Planar structure</strong> with restricted rotation (e.g., ethene, <span class="arithmatex">\(\ce{C2H4}\)</span>).</p>
+</li>
+<li>
+<p><strong>Triple Bond</strong>:</p>
+</li>
+<li><strong>Composition</strong>: One <span class="arithmatex">\(\sigma\)</span>bond + two<span class="arithmatex">\(\pi\)</span> bonds.</li>
+<li><strong>Geometry</strong>: <strong>Linear structure</strong> with no rotation (e.g., acetylene, <span class="arithmatex">\(\ce{C2H2}\)</span>).</li>
+</ol>
+<p><img alt="Bonds" src="assets/bonds-visualization.png" /></p>
+<p><strong>Sigma bonds</strong> form the basic framework, while <strong>pi bonds</strong> add rigidity and prevent rotation in double and triple bonds.</p>
+</blockquote>
+<h4 id="bonding-via-textsp3-hybrid-oribitals">Bonding via <span class="arithmatex">\(\text{sp}^3\)</span> hybrid oribitals</h4>
+<ul>
+<li>Each bond in <span class="arithmatex">\(\ce{CH4}\)</span>is formed by overlap of an<span class="arithmatex">\(\text{sp}^3\)</span>hybrid orbital of carbon with a<span class="arithmatex">\(\text{1s}\)</span> orbital from hydrogen.</li>
+<li>These four bonds point to the corners of a tetrahedron.</li>
+</ul>
+<p><img alt="Hybrid bonds in methane" src="assets/hybrid-bonds-methane.png" /></p>
+<h4 id="how-to-determine-hybridization">How to determine hybridization?</h4>
+<ul>
+<li>Count the number of groups, which are atoms and non-bonded electron pairs, around the atom.</li>
+<li>The number of groups directly corresponds to the number of atomic orbitals that must be hybridized to form the hybrid orbital.</li>
+</ul>
+<h3 id="three-types-of-hybrid-orbitals">Three types of Hybrid Orbitals</h3>
+<table>
+<thead>
+<tr>
+<th>Number of groups</th>
+<th>Number of orbitals</th>
+<th>Type of hybrid orbital</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>two sp hybrid orbitals</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>three sp<span class="arithmatex">\(^2\)</span> hybrid orbitals</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>four sp<span class="arithmatex">\(^3\)</span> hybrid orbitals</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Hybrid oribitals" src="assets/hybrid-orbitals-nh3-h2o.png" /></p>
+<h3 id="hybridization-in-ethane-ethylene-and-acetylene">Hybridization in ethane, ethylene and acetylene</h3>
+<p><img alt="" src="assets/ethane-ethylene-acetylene.png" />
+<img alt="" src="assets/ethane-ethylene-acetylene-density.png" /></p>
+<h4 id="ethane-cech3ch3">Ethane <span class="arithmatex">\(\ce{CH3CH3}\)</span></h4>
+<p><a href="https://pubchem.ncbi.nlm.nih.gov/compound/6324#section=3D-Conformer">3D structure</a></p>
+<ul>
+<li>The two <span class="arithmatex">\(\text{sp}^3\)</span>orbitals overlap, forming a single bond<span class="arithmatex">\(\ce{C-C}\)</span> </li>
+<li>Each <span class="arithmatex">\(\ce{C-H}\)</span>is formed by overlap of an<span class="arithmatex">\(\ce{sp}^3\)</span>hybrid on<span class="arithmatex">\(\ce{C}\)</span>with a<span class="arithmatex">\(\ce{1s}\)</span>orbital on<span class="arithmatex">\(\ce{H}\)</span></li>
+</ul>
+<p>Making a model of ethane illustrates one additional
+feature about its structure. Rotation occurs around the central <span class="arithmatex">\(\ce{C-C}\)</span> <span class="arithmatex">\(\sigma\)</span> bond.</p>
+<p><img alt="Ethane bond rotation" src="assets/ethane-bond-rotation.png" /></p>
+<h4 id="ethylene-cech2ch2">Ethylene <span class="arithmatex">\(\ce{CH2CH2}\)</span></h4>
+<p><a href="https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=3D-Conformer">3D structure</a></p>
+<ol>
+<li><strong>Hybridization in ethylene</strong>:</li>
+<li>Each carbon in ethylene <span class="arithmatex">\(\ce{C2H4}\)</span>is<span class="arithmatex">\(\text{sp}^2\)</span>hybridized, forming three$\text{sp}^2 $hybrid orbitals.</li>
+<li>
+<p>These orbitals participate in forming <span class="arithmatex">\(\sigma\)</span> bonds with hydrogen atoms and between the two carbon atoms.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\sigma\)</span>and<span class="arithmatex">\(\pi\)</span> bonds in ethylene</strong>:</p>
+</li>
+<li>The double bond in ethylene consists of one <span class="arithmatex">\(\sigma\)</span>bond and one<span class="arithmatex">\(\pi\)</span> bond.</li>
+<li>
+<p>The sigma bond results from the overlap of sp² hybrid orbitals, while the pi bond forms from the lateral overlap of unhybridized p orbitals.</p>
+</li>
+<li>
+<p><strong>No free rotation in ethylene</strong>:</p>
+</li>
+<li>Rotation around the <span class="arithmatex">\(\ce{C=C}\)</span>double bond is restricted due to the<span class="arithmatex">\(\pi\)</span> bond.</li>
+<li>Rotation can only happen if the pi bond is broken, which requires significant energy.</li>
+</ol>
+<h4 id="textsp-hybrid-orbitals"><span class="arithmatex">\(\text{sp}\)</span> hybrid orbitals</h4>
+<p>Here is a brief outline of the content from the image on <strong>sp Hybrid Orbitals</strong>:</p>
+<ol>
+<li><strong>sp Hybridization in Acetylene (HC≡CH)</strong>:</li>
+<li>In acetylene, each carbon atom is <strong>sp hybridized</strong>.</li>
+<li>
+<p>This means that each carbon has two sp hybrid orbitals and two unhybridized <strong>p</strong> orbitals (one along the <strong>py</strong> axis and one along the <strong>pz</strong> axis).</p>
+</li>
+<li>
+<p><strong>Linear Geometry</strong>:</p>
+</li>
+<li>The two sp hybrid orbitals are arranged linearly, resulting in a bond angle of <strong>180°</strong>.</li>
+<li>
+<p>These orbitals form sigma (σ) bonds with hydrogen atoms and between the two carbon atoms.</p>
+</li>
+<li>
+<p><strong>Unhybridized p Orbitals</strong>:</p>
+</li>
+<li>The two unhybridized p orbitals on each carbon atom are oriented perpendicular to the sp orbitals.</li>
+<li>These p orbitals participate in forming two pi (π) bonds, resulting in the triple bond between the carbon atoms.</li>
+</ol>
+<p>This configuration explains the linear structure and bond characteristics of molecules like acetylene.</p>
+<h4 id="acetylene-cec2h2">Acetylene <span class="arithmatex">\(\ce{C2H2}\)</span></h4>
+<p><a href="https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=3D-Conformer">3D structure</a></p>
+<p>In acetylene (<span class="arithmatex">\(\ce{HC#CH}\)</span>), each carbon atom undergoes <strong>sp hybridization</strong>. This means that one <strong>s orbital</strong> and one <strong>p orbital</strong> from each carbon atom combine to form two sp hybrid orbitals. These sp orbitals are oriented linearly, giving a bond angle of <strong>180°</strong>, which explains the linear geometry of the molecule.</p>
+<p>Each carbon atom in acetylene also retains two unhybridized <strong>2p orbitals</strong>. These orbitals are oriented <strong>perpendicular to each other</strong> and to the sp hybrid orbitals. The sp hybrid orbitals are used to form <strong>sigma (σ) bonds</strong>: one between each carbon atom and a hydrogen atom and one between the two carbon atoms.</p>
+<h3 id="triple-bonds">Triple Bonds</h3>
+<p>The <strong>triple bond</strong> between the two carbon atoms in acetylene consists of:
+- <strong>One <span class="arithmatex">\(\sigma\)</span> bond</strong>: This bond is formed by the head-on overlap of two sp hybrid orbitals, one from each carbon atom.
+- <strong>Two <span class="arithmatex">\(\pi\)</span> bonds</strong>: The two unhybridized 2p orbitals on each carbon atom overlap <strong>side-by-side</strong> with the corresponding 2p orbitals on the other carbon atom. These side-by-side overlaps create two pi bonds. One pi bond is formed from the overlap of the p orbitals along the <strong>y-axis</strong>, and the other from the overlap of the p orbitals along the <strong>z-axis</strong>.</p>
+<p>The result is a strong triple bond that consists of:
+1. <strong>One <span class="arithmatex">\(\sigma\)</span> bond</strong> that aligns along the internuclear axis.
+2. <strong>Two <span class="arithmatex">\(\pi\)</span> bonds</strong> that are perpendicular to the sigma bond and each other, giving the molecule its rigidity and preventing free rotation around the triple bond.</p>
+<h4 id="properties-of-triple-bonds">Properties of Triple Bonds</h4>
+<ol>
+<li><strong>Strength</strong>: Triple bonds are stronger and shorter than double or single bonds because they involve more overlapping electron density between the bonded atoms.</li>
+<li><strong>Bond Length</strong>: The bond length in acetylene is shorter than in compounds with double or single bonds due to the increased overlap from the <span class="arithmatex">\(\pi\)</span> bonds.</li>
+<li><strong>Rigidity</strong>: The presence of two <span class="arithmatex">\(\pi\)</span> bonds in a triple bond restricts rotation around the bond axis, making the molecule more rigid than alkenes (with double bonds) or alkanes (with single bonds).</li>
+</ol>
+<h4 id="bonds-and-hybdrization-overview-table">Bonds and hybdrization overview table</h4>
+<table>
+<thead>
+<tr>
+<th>Number of groups bonded to C</th>
+<th>Hybridization</th>
+<th>Bond angle</th>
+<th>Example</th>
+<th>Observed bonding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td><span class="arithmatex">\(\ce{sp}^3\)</span></td>
+<td>109.5°</td>
+<td><span class="arithmatex">\(\ce{CH3CH3}\)</span>(ethane)</td>
+<td>one σ bond<span class="arithmatex">\(C_{sp^3} - C_{sp^3}\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="arithmatex">\(\ce{sp}^2\)</span></td>
+<td>120°</td>
+<td><span class="arithmatex">\(\ce{CH2=CH2}\)</span>(ethylene)</td>
+<td>one σ bond + one π bond<span class="arithmatex">\(C_{sp^2} - C_{sp^2}, C_{2p} - C_{2p}\)</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="arithmatex">\(\ce{sp}\)</span></td>
+<td>180°</td>
+<td><span class="arithmatex">\(\ce{HC#CH}\)</span>(acetylene)</td>
+<td>one σ bond + two π bonds<span class="arithmatex">\(C_{sp} - C_{sp}, C_{2p} - C_{2p}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="bond-length-and-bond-strength">Bond length and bond strength</h3>
+<ul>
+<li>As the number of electrons between two nuclei increases, the bonds connecting them becomes shorter and stronger.</li>
+<li>Triple bonds are shorter and stronger that single bonds.</li>
+</ul>
+<p><img alt="" src="assets/bonds-strength.png" /></p>
+<h4 id="carbon-hydrogen-bonds">Carbon-Hydrogen bonds</h4>
+<ul>
+<li>The length and strength of <span class="arithmatex">\(\ce{C—H}\)</span> bonds vary depending on the hybridization of the carbon atom.</li>
+</ul>
+<p><img alt="" src="assets/carbon-hydrogen-bond-strength.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>C–C bond length (pm)</th>
+<th>Bond strength kJ/mol (kcal/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3-CH3}\)</span></td>
+<td>153</td>
+<td>368 (88)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH2=CH2}\)</span></td>
+<td>134</td>
+<td>635 (152)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{HC#CH}\)</span></td>
+<td>121</td>
+<td>837 (200)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3CH2-H}\)</span></td>
+<td>111</td>
+<td>410 (98)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH2=CH-H}\)</span></td>
+<td>110</td>
+<td>435 (104)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{HC#C-H}\)</span></td>
+<td>109</td>
+<td>523 (125)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE</strong>: Going down the rows, length decreases and the bonds strength decreases just a promised before.</p>
+<h4 id="percent-s-character">Percent s-character</h4>
+<ul>
+<li>
+<p><strong>sp hybrid</strong>:
+  $$
+  \frac{\text{one 2s orbital}}{\text{two hybrid orbitals}} = 50\% \, \text{s-character}
+  $$</p>
+</li>
+<li>
+<p><strong>sp² hybrid</strong>:
+  $$
+  \frac{\text{one 2s orbital}}{\text{three hybrid orbitals}} = 33\% \, \text{s-character}
+  $$</p>
+</li>
+<li>
+<p><strong>sp³ hybrid</strong>:
+  $$
+  \frac{\text{one 2s orbital}}{\text{four hybrid orbitals}} = 25\% \, \text{s-character}
+  $$</p>
+</li>
+</ul>
+<p><strong>NOTE</strong>: increased percent <strong>s-character</strong> <span class="arithmatex">\(\Rightarrow\)</span> Increased bond strength <span class="arithmatex">\(\Rightarrow\)</span> Decreased bond length</p>
+<h3 id="electronegativity">Electronegativity</h3>
+<p>Electronegativity is a measure of an atom's attraction for electrons in a bond. </p>
+<p><img alt="" src="assets/electronegativity-values.png" />
+<img alt="" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Electronegative.jpg" /></p>
+<h3 id="bond-polarity">Bond polarity</h3>
+<p>Electronegativity values are used to indicate wether the electrons in a bond are equally shared or unequally shared between two atoms. When electrons are equally shared, the bond is <strong>nonpolar</strong></p>
+<h4 id="nonpolar-bonds">Nonpolar bonds</h4>
+<ul>
+<li>A <span class="arithmatex">\(\ce{C-C}\)</span> bond is <strong>nonpolar</strong>.</li>
+<li><span class="arithmatex">\(\ce{C-H}\)</span>bonds are considered to be nonpolar because the electronegativity difference between<span class="arithmatex">\(\ce{C}\)</span>and<span class="arithmatex">\(\ce{H}\)</span> is small.</li>
+<li>Whenever two different atoms having similar electronegativities are bonded together, the bond is <strong>nonpolar</strong>.</li>
+</ul>
+<h4 id="polar-bonds">Polar bonds</h4>
+<ul>
+<li>Bonding between atoms of different electronegativity values results in unequal sharing of electrons.</li>
+<li>The <span class="arithmatex">\(\ce{C-O}\)</span> bond</li>
+<li>In this bond electrons are pulled away from <span class="arithmatex">\(\ce{C}\)</span>toward<span class="arithmatex">\(\ce{O}\)</span> which is the element having higher electronegativity (see table above).</li>
+<li>The bond is polar, or polar covalent. The bond is said to have dipole; that is, partial separation of charge.</li>
+</ul>
+<blockquote>
+<p><img alt="" src="assets/c-o-polarization.png" />
+- The <span class="arithmatex">\(\delta^+\)</span>  means the indicated atom is electron deficient.
+- The <span class="arithmatex">\(\delta^-\)</span> means the indicated atom is electron rich.
+- The direction of polarity in a bond is indicated by an arrow with the head of the arrow pointing towards the more electronegative element.
+- The tail of the arrow is drawn at the less electronegative element.</p>
+</blockquote>
+<h3 id="polar-molecules">Polar molecules</h3>
+<p>A polar molecule has either one polar bond, or two or more bond dipoles that reinforce each other.</p>
+<p>Example of water polarity:
+- It is a bent molecule
+- Two dipoles reinforce
+- It has a net dipole, making it a polar molecule</p>
+<p><img alt="" src="assets/water-polarity.png" /></p>
+<h3 id="nonpolar-molecules">Nonpolar molecules</h3>
+<p>A nonpolar molecule has either no polar bonds, or two or more bond dipoles that cancel</p>
+<p>A nonpolar molecule has either no polar bonds, or two or more cancelling bond dipoles.</p>
+<p>Example of carbon dioxyde nonpolarity
+  - It is a linear molecule
+  - Two dipoles are equal and opposite
+  - Two dipoles cancel out
+  - It is a nonpolar molecule with no net dipole</p>
+<p><img alt="" src="assets/carbon-dioxyde-nonpolar.png" /></p>
+<h3 id="essential-polarity-rules">Essential polarity rules</h3>
+<h3 id="rules">Rules:</h3>
+<ol>
+<li>If the electronegativity difference (<span class="arithmatex">\(\Delta EN\)</span>) is less than 0.5, the bond is <strong>nonpolar covalent</strong>.</li>
+<li>If the <span class="arithmatex">\(\Delta EN\)</span> is between 0.5 and 1.6, the bond is considered <strong>polar covalent</strong>.</li>
+<li>If the <span class="arithmatex">\(\Delta EN\)</span> is greater than 2.0, the bond is <strong>ionic</strong>.</li>
+<li>If the <span class="arithmatex">\(\Delta EN\)</span> is between 1.6 and 2.0:</li>
+<li><strong>If a metal is involved</strong>, the bond is considered <strong>ionic</strong>.</li>
+<li><strong>If only nonmetals are involved</strong>, the bond is considered <strong>polar covalent</strong>.</li>
+</ol>
+<h3 id="example">Example:</h3>
+<ul>
+<li><strong>Sodium bromide</strong> (<span class="arithmatex">\(\ce{NaBr}\)</span>; <span class="arithmatex">\(\ce{EN_{Na}} = 0.9\)</span>, <span class="arithmatex">\(\ce{EN_{Br}} = 2.8\)</span>): <span class="arithmatex">\(\Delta EN = 1.9\)</span></li>
+<li><strong>Hydrogen fluoride</strong> (<span class="arithmatex">\(\ce{HF}\)</span>; <span class="arithmatex">\(\ce{EN_{H}} = 2.1\)</span>, <span class="arithmatex">\(\ce{EN_{F}} = 4.0\)</span>): <span class="arithmatex">\(\Delta EN = 1.9\)</span></li>
+</ul>
+<p><strong>Rule 4</strong> applies: 
+- <span class="arithmatex">\(\ce{NaBr}\)</span> has <strong>ionic bonds</strong> because it involves a metal (Na).
+- <span class="arithmatex">\(\ce{HF}\)</span> has a <strong>polar covalent bond</strong> because both atoms are nonmetals.</p>
+<p>These two compounds are quite different:
+- <span class="arithmatex">\(\ce{NaBr}\)</span> exhibits the classic <strong>lattice structure</strong> typical of ionic substances.
+- <span class="arithmatex">\(\ce{HF}\)</span> is a <strong>gas</strong> at room temperature, reflecting the nature of polar covalent bonds.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

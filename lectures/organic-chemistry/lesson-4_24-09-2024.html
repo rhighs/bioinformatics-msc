@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Organic Chemistry, Academic Year 2024/2025 - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/organic-chemistry/lesson-4_24-09-2024.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#organic-chemistry-academic-year-20242025" class="nav-link">Organic Chemistry, Academic Year 2024/2025</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#functional-groups-intermolecular-forces-and-physical-properties" class="nav-link">Functional groups, intermolecular forces and physical properties</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ethane-a-molecule-with-no-functional-group" class="nav-link">Ethane, a Molecule with No Functional Group</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ethanol" class="nav-link">Ethanol</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</h1>
+<div class="toc">
+<ul>
+<li><a href="#organic-chemistry-academic-year-20242025">Organic Chemistry, Academic Year 2024/2025</a><ul>
+<li><a href="#functional-groups-intermolecular-forces-and-physical-properties">Functional groups, intermolecular forces and physical properties</a><ul>
+<li><a href="#functional-groups">Functional groups</a><ul>
+<li><a href="#reactivity-of-functional-groups">Reactivity of functional groups</a></li>
+<li><a href="#why-pi-bonds-break-so-easily">Why \(\pi\) bonds break so easily</a></li>
+</ul>
+</li>
+<li><a href="#parts-of-a-functional-group">Parts of a functional group</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#ethane-a-molecule-with-no-functional-group">Ethane, a Molecule with No Functional Group</a></li>
+<li><a href="#ethanol">Ethanol</a><ul>
+<li><a href="#hydrocarbons">Hydrocarbons</a></li>
+<li><a href="#aromatic-hydrocarbons">Aromatic hydrocarbons</a></li>
+<li><a href="#functional-groups-with-carbon-heteroatom-cec-z-sigma-bonds">Functional groups with carbon heteroatom \(\ce{C-Z}\) \(\sigma\) bonds</a></li>
+<li><a href="#functional-groups-with-cec-o-group">Functional groups with \(\ce{C-O}\) group</a><ul>
+<li><a href="#atoms-classification">Atoms classification</a></li>
+<li><a href="#why-all-this-fuss">Why all this fuss?</a></li>
+</ul>
+</li>
+<li><a href="#why-functional-groups-matter">Why functional groups matter</a></li>
+<li><a href="#what-are-intermolecular-forces">What are intermolecular forces?</a><ul>
+<li><a href="#ion-ion-interactions">Ion-Ion interactions</a></li>
+</ul>
+</li>
+<li><a href="#intermolecular-forces-in-covalent-molecules">Intermolecular forces in covalent molecules</a><ul>
+<li><a href="#van-der-waals-forces">van der Waals forces</a></li>
+<li><a href="#var-der-waals-forces-in-methane">var der Waals forces in methane</a></li>
+<li><a href="#var-der-waals-forces-in-relation-with-surface-area">var der Waals forces in relation with surface area</a></li>
+<li><a href="#var-der-waals-forces-and-polarizability">var der Waals forces and polarizability</a></li>
+</ul>
+</li>
+<li><a href="#dipole-dipole-interactions">Dipole-Dipole interactions</a><ul>
+<li><a href="#intermolecular-non-covalent-bonding-forces">Intermolecular non-covalent bonding forces</a></li>
+<li><a href="#hydrogen-bonding">Hydrogen bonding</a></li>
+<li><a href="#typical-h-bond-donors-and-acceptors-in-eeceptor-proteins">Typical H-Bond donors and Acceptors in eeceptor-proteins</a></li>
+<li><a href="#intermolecular-non-covalent-bonding-forces-aka-electrostatic-or-ionic-bond">Intermolecular non-covalent bonding forces; aka Electrostatic or ionic bond</a></li>
+<li><a href="#essence-of-intermolecular-forces">Essence of intermolecular forces</a></li>
+</ul>
+</li>
+<li><a href="#physical-properties">Physical properties</a><ul>
+<li><a href="#boiling-point">Boiling point</a></li>
+<li><a href="#melting-point">Melting point</a></li>
+<li><a href="#melting-point-trends">Melting point trends</a></li>
+<li><a href="#the-effect-of-symmetry-on-melting-pointso">The effect of symmetry on melting pointso</a></li>
+<li><a href="#solubility">Solubility</a></li>
+<li><a href="#solubility-trends">Solubility trends</a></li>
+<li><a href="#solubility-in-ionic-compounds">Solubility in ionic compounds</a></li>
+<li><a href="#solubility-of-organic-molecules">Solubility of organic molecules</a></li>
+<li><a href="#butane-and-acetone-solubility">Butane and acetone solubility</a></li>
+<li><a href="#water-solubility-of-organic-molecules">Water solubility of organic molecules</a></li>
+<li><a href="#solubility-properties-of-representative-compounds">Solubility Properties of Representative Compounds</a></li>
+</ul>
+</li>
+<li><a href="#vitamins">Vitamins</a><ul>
+<li><a href="#vitamin-a">Vitamin A</a></li>
+<li><a href="#vitamin-c">Vitamin C</a></li>
+</ul>
+</li>
+<li><a href="#functional-groups-and-electrophiles">Functional groups and electrophiles</a></li>
+<li><a href="#nucleophilic-sites-in-moleucules">Nucleophilic sites in moleucules</a><ul>
+<li><a href="#biomolecules">Biomolecules</a></li>
+<li><a href="#families-of-biomolecules">Families of Biomolecules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="functional-groups-intermolecular-forces-and-physical-properties">Functional groups, intermolecular forces and physical properties</h2>
+<h3 id="functional-groups">Functional groups</h3>
+<ul>
+<li>
+<p>A functional group is an <strong>atom</strong> or a <strong>group of atoms</strong> with characteristic chemical and physical properties.</p>
+</li>
+<li>
+<p>Most organic molecules contain a carbon backbone, consisting of <span class="arithmatex">\(\ce{C-C}\)</span>and<span class="arithmatex">\(\ce{C-H}\)</span> bonds to which functional groups are attached.</p>
+</li>
+<li>
+<p>Structural features of a functional group:</p>
+<ul>
+<li><strong>Heteroatoms</strong> <span class="arithmatex">\(\rightarrow\)</span>atoms other than<span class="arithmatex">\(\ce{C}\)</span>or<span class="arithmatex">\(\ce{H}\)</span></li>
+<li>Bonds commonly occur in <span class="arithmatex">\(\ce{C-C}\)</span>and<span class="arithmatex">\(\ce{C-O}\)</span> double bonds</li>
+</ul>
+</li>
+</ul>
+<p>Functional groups distinguish one organic molecule from another, they're able to determine a molecule's:
+- Name
+- Geometry
+- Chemical and physical properties
+- Reactivity</p>
+<ul>
+<li>They also pretty much create what are called as <strong><em>Classes of Organic Compounds</em></strong> <span class="arithmatex">\(\rightarrow\)</span> alkanes, alkenes, alkynes, alcohols and more...</li>
+</ul>
+<h4 id="reactivity-of-functional-groups">Reactivity of functional groups</h4>
+<p>Heteratoms and bonds are responsible for the reactivity on a particular molecule
+- Heteroatoms have lone pairs and create electron-deficient sites on carbon
+- A bond makes a molecule base and a nuclephile, it is easily broken in chemical reactions</p>
+<p align="center">
+    <img src="assets/dimehyl-ether.png" />
+</p>
+
+<ul>
+<li>Lone pairs make <span class="arithmatex">\(\ce{O}\)</span> a base and a nucleophile</li>
+<li>The <span class="arithmatex">\(\ce{C}\)</span> atom is electron deficient, making it an electrophile<ul>
+<li>Heteroatoms often pull electron density away from nearby carbons because they are more electronegative.</li>
+<li>This creates electron-deficient sites (partial positive charge, <span class="arithmatex">\(\delta^+\)</span>) on those carbons, making them electrophilic (prone to be attacked by nucleophiles).</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+    <img src="assets/double-bond-easily-broken.png" />
+</p>
+
+<ul>
+<li>The <span class="arithmatex">\(\pi\)</span> bond is easily broken.</li>
+<li>The <span class="arithmatex">\(\pi\)</span> bond makes a compound a base and a nucleophile.<ul>
+<li>In many chemical reactions, especially in <strong>nucleophilic substitution</strong> or <strong>addition reactions</strong>, the <span class="arithmatex">\(\pi\)</span>bond donates its electrons to form new bonds. Since the<span class="arithmatex">\(\pi\)</span> bond is more loosely held, it can be broken, allowing the electrons to be used in new bond formation with other atoms or groups.</li>
+</ul>
+</li>
+</ul>
+<h4 id="why-pi-bonds-break-so-easily">Why <span class="arithmatex">\(\pi\)</span> bonds break so easily</h4>
+<p><strong>Electron-rich bonds</strong>, such as <strong>π bonds</strong> in <strong>double</strong> or <strong>triple bonds</strong>, are more easily broken in chemical reactions because of their <strong>weaker nature</strong> and <strong>exposed electron density</strong>.</p>
+<p><strong>Weaker Bond Energy</strong>
+   - <strong><span class="arithmatex">\(\pi\)</span> bonds</strong> are generally weaker than <strong><span class="arithmatex">\(\sigma\)</span> bonds</strong>.
+     - <strong><span class="arithmatex">\(\sigma\)</span> bonds</strong> are formed by <strong>head-on overlap</strong> of orbitals, which leads to a strong bond with electrons tightly held between the nuclei.
+     - <strong><span class="arithmatex">\(\pi\)</span> bonds</strong>, on the other hand, result from the <strong>side-by-side overlap</strong> of <strong>p orbitals</strong>. The overlap is less effective compared to the head-on overlap in σ bonds, making π bonds <strong>weaker</strong> and <strong>easier to break</strong>.</p>
+<p><strong>Exposed Electron Density</strong>
+   - In a <strong><span class="arithmatex">\(\pi\)</span> bond</strong>, the electrons are located <strong>above and below</strong> the plane of the atoms involved in the bond (in contrast to the <strong><span class="arithmatex">\(\sigma\)</span> bond</strong>, where the electron density is directly between the nuclei).
+   - This makes the <strong><span class="arithmatex">\(\pi\)</span> electrons more exposed</strong> and less tightly held, making them more available for reaction.</p>
+<h3 id="parts-of-a-functional-group">Parts of a functional group</h3>
+<p align="center">
+    <img src="assets/parts-of-a-functional-group.png" />
+</p>
+
+<ul>
+<li>
+<p><strong>Ethane</strong></p>
+<ul>
+<li>Has all <span class="arithmatex">\(\ce{C-C}\)</span>and<span class="arithmatex">\(\ce{C-H}\)</span> <span class="arithmatex">\(\sigma\)</span> bonds</li>
+<li>Has no functional group</li>
+</ul>
+</li>
+<li>
+<p><strong>Ethanol</strong></p>
+<ul>
+<li>Polar <span class="arithmatex">\(\ce{C-O}\)</span>and<span class="arithmatex">\(\ce{O-H}\)</span> bonds</li>
+<li>Two lone pairs</li>
+</ul>
+</li>
+</ul>
+<h1 id="ethane-a-molecule-with-no-functional-group">Ethane, a Molecule with No Functional Group</h1>
+<ul>
+<li>This molecule has only C—C and C—H bonds.</li>
+<li>It contains no polar bonds, lone pairs, or bonds.</li>
+<li>Therefore, ethane has no reactive sites (functional groups).</li>
+<li>Consequently, ethane and other alkanes are very unreactive.</li>
+</ul>
+<h1 id="ethanol">Ethanol</h1>
+<ul>
+<li>Compounds containing an <span class="arithmatex">\(\ce{HO}\)</span> group are called <strong>alcohols</strong>.</li>
+<li>The hydroxy group makes the properties of ethanol very different from the properties of ethane.</li>
+<li>Ethanol has lone pairs and polar bonds that make it reactive.</li>
+<li>Other molecules with hydroxy groups will have similar properties to ethanol.</li>
+</ul>
+<p><strong>NOTE</strong>: The term <strong>"backbone"</strong> is used to describe the continuous chain of atoms that provides the main structure, to which other atoms or groups can be attached, influencing the molecule’s properties.</p>
+<p>Ethane consists of <strong>nonpolar <span class="arithmatex">\(\ce{C-C}\)</span>and weakly polar<span class="arithmatex">\(\ce{C-H}\)</span> bonds</strong>, resulting in no significant reactive sites. It lacks functional groups and lone pairs, making it <strong>chemically inert</strong> under normal conditions and requiring high energy (e.g., combustion) to break its bonds. On the other hand, Ethanol has a <strong>hydroxyl group (<span class="arithmatex">\(\ce{-OH}\)</span>)</strong>, making it much more reactive than ethane. The <strong>polar <span class="arithmatex">\(\ce{O-H}\)</span>and<span class="arithmatex">\(\ce{C-O}\)</span> bonds</strong> create partial charges, making the molecule susceptible to <strong>nucleophilic and electrophilic attacks</strong>. The hydroxyl group also enables ethanol to undergo various reactions (e.g., <strong>oxidation</strong>, <strong>dehydration</strong>, <strong>esterification</strong>) and form <strong>hydrogen bonds</strong>, increasing its overall reactivity.</p>
+<h3 id="hydrocarbons">Hydrocarbons</h3>
+<p>Hydrocarbons are compounds make up of only the elements carbon and hydrogen; they may be aliphatic or aromatic</p>
+<p align="center">
+    <img src="assets/alkane-alkene-alkyne-aromatic-compunds.png" />
+</p>
+
+<ul>
+<li>Aliphatic hydrocarbons have three subgroups <ul>
+<li>Alkanes have only <span class="arithmatex">\(\ce{C-C}\)</span>bonds and no functional group<span class="arithmatex">\(\rightarrow \ce{C-C}\)</span></li>
+<li>Alkenes have a <span class="arithmatex">\(\ce{C-C}\)</span>double bond<span class="arithmatex">\(\rightarrow \ce{C=C}\)</span></li>
+<li>Alkynes have a <span class="arithmatex">\(\ce{C-C}\)</span>triple bond<span class="arithmatex">\(\rightarrow \ce{C#C}\)</span> </li>
+</ul>
+</li>
+</ul>
+<h3 id="aromatic-hydrocarbons">Aromatic hydrocarbons</h3>
+<ul>
+<li>Aromatic hydrocarbons are so named because many of the earliest known aromatic compounds had strong, characterstic odors.</li>
+<li>The simplest aromatic hydrocarbon is benzene.</li>
+<li>The six-membered ring and three bonds of benzene comprise a single functional group, found in most aromatic compounds.<ul>
+<li>The <strong>phenyl group</strong></li>
+</ul>
+</li>
+</ul>
+<p align="center">
+    <img src="assets/phenyl-group.png" />
+</p>
+
+<h3 id="functional-groups-with-carbon-heteroatom-cec-z-sigma-bonds">Functional groups with carbon heteroatom <span class="arithmatex">\(\ce{C-Z}\)</span> <span class="arithmatex">\(\sigma\)</span> bonds</h3>
+<p align="center">
+    <img src="assets/c-z-sigma-bond.png" width=400/>
+</p>
+
+<p>The structure on the right shows a 3D molecular model where carbon is bonded to the heteroatom <span class="arithmatex">\(\ce{Z}\)</span>with an arrow indicating the direction of the electron density being pulled toward the more electronegative atom<span class="arithmatex">\(\ce{Z}\)</span>.
+- This type of bond is common in many functional groups like alcohols C—O, amines C—N, and halides C—Cl, C—Br, etc.</p>
+<blockquote>
+<p><strong>What's a halogen? a halide?</strong>
+<strong>Halogens</strong> are highly reactive elements from Group 17 of the periodic table, including fluorine <span class="arithmatex">\(\ce{F}\)</span>, chlorine <span class="arithmatex">\(\ce{Cl}\)</span>, bromine <span class="arithmatex">\(\ce{Br}\)</span>, and iodine <span class="arithmatex">\(\ce{I}\)</span>. When a halogen forms a bond with another element, particularly carbon, the resulting compound is called a <strong>halide</strong>. Halides (e.g., alkyl halides) have polar carbon-halogen bonds due to the high electronegativity of halogens, making them reactive in organic chemical reactions like substitution and elimination.</p>
+</blockquote>
+<p align="center">
+    <img src="assets/types-of-c-z-bonds.png" />
+</p>
+
+<h3 id="functional-groups-with-cec-o-group">Functional groups with <span class="arithmatex">\(\ce{C-O}\)</span> group</h3>
+<ul>
+<li>This group is called a "carbonyl group"</li>
+<li>The polar <span class="arithmatex">\(\ce{C=O}\)</span>bond makes the carbonyl carbon an electrophile, while the lone pairs on<span class="arithmatex">\(\ce{O}\)</span> allow it to react as a nucleophile and base</li>
+</ul>
+<p align="center">
+    <img src="assets/carbonyl-group.png" width="300"/>
+</p>
+
+<p><strong>NOTE</strong>: the carbonyl group also contains a bond that is more easily broken than a <span class="arithmatex">\(\ce{C-O}\)</span> bond</p>
+<h4 id="atoms-classification">Atoms classification</h4>
+<p align="center">
+    <img src="assets/classes-of-carbon-and-hydrogen.png" />
+</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>1. Carbon atoms</strong></th>
+<th><strong>2. Hydrogen atoms</strong></th>
+<th><strong>3. Alcohols and alkyl halides</strong></th>
+<th><strong>4. Amines and amides</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="6-acetylmorphine carbon classification" src="https://pubchem.ncbi.nlm.nih.gov/image/imagefly.cgi?cid=5462507&amp;width=200&amp;height=200" /></td>
+<td><img alt="6-acetylmorphine hydrogen classification" src="https://pubchem.ncbi.nlm.nih.gov/image/imagefly.cgi?cid=5462507&amp;width=200&amp;height=200" /></td>
+<td><img alt="Cortisol alcohol classification" src="https://pubchem.ncbi.nlm.nih.gov/image/imagefly.cgi?cid=5754&amp;width=200&amp;height=200" /></td>
+<td><img alt="Motuporamine B amine classification" src="https://pubchem.ncbi.nlm.nih.gov/image/imagefly.cgi?sid=275535125&amp;deposited=t&amp;version=2&amp;width=200&amp;height=200" /></td>
+</tr>
+<tr>
+<td>6-acetylmorphine</td>
+<td>6-acetylmorphine</td>
+<td>Cortisol</td>
+<td>Motuporamine B</td>
+</tr>
+<tr>
+<td><strong>Carbon atoms</strong> are classified by the number of carbon atoms bonded to them; a 1° carbon is bonded to one other carbon, and so forth.</td>
+<td><strong>Hydrogen atoms</strong> are classified by the type of carbon to which they are bonded; a 1° hydrogen is bonded to a 1° carbon, and so forth.</td>
+<td><strong>Alcohols and alkyl halides</strong> are classified by the type of carbon to which they are bonded; a 1° alcohol has an OH group bonded to a 1° carbon, and so forth.</td>
+<td><strong>Amines and amides</strong> are classified by the number of carbon atoms bonded to the nitrogen atom; a 1° amine has one C–N bond, and so forth.</td>
+</tr>
+</tbody>
+</table>
+<p align="center">
+    <img src="assets/big-molecules-with-numbers.png" />
+</p>
+
+<p align="center">
+    <img src="assets/classes-for-groups.png" />
+</p>
+
+<h4 id="why-all-this-fuss">Why all this fuss?</h4>
+<p><em>SIGH... Notations!</em></p>
+<p>Carbon atoms are classified by the number of other carbon atoms they are bonded to: primary (1°) carbons are connected to one other carbon, secondary (2°) to two, tertiary (3°) to three, and quaternary (4°) to four. This helps in understanding molecular structure and reactivity. Similarly, hydrogen atoms are classified based on the type of carbon they are attached to. Functional groups like alcohols and alkyl halides are also categorized by the carbon they are bonded to, influencing their chemical behavior. Amines and amides are classified by the number of carbon atoms attached to the nitrogen, with primary (1°), secondary (2°), and tertiary (3°) amines or amides having one, two, or three carbon-nitrogen bonds, respectively. These classifications are key to predicting structure and reactivity in organic compounds.</p>
+<p>This type of classification is pretty much just precise notation allows that chemists to describe molecules better, predict their reactivity, and understand how different structural features influence their chemical behavior.</p>
+<h3 id="why-functional-groups-matter">Why functional groups matter</h3>
+<p>A functional group in an organic compound plays a crucial role in determining its chemical and physical behavior. These characteristics can be outlined as follows:</p>
+<ul>
+<li>
+<p><strong>Bonding and Shape</strong>: The functional group influences the type of bonding (such as single, double, or triple bonds) and the molecular geometry, which affects how molecules interact with one another and fit into reaction mechanisms.</p>
+</li>
+<li>
+<p><strong>Type and Strength of Intermolecular Forces</strong>: The functional group dictates the type of intermolecular forces, such as hydrogen bonding, van der Waals forces, or dipole-dipole interactions. These forces influence properties like boiling and melting points.</p>
+</li>
+<li>
+<p><strong>Chemical and Physical Properties</strong>: The presence of a functional group affects properties such as solubility, acidity or basicity, and volatility, directly shaping the compound's behavior in different environments.</p>
+</li>
+<li>
+<p><strong>Nomenclature</strong>: Functional groups also determine the naming of organic compounds, as they are often used as the basis for the systematic naming (IUPAC) of molecules.</p>
+</li>
+<li>
+<p><strong>Chemical Reactivity</strong>: Functional groups govern how molecules react with other substances, dictating the types of reactions they undergo, their reaction mechanisms, and their overall reactivity in organic synthesis.</p>
+</li>
+</ul>
+<p>These aspects help chemists predict how molecules behave and interact based on their functional groups.</p>
+<h3 id="what-are-intermolecular-forces">What are intermolecular forces?</h3>
+<p>Intermolecular forces are interactions that exist between molecules, functional groups determine the type and strength of these interactions. For a figurative sense, ionic and covalent compounds have very different intermolecular interactions:</p>
+<h4 id="ion-ion-interactions">Ion-Ion interactions</h4>
+<p>In an ionic compound, such as sodium chloride <span class="arithmatex">\(\ce{NaCl}\)</span>, the positively charged sodium ions <span class="arithmatex">\(\ce{Na}^+\)</span>and negatively charged chloride ions<span class="arithmatex">\(\ce{Cl}^-\)</span> are arranged in a repeating lattice structure. The ions are held together by the <strong>electrostatic forces</strong> of attraction between opposite charges.</p>
+<p><strong>Sidenote</strong>: This strong interaction is responsible for the high melting and boiling points of ionic compounds because a significant amount of energy is required to break these strong bonds.</p>
+<blockquote>
+<p>Ion-ion interactions are among the strongest types of attractive forces in chemistry because they involve full charges and lead to the stable, rigid structures seen in many ionic solids. This is what gives ionic compounds distinct physical properties, like hardness and high thermal stability.</p>
+</blockquote>
+<p align="center">
+    <img src="assets/electrostatic-na-cl.png" width=300 />
+</p>
+
+<p>This image describes <strong>ion-ion interactions</strong>, which are the strong electrostatic attractions that occur between oppositely charged ions in ionic compounds. These interactions are a type of <strong>intermolecular force</strong> but are much stronger than the forces found between covalent molecules.</p>
+<p>The image also highlights that <strong>ion-ion interactions</strong> are much stronger than the <strong>intermolecular forces</strong> present in covalent molecules, such as <strong>van der Waals forces</strong> or <strong>hydrogen bonding</strong>.
+- In covalent compounds, the molecules themselves are neutral or only slightly polar, so the interactions between them are weaker compared to the full charges found in ionic compounds.</p>
+<h3 id="intermolecular-forces-in-covalent-molecules">Intermolecular forces in covalent molecules</h3>
+<p>Covalent compunds are composed of discrete molecules, the natures of the forces between molecules dependes on the functional group(s) present. There are generally four types of interactions, we'll list them in order of increasing strength:
+- <strong>van der Waals</strong> or dispersive forces
+- <strong>dipole-dipole</strong> interactions
+- hydrogen bonding
+- ionic interactions</p>
+<h4 id="van-der-waals-forces">van der Waals forces</h4>
+<p>Van der Waals forces, also known as <strong>London dispersion forces</strong>, are the weakest type of intermolecular forces. These forces arise due to <strong>temporary fluctuations in electron density</strong> within a molecule, which create <strong>instantaneous dipoles</strong>. Even in nonpolar molecules where there is no permanent dipole, the random movement of electrons can momentarily cause a slight imbalance in charge distribution. This temporary dipole can induce a corresponding dipole in a neighboring molecule, leading to an <strong>induced dipole-induced dipole interaction</strong>.</p>
+<p>While van der Waals forces are weak, <strong>they are significant in large numbers</strong>. These forces are especially important in nonpolar compounds, where no permanent dipoles exist to generate stronger interactions like hydrogen bonds or dipole-dipole forces.</p>
+<p>The strength of van der Waals forces increases with the size and surface area of the molecule because larger molecules have more electrons and a greater ability to become polarized.</p>
+<p><strong>NOTE</strong>: This is why larger nonpolar molecules like iodine <span class="arithmatex">\(\ce{I_2}\)</span>or long-chain hydrocarbons have higher boiling and melting points compared to smaller nonpolar molecules like helium<span class="arithmatex">\(\ce{He}\)</span> or methane (<span class="arithmatex">\(\ce{CH_4}\)</span>).</p>
+<h4 id="var-der-waals-forces-in-methane">var der Waals forces in methane</h4>
+<ul>
+<li><span class="arithmatex">\(\ce{CH_4}\)</span> has no net dipole</li>
+<li>At any one instant, its electron density may not be completely symmetrical, resulting in a temporary dipole.</li>
+<li>This can induce a temporary dipole in another molecule.</li>
+</ul>
+<p align="center">
+    <img src="./assets/van-der-waals-temp-dipole.png" />
+</p>
+
+<h4 id="var-der-waals-forces-in-relation-with-surface-area">var der Waals forces in relation with surface area</h4>
+<p>All compunds exhibit van der Waals forces <span class="arithmatex">\(\rightarrow\)</span> The larger the surface area of a molcules, the larger the attractive forces between two molecules, and the stronger the intermolecular forces.</p>
+<p align="center">
+    <img src="assets/van-der-waals-forces-and-area.png" />
+</p>
+
+<h4 id="var-der-waals-forces-and-polarizability">var der Waals forces and polarizability</h4>
+<p><strong>Polarizability</strong> refers to how easily the electron cloud around an atom can be distorted by external forces. <strong>Larger atoms, with more loosely held valence electrons</strong>, are more polarizable than smaller atoms. This means that compounds with larger, more polarizable atoms experience stronger van der Waals forces compared to compounds with smaller, less polarizable atoms.</p>
+<ul>
+<li>Polarizability increases in larger atoms because their valence electrons are farther from the nucleus, meaning they experience a weaker attraction to the positively charged nucleus.</li>
+<li>This weaker attraction allows the electron cloud to be <strong>more easily distorted or shifted when subjected to external forces</strong>, such as the presence of a nearby dipole or temporary charge fluctuation <span class="arithmatex">\(\rightarrow\)</span> it is more malleable.</li>
+</ul>
+<p>Instead in smaller atoms, the valence electrons are closer to the nucleus and more tightly held, making them less susceptible to such distortions.</p>
+<h3 id="dipole-dipole-interactions">Dipole-Dipole interactions</h3>
+<p>Dipole-Dipole interactions are the attractive forces between the permanent dipoles of two polar molecules. The dipoles in adjacent molecules align so that the partial positive and partial negative charges are in close proximity.</p>
+<p><strong>NOTE</strong>: These attractive forces caused by permanent dipoles are much stronger than weak van der Waals forces</p>
+<p align="center">
+    <img src="assets/acetone-dipole-dipole.png" />
+</p>
+
+<h4 id="intermolecular-non-covalent-bonding-forces">Intermolecular non-covalent bonding forces</h4>
+<p>Dipole-dipole interactions can occur when both the drug and the binding site have permanent dipole moments. As the drug approaches the binding site, the dipoles of the drug and the binding site align with each other. This alignment helps the drug orient itself correctly within the binding site. </p>
+<p>This orientation is <strong>beneficial</strong> if it allows other functional groups on the drug to interact with the corresponding regions of the binding site effectively, enhancing the binding strength.</p>
+<p align="center">
+    <img src="assets/dipole-binding-site.png" />
+</p>
+
+<p>However, if the dipoles align but the other binding groups on the drug are <strong>not positioned correctly</strong>, this orientation can be <strong>detrimental</strong>, reducing the effectiveness of the interaction.</p>
+<p>The strength of dipole-dipole interactions decreases with distance between the drug and the binding site, but it diminishes less quickly than weaker forces like van der Waals interactions. However, it still fades faster than stronger electrostatic (ionic) interactions.</p>
+<blockquote>
+<p><strong>What really is a drug this context?</strong>
+In this context, the "drug" refers to a small molecule that is designed or naturally occurs to bind to a specific target site in the body, often a protein (such as an enzyme or receptor). The drug’s goal is to interact with this target site to produce a therapeutic effect, such as inhibiting an enzyme, activating a receptor, or blocking a signaling pathway</p>
+</blockquote>
+<h4 id="hydrogen-bonding">Hydrogen bonding</h4>
+<p align="center">
+    <img src="assets/hydrogen-bonding.png" />
+</p>
+
+<p>Hydrogen bonding typically occurs when a hydrogen atom bonded to O, N, or F, is electrostatically attracted to a lone pair of electrons on an O, N, or F atom in another molecule.</p>
+<p>They vary in strength between <span class="arithmatex">\(\text{5-25 kJ/mol}\)</span> and are weaker than electrostatic interactions but definetely stronger than van der Waals interactions.</p>
+<ul>
+<li>Hydrogen bonds take place between an electron deficient hydrogen and an electron rich heteroatom (typically <span class="arithmatex">\(\ce{N}\)</span>or<span class="arithmatex">\(\ce{O}\)</span>). </li>
+</ul>
+<p>The electron deficient hydrogen is called a <strong><em>hydrogen bond donor</em></strong> <span class="arithmatex">\(\rightarrow\)</span><strong>HBD</strong>. The electron rich heteroatom on the other hand is called a <strong><em>hydrogen bond acceptor</em></strong><span class="arithmatex">\(\rightarrow\)</span> <strong>HBA</strong>.</p>
+<p align="center">
+    <img src="assets/hbd-hba.png" />
+</p>
+
+<ul>
+<li><span class="arithmatex">\(\ce{X-H}\)</span>is a hydrogen bond donor (HBD), with the hydrogen being<span class="arithmatex">\(\delta^+\)</span>.</li>
+<li><span class="arithmatex">\(\ce{Y}\)</span>is a hydrogen bond acceptor (HBA), with lone pairs of electrons<span class="arithmatex">\(\delta^-\)</span> to form hydrogen bonds.</li>
+</ul>
+<p>Typically, the acceptor is also an electronegative atom like oxygen, nitrogen, or fluorine.</p>
+<p>In this mechanism, a drug molecule may contain such donor or acceptor groups to interact with the target via hydrogen bonding. This interaction allows the drug to bind specifically to the target, which could be a protein, enzyme, or another biological macromolecule, thereby influencing the function of the target. </p>
+<p>In hydrogen bonds the inteaction involves orbitals and is <strong>directional</strong>, optimum orientation is where the <span class="arithmatex">\(\ce{X-H}\)</span>bond points directly to the lone pair on<span class="arithmatex">\(\ce{Y}\)</span>such that the angle between X, H and Y is<span class="arithmatex">\(\ce{180°}\)</span></p>
+<p align="center">
+    <img src="assets/drug-orientation-to-target.png" />
+</p>
+
+<h4 id="typical-h-bond-donors-and-acceptors-in-eeceptor-proteins">Typical H-Bond donors and Acceptors in eeceptor-proteins</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Donors</strong></th>
+<th><strong>Shared (Both Donors and Acceptors)</strong></th>
+<th><strong>Acceptors</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peptide-NH</td>
+<td>Tyr (Tyrosine)</td>
+<td>Peptide-CO</td>
+</tr>
+<tr>
+<td>N-term. -NH₃⁺</td>
+<td>Ser (Serine)</td>
+<td>C-term. -COO⁻</td>
+</tr>
+<tr>
+<td>Lys (Lysine)</td>
+<td>Thr (Threonine)</td>
+<td>Glu (Glutamate)</td>
+</tr>
+<tr>
+<td>Arg (Arginine)</td>
+<td>His (Histidine)</td>
+<td>Asp (Aspartate)</td>
+</tr>
+<tr>
+<td>Trp (Tryptophan)</td>
+<td>Cys (Cysteine)</td>
+<td>Met (Methionine) (Weak)</td>
+</tr>
+<tr>
+<td></td>
+<td>Asn (Asparagine)</td>
+<td>S-S Bond</td>
+</tr>
+<tr>
+<td></td>
+<td>Gln (Glutamine)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>What is a receptor protein?</strong>
+Receptor proteins are specialized proteins located on the surface of cells (membrane receptors) or within cells (intracellular receptors) that bind to specific molecules, such as hormones, neurotransmitters, or drugs.</p>
+</blockquote>
+<h4 id="intermolecular-non-covalent-bonding-forces-aka-electrostatic-or-ionic-bond">Intermolecular non-covalent bonding forces; aka Electrostatic or ionic bond</h4>
+<p>This is the strongest of the intermolecular type of bonds reaching energy levels in the range of <span class="arithmatex">\(\text{20-40 kJ/mol}\)</span>. This kind of interaction takes place between groups of opposite charge. The strength of the interaction is inversely proprtional to the distance of the two interactants:</p>
+<div class="arithmatex">\[
+    \text{distance between molecules} \propto \text{bond strength}
+\]</div>
+<p>where <span class="arithmatex">\(\propto\)</span> denotes inverse proportionality.</p>
+<ul>
+<li>Stronger interactions occur in hydrophobic environments</li>
+<li>The strength of interactions drops off less rapidly with distance than with other forms of intermolecular interactions</li>
+</ul>
+<p><strong>NOTE</strong>: Ionic bonds are the most important initial interactions as a drug enters the binding site</p>
+<p align="center">
+    <img src="assets/ionic-interactions-drug.png" />
+</p>
+
+<p>Ionic bonds are the strongest non-covalent interactions, typically ranging from <span class="arithmatex">\(\text{20-40 kJ/mol}\)</span>, because they involve full charges. This makes them much stronger than hydrogen bonds or van der Waals forces, which rely on partial or temporary charges. Unlike other interactions, the strength of ionic bonds decreases less rapidly with distance, meaning they remain effective over larger distances. Additionally, in hydrophobic environments where water can't interfere, ionic bonds become even stronger, playing a crucial role in stabilizing interactions in biological systems.</p>
+<p>Here is the information from the image formatted in Markdown:</p>
+<h4 id="essence-of-intermolecular-forces">Essence of intermolecular forces</h4>
+<p>As the polarity of an organic molecule increases, so does the strength of its intermolecular forces.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Type of Force</strong></th>
+<th><strong>Relative Strength</strong></th>
+<th><strong>Exhibited by</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>van der Waals</td>
+<td>weak</td>
+<td>all molecules</td>
+<td><span class="arithmatex">\(\ce{CH3CH2CH2CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>dipole–dipole</td>
+<td>moderate</td>
+<td>molecules with a net dipole</td>
+<td><span class="arithmatex">\(\ce{CH3CH2CH2CHO}\)</span></td>
+</tr>
+<tr>
+<td>hydrogen bonding</td>
+<td>strong</td>
+<td>molecules with an O–H, N–H, or H–F bond</td>
+<td><span class="arithmatex">\(\ce{CH3CH2CH2CH2OH}\)</span></td>
+</tr>
+<tr>
+<td>ion–ion</td>
+<td>very strong</td>
+<td>ionic compounds, groups of opposite charge in covalent molecules</td>
+<td><span class="arithmatex">\(\ce{NaCl}\)</span>, <span class="arithmatex">\(\ce{LiF}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="physical-properties">Physical properties</h3>
+<h4 id="boiling-point">Boiling point</h4>
+<p>The boiling point of a compund is referred to as the temperature at which liquid molecules are converted into gas. In boiling, energy is needed in order to overcome the attractive forces in the more ordered liquid state.
+- The stronger the intermolecular forces, the higher the boiling point. 
+    - A good example is water: it's high boiling point is due to its extensive hydrogen <strong>bonding network</strong>, which requires a significant amount of energy to break. This is why water boils at a much higher temperature than many other small molecules.</p>
+<p align="center">
+    <img src="assets/increasing-boiling-point.png" />
+</p>
+
+<ul>
+<li>The relative strength of the intermolecular forces increases from pentane to butanal to 1-butanol.</li>
+<li>The boiling points of these compounds increase in the same order.</li>
+</ul>
+<p align="center">
+    <img src="assets/pentane-butanal-butan-1-ol.png" />
+</p>
+
+<p><strong>Other factors contributing to the boiling point value</strong></p>
+<ul>
+<li><strong>Surface Area</strong>: </li>
+<li>A larger surface area allows for <strong>greater intermolecular contact</strong>, which increases the strength of van der Waals forces between molecules.</li>
+<li>For example, <strong>pentan-3-one</strong> has a larger surface area than <strong>acetone</strong>, which results in stronger intermolecular forces and a higher boiling point (102°C for pentan-3-one vs. 56°C for acetone).</li>
+</ul>
+<p align="center">
+    <img src="assets/surface-area-polarizability-bp.png" />
+</p>
+
+<ul>
+<li><strong>Polarizability</strong>:</li>
+<li><strong>Polarizability</strong> refers to how easily the electron cloud around an atom can be distorted.
+        - Larger atoms with more diffuse electron clouds are <strong>more polarizable</strong>, leading to <strong>stronger van der Waals forces</strong></li>
+<li>For instance, <strong>iodomethane <span class="arithmatex">\(\ce{CH3I}\)</span></strong> has a more polarizable iodine atom, resulting in a higher boiling point (42°C) compared to <strong>fluoromethane <span class="arithmatex">\(\ce{CH3F}\)</span></strong>, which has the less polarizable fluorine atom and a much lower boiling point (-78°C)</li>
+</ul>
+<h4 id="melting-point">Melting point</h4>
+<p>The melting point is the temperature at which a solid is converted to its liquid phase. In melting, energy is needed to overcome the attractive forces in the more ordered crystalline solid.</p>
+<ul>
+<li>Just like in the b.p. the stronger the intermolecular forces the higher the melting point.</li>
+</ul>
+<p><strong>NOTE</strong>: given the same functional group, the more symmetrical the compund, the higher the melting point (???)</p>
+<blockquote>
+<p><strong>Symmetricity? What the F you might say...</strong>
+Symmetry promotes efficient packing in the solid state, resulting in stronger intermolecular interactions and, thus, a <strong>higher melting point</strong> for more symmetrical compounds.
+- <strong>Symmetrical molecules</strong> pack more efficiently into a solid crystalline lattice because their shape allows them to align neatly. This tight packing leads to stronger intermolecular interactions in the solid state, which means more energy is required to disrupt these interactions during melting. Hence, a <strong>higher melting point</strong>.</p>
+<ul>
+<li><strong>Less symmetrical molecules</strong> pack less efficiently, resulting in weaker intermolecular interactions in the solid state. These interactions are easier to overcome, leading to a <strong>lower melting point</strong>.</li>
+</ul>
+</blockquote>
+<h4 id="melting-point-trends">Melting point trends</h4>
+<p>For covalent molecules of approximately the same molecular weight, the melting point depends upon the identity of the functional group.</p>
+<ul>
+<li>The stronger the intermolecular attraction, the higher the melting points.</li>
+</ul>
+<p align="center">
+    <img src="assets/melting-point-interactions-trend.png" />
+</p>
+
+<p align="center">
+    <img src="assets/pentate-butanal-butan-1-ol-mp.png" />
+</p>
+
+<h4 id="the-effect-of-symmetry-on-melting-pointso">The effect of symmetry on melting pointso</h4>
+<ul>
+<li>For compunds having the same functional group and similar molecular weights, <strong>the more compact and symmetrical the shape, the higher the melting point</strong>.</li>
+</ul>
+<p align="center">
+    <img src="assets/symmetrical-neopentene-comparison.png" />
+</p>
+
+<ul>
+<li>A compact symmetrical molecule like neopentane packs well into a crystalline lattice whereas isopentane does not. It has a much higher melting point than isopentane.</li>
+</ul>
+<p><strong>NOTE</strong>: symmetricity is reffered to as the dregee of symm in a single molecule, not the composition of many of them although it influences it.</p>
+<h4 id="solubility">Solubility</h4>
+<p>Solubility is defined as the extend to which a compound, called a solute, dissolves in a liquid, called a solvent. The energy needed to break up the interactions between the molecules or ions of the solute comes from new interactions between the solute and the solvent.</p>
+<p align="center">
+    <img src="assets/solute-solvent-interactions.png" />
+</p>
+
+<h4 id="solubility-trends">Solubility trends</h4>
+<p>Compounds dissolve in solvents having similar kind of intermolecular forces <span class="arithmatex">\(\xrightarrow{slides quoting}\)</span> <span class="arithmatex">\(\text{Like dissolves like}\)</span></p>
+<ul>
+<li>
+<p><strong>Polar</strong> compounds dissolve in polar solvents like water or alcohols capable of hydrogen bonding with the solute.</p>
+</li>
+<li>
+<p><strong>Nonpolar</strong> or weakly polar compounds dissolve in</p>
+<ul>
+<li>nonpolar solvents (e.g., carbon tetrachloride and
+hexane).</li>
+<li>weakly polar solvents (e.g., diethyl ether)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Polar compounds</strong> dissolve in <strong>polar solvents</strong> (like water or alcohol) due to strong interactions like <strong>hydrogen bonding</strong> or <strong>dipole-dipole forces</strong>. For example, salt dissolves in water because water can stabilize the ions. <strong>Nonpolar or weakly polar compounds</strong> dissolve in <strong>nonpolar solvents</strong> (like hexane or carbon tetrachloride) or <strong>weakly polar solvents</strong> (like diethyl ether). Nonpolar compounds interact through weak <strong>van der Waals forces</strong>, making them insoluble in polar solvents like water.</p>
+<h4 id="solubility-in-ionic-compounds">Solubility in ionic compounds</h4>
+<p>Most ionic compounds are soluble in water, but insoluble in organic solvents. To dissolve an ionic compund, the strong ion-ion interactions must be replaced by many weaker ion-dipole interactions.</p>
+<p align="center">
+    <img src="assets/ion-ion-weakening.png" width=400 />
+</p>
+
+<blockquote>
+<p>💡 What is an ion-dipole interaction?
+An ion-dipole interaction is a type of intermolecular force that occurs between a charged ion and a polar molecule. The strength of this interaction depends on the magnitude of the charge on the ion and the dipole moment of the polar molecule.
+- The positive end of a dipole (in a polar molecule like water) is attracted to a negative ion (anion).
+- The negative end of a dipole is attracted to a positive ion (cation).</p>
+</blockquote>
+<h4 id="solubility-of-organic-molecules">Solubility of organic molecules</h4>
+<p>An organic molecule is water soluble only if it contains one polar functional group capable of hydrogen bonding with the solvent for every five <span class="arithmatex">\(\ce{C}\)</span>atoms in contains. Compare the solubility of butane and acetone in<span class="arithmatex">\(\ce{H2O}\)</span>and<span class="arithmatex">\(\ce{CCl4}\)</span></p>
+<p align="center">
+    <img src="assets/butane-acetone-solubility.png" width=400 />
+</p>
+
+<h4 id="butane-and-acetone-solubility">Butane and acetone solubility</h4>
+<p>Since butane and acetone are both organic compounds, they are both soluble in the organic solvent <span class="arithmatex">\(\ce{CCl4}\)</span>. Butane, which is nonpolar, is insoluble in <span class="arithmatex">\(\ce{H2O}\)</span>. Acetone is soluble in <span class="arithmatex">\(\ce{H2O}\)</span>because it contains only three<span class="arithmatex">\(\ce{C}\)</span>atoms and its<span class="arithmatex">\(\ce{O}\)</span>atom can hydrogen bond with an<span class="arithmatex">\(\ce{H}\)</span>atom of<span class="arithmatex">\(\ce{H2O}\)</span>.</p>
+<p align="center">
+    <img src="assets/butane-acetone-solubility-2.png" width=400 />
+</p>
+
+<h4 id="water-solubility-of-organic-molecules">Water solubility of organic molecules</h4>
+<p>The size of an organic molecule with a polar functional group determines its water solubility. A low molecular weight alcohol like ethanol is water soluble.</p>
+<p>On the other hand, Cholesterol, with 27 carbon atoms and only one OH group, has a carbon skeleton that is too large for the OH group to solubilize by hydrogen bonding <span class="arithmatex">\(\Rightarrow\)</span> <strong>cholesterol is insoluble in water</strong></p>
+<h4 id="solubility-properties-of-representative-compounds">Solubility Properties of Representative Compounds</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Type of Compound</strong></th>
+<th><strong>Solubility in H₂O</strong></th>
+<th><strong>Solubility in Organic Solvents (such as CCl₄)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ionic</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{NaCl}\)</span></td>
+<td>soluble</td>
+<td>insoluble</td>
+</tr>
+<tr>
+<td><strong>Covalent</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3CH2CH2CH3}\)</span></td>
+<td>insoluble (no N or O atom to hydrogen bond to<span class="arithmatex">\(\ce{H2O}\)</span>)</td>
+<td>soluble</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3CH2CH2OH}\)</span></td>
+<td>soluble (<span class="arithmatex">\(\leq 5\)</span>C's and an O atom for hydrogen bonding to<span class="arithmatex">\(\ce{H2O}\)</span>)</td>
+<td>soluble</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ce{CH3(CH2)10OH}\)</span></td>
+<td>insoluble (<span class="arithmatex">\(&gt; 5\)</span>C's; too large to be soluble even though it has an O atom for hydrogen bonding to<span class="arithmatex">\(\ce{H2O}\)</span>)</td>
+<td>soluble</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vitamins">Vitamins</h3>
+<p>Vitamins are organic compunds needed in small amounts for normal cell function, most cannot be synthesized in our bodies and must be obtained from diet. Most are identified by a letter, such as A, C, D, E and K.</p>
+<p>There are several different B vitamins, so a subscript is added just to distinguish between them. Examples are <span class="arithmatex">\(\ce{B_1}\)</span>, <span class="arithmatex">\(\ce{B_2}\)</span>and<span class="arithmatex">\(\ce{B_12}\)</span>.</p>
+<ul>
+<li>Vitamins can be fat soluble or water soluble depending on their structure</li>
+</ul>
+<h4 id="vitamin-a">Vitamin A</h4>
+<ul>
+<li>Vitamin A is an essential component of the vision receptors in our eyes. Vitamin A or <em>retinol</em> may be obtained <strong>directly from diet</strong>.</li>
+<li>It also can be obtained from the conversion of <span class="arithmatex">\(\beta\)</span>-carotene, the orange pigment found in many plants including carrots, into vitamin A in our bodies.</li>
+<li>Vitamin A is water insoluble because it contains only one OH group and 20 carbon atoms.</li>
+</ul>
+<p align="center">
+    <img src="assets/bcarotene-vitamin-a.png" width=400 />
+</p>
+
+<h4 id="vitamin-c">Vitamin C</h4>
+<ul>
+<li>
+<p>Vitamin C, ascorbic acid, is important in the formation of collagen. Most animals can synthesize vitamin C but Humans must obtain this vitamin from dietary sources, such as citrus fruits.</p>
+</li>
+<li>
+<p>Each carbon atom is bonded to an oxygen which makes it capable of hydrogen bonding, and thus, water soluble.</p>
+</li>
+</ul>
+<p align="center">
+    <img src="assets/vitamin-c.png" width=200 />
+</p>
+
+<h3 id="functional-groups-and-electrophiles">Functional groups and electrophiles</h3>
+<ul>
+<li>All functional groups contain a heteroatom, a bond, or both.</li>
+<li>These features create electrophilic sites and nucleophilic sites in a molecule.</li>
+<li><strong>Electron-rich sites (nucleophiles)</strong> react with <strong>electron-poor sites (electrophiles)</strong>.</li>
+<li>An electronegative heteroatom like <span class="arithmatex">\(\ce{N}\)</span>, <span class="arithmatex">\(\ce{O}\)</span>, or <span class="arithmatex">\(\ce{X}\)</span> makes a carbon atom electrophilic, as shown below.</li>
+</ul>
+<p align="center">
+    <img src="assets/electrophilic-example.png" width=400 />
+</p>
+
+<ul>
+<li>In the examples, a partially positive carbon atom (<span class="arithmatex">\(\delta^+\)</span>) is attached to an electronegative atom (like $\ce{Cl} or <span class="arithmatex">\(\ce{OH}\)</span>), making the carbon <strong>electrophilic</strong> (electron-poor), which is susceptible to attack by nucleophiles.</li>
+</ul>
+<h3 id="nucleophilic-sites-in-moleucules">Nucleophilic sites in moleucules</h3>
+<p>A lone pair on a heteroatom makes it basic and nucleophilic</p>
+<p align="center">
+    <img src="assets/some-base-nucleophiles.png" width=400 />
+</p>
+
+<p><span class="arithmatex">\(\pi\)</span>bonds create nucleophilic sites and are more easily broken than<span class="arithmatex">\(\sigma\)</span> bonds.</p>
+<p align="center">
+    <img src="assets/nucleophiles-with-pibonds.png" width=400 />
+</p>
+
+<p>An electron-rich carbon reacts with an electrophile, symbolized as <span class="arithmatex">\(\text{E}^+\)</span>. For example, alkenes contain an electron-rich double bond, and so they react with electrophiles <span class="arithmatex">\(\text{E}^+\)</span>.</p>
+<p align="center">
+    <img src="assets/pibond-nuclephile-reaction-electrophile.png" width=400 />
+</p>
+
+<p>Alkyl halides possess an electrophilic carbon atom, so they react with electron-rich nucleophiles.</p>
+<p align="center">
+    <img src="assets/alkyle-halide-reaction-electro-nucleophile.png" width=400 />
+</p>
+
+<h4 id="biomolecules">Biomolecules</h4>
+<ul>
+<li>Biomolecules are organic compounds found in biological systems.</li>
+<li>Many are relatively small, with molecular weights of less than 1000 g/mol.</li>
+<li>Biomolecules often have several functional groups.</li>
+</ul>
+<h4 id="families-of-biomolecules">Families of Biomolecules</h4>
+<ul>
+<li>There are four main families of small biomolecules:</li>
+<li><strong>Simple sugars</strong>: combine to form complex carbohydrates like starch and cellulose</li>
+<li><strong>Amino acids</strong>: join together to form proteins</li>
+<li><strong>Nucleotides</strong>: combine to form DNA</li>
+<li><strong>Lipids</strong>: commonly form from fatty acids and alcohols</li>
+</ul>
+<p align="center">
+    <img src="assets/example-biomolecules.png" width=400 />
+</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Introduction to Bioinformatics - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="../organic-chemistry/index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/bioinformatics-and-computational-biology/introduction.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#introduction-to-bioinformatics" class="nav-link">Introduction to Bioinformatics</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-bioinformatics" class="nav-link">What is Bioinformatics?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#role-of-ict-information-communication-technologies" class="nav-link">Role of ICT (Information Communication Technologies)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#modern-bioinformatics-and-computational-biology-were-born-with-the-dna-sequencing-projects" class="nav-link">Modern Bioinformatics and Computational Biology were born with the DNA sequencing projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-human-genome-project-hgp" class="nav-link">The Human Genome Project (HGP)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="introduction-to-bioinformatics">Introduction to Bioinformatics</h1>
+<div class="toc">
+<ul>
+<li><a href="#introduction-to-bioinformatics">Introduction to Bioinformatics</a><ul>
+<li><a href="#what-is-bioinformatics">What is Bioinformatics?</a><ul>
+<li><a href="#definition-of-computational-biology-according-to-the-textnih">Definition of Computational Biology (according to the \(\text{NIH}\))</a></li>
+</ul>
+</li>
+<li><a href="#role-of-ict-information-communication-technologies">Role of ICT (Information Communication Technologies)</a></li>
+<li><a href="#modern-bioinformatics-and-computational-biology-were-born-with-the-dna-sequencing-projects">Modern Bioinformatics and Computational Biology were born with the DNA sequencing projects</a></li>
+<li><a href="#the-human-genome-project-hgp">The Human Genome Project (HGP)</a><ul>
+<li><a href="#goals">Goals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="what-is-bioinformatics">What is Bioinformatics?</h2>
+<p><em>The definition of bioinformatics is not universally agreed upon</em>, however we'll define it as...</p>
+<blockquote>
+<p><em>"The creation and development of advanced information and computational technologies for problems in biology, most commonly molecular biology"</em></p>
+</blockquote>
+<p>In alternative, the following extended defition could be considered:</p>
+<ul>
+<li>Bioinformatics is an interdisciplinary field that combines biology, computer science, mathematics, and statistics to analyze and interpret biological data, especially large datasets. It primarily involves developing algorithms, computational models, and software tools to understand biological processes and systems.</li>
+</ul>
+<h3 id="definition-of-computational-biology-according-to-the-textnih">Definition of <strong>Computational Biology</strong> (according to the <span class="arithmatex">\(\text{NIH}\)</span>)</h3>
+<p>Computational Biology refers to the development and application of data-analytical and theoretical methods, mathematical modeling and
+computational simulation tecniques to the study of biological, behavioral and, social systems.</p>
+<p><strong>What is Systems Biology?</strong></p>
+<p>It is the study of the interactions between components of a biological systems, and how these interactions give rise to the funciton and
+behavior of that system.</p>
+<p>To create models that describe all the interactions within a biological system, such as interactions between genes, proteins, or metabolic pathways. The goal is not just to study individual components, but to understand how they work together as a whole to drive the behavior and function of the system. Since the aim is to model all interactions in the system (which is a large and complex task), the experimental techniques that are best suited to systems biology are those that can capture data about the system on a large scale or "system-wide." This means techniques that gather data from many components simultaneously, rather than focusing on one or a few at a time.</p>
+<p><strong>High throughput techniques??</strong></p>
+<p>These are merely technologies that can generate a vast amount of data quickly and on a large scale, which are critical in systems biology. These methods provide the quantitative data (i.e. numerical measurements) needed to build and validate computational models. These models can then be used to predict how the system behaves, how it responds to changes, or how the interactions between components lead to the overall function of the system.</p>
+<p>e.g. <strong>NGS</strong> (Next-generation sequencing)</p>
+<blockquote>
+<p>A technique that rapidly sequences large amounts of DNA or RNA, generating vast data. Processing this data often involves <strong>GPUs</strong> or <strong>multiprocessing</strong> to handle the massive computational demands for alignment, assembly, and analysis efficiently.</p>
+</blockquote>
+<h2 id="role-of-ict-information-communication-technologies">Role of ICT (Information Communication Technologies)</h2>
+<ul>
+<li>Management (store, integrate, query, search, retrieve, ...) and analysis of data and information (knowledge)</li>
+<li>Development of models and algorithms</li>
+<li>Implementation of instruments and services</li>
+<li>Creation of visualization tools</li>
+</ul>
+<h2 id="modern-bioinformatics-and-computational-biology-were-born-with-the-dna-sequencing-projects">Modern Bioinformatics and Computational Biology were born with the DNA sequencing projects</h2>
+<p>The sequencing of human DNA was first proposed in 1984 at a conference organized by the U.S. Department of Energy (DOE). This idea eventually led to the launch of the <a href="https://en.wikipedia.org/wiki/Human_Genome_Project">Human Genome Project</a> in 1990, an international effort to map and sequence the entire human genome. A first draft of the project was finished and available to the public by June 2000. The project was then completed in 2003, providing a complete blueprint of human DNA.</p>
+<p>In June 2000, the <a href="https://www.genome.gov/11006939/ihg-sequencing-centers">International Human Genome Sequencing Consortium</a> (a public effort) and the private company <a href="https://en.wikipedia.org/wiki/Celera_Corporation">Celera Genomics</a> announced the completion of the first draft of the human genome. This milestone marked significant progress in understanding human genetics.</p>
+<p>The first draft sequence was completed in October 2000 and later published in February 2001, with both the consortium and Celera publishing their results. This draft provided a rough map of the human genome, identifying most of the genetic material but leaving some gaps and areas that required further refinement.</p>
+<p>The private company Celera Genomics announced the completion of the first draft of the human genome. This milestone marked significant progress in understanding human genetics.</p>
+<p>The first draft sequence was completed in October 2000 and later published in February 2001, with both the consortium and Celera publishing their results</p>
+<h2 id="the-human-genome-project-hgp">The Human Genome Project (HGP)</h2>
+<p>Providing a complete, high-quality sequence of human genomic DNA to the research community as a freely, publicly available resource.</p>
+<h3 id="goals">Goals</h3>
+<ul>
+<li>
+<p><strong>Human DNA sequence variation</strong></p>
+</li>
+<li>
+<p><strong>Finding and mapping common and less common variants</strong>: Identify genetic differences, both frequent and rare, across the population. These variations can help explain why some individuals are more prone to certain diseases or traits.</p>
+</li>
+<li><strong>Making the information available</strong>: Share these findings in public databases so researchers worldwide can access and utilize them.</li>
+<li>
+<p><strong>Develop algorithms for using such information</strong>: Create tools to efficiently analyze genetic variations, linking them to health outcomes or disease risks.</p>
+</li>
+<li>
+<p><strong>Comparative genomics</strong></p>
+</li>
+<li>
+<p><strong>Interpreting the human genome sequence</strong>: Compare the human genome to those of other species to better understand how certain parts of our DNA contribute to biological functions.</p>
+<ul>
+<li><strong>Functions of conserved sequences</strong>: Identify DNA sequences that are similar across species, which likely serve important roles (e.g., regulating genes or coding for essential proteins).</li>
+<li><strong>Support experiments in model systems</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Functional analysis of genes</strong></p>
+</li>
+<li>
+<p><strong>Proteins</strong>: Study how genes encode proteins, which carry out most cellular tasks.</p>
+</li>
+<li><strong>Coding regions</strong>: Investigate sections of DNA that directly instruct cells to build proteins.</li>
+<li><strong>Other functional elements of the genome</strong>: Explore non-coding regions that play roles in regulating genes or maintaining chromosome structure.</li>
+<li>
+<p><strong>High-throughput, genome-wide basis</strong>: Use technologies that analyze thousands of genes or proteins at once to collect data on gene activity and interactions.</p>
+</li>
+<li>
+<p><strong>Genome informatics</strong></p>
+</li>
+<li><strong>Data analysis methods</strong>:<ul>
+<li><strong>Sequence analysis</strong>: Examine the order of DNA bases (A, T, C, G) to identify genes and their functions.</li>
+<li><strong>Gene mapping</strong>: Locate specific genes on chromosomes.</li>
+<li><strong>Complex trait mapping</strong>: Study how multiple genes contribute to traits like height or disease susceptibility.</li>
+<li><strong>Genetic variation</strong>: Analyze differences in DNA that may impact health.</li>
+<li><strong>Functional analysis</strong>: Determine what different parts of the genome do.</li>
+</ul>
+</li>
+<li><strong>Development of database tools</strong>: Build software that allows scientists to store, access, and analyze genetic data.</li>
+<li><strong>Development and maintenance of databases</strong>: Maintain large collections of genomic data for public use.</li>
+</ul>
+<blockquote>
+<p>💡 <em>Difference between terms DNA, Genes and Genome</em></p>
+<ul>
+<li><strong>DNA</strong>: The molecule that contains genetic instructions for the development and function of living organisms.</li>
+<li><strong>Genes</strong>: Specific segments of DNA that contain instructions to make proteins, which perform most functions in a cell.</li>
+<li><strong>Genome</strong>: The complete set of DNA in an organism, including all of its genes and non-coding regions.</li>
+</ul>
+</blockquote>
+<p>After the publishing of the complete sequence of the human genome in 2001 start the "post-genomic era":</p>
+<ul>
+<li>The complete human <strong>DNA sequence</strong> is <strong>known</strong></li>
+<li>Much must still to be yet understood:</li>
+<li>What are <strong>all the genes</strong> in the DNA and where do they start and end?</li>
+<li>What are <strong>all</strong> the DNA components?</li>
+<li>How do they <strong>interact</strong> with each other in a <strong>"systemic way"</strong>?</li>
+<li>What is their <strong>function</strong>; how is it <strong>altered in pathologies</strong>; how to <strong>correct</strong> such <strong>alterations</strong>?</li>
+</ul>
+<p><strong>What's Molecular medicine?</strong></p>
+<ul>
+<li><strong>Molecular medicine</strong> is a broad field, where <strong>physical</strong>, <strong>chemical</strong>, <strong>biological</strong>, and <strong>medical</strong> techniques are used to describe <strong>molecular structures</strong> and <strong>mechanisms</strong>, identify fundamental <strong>molecular</strong> and <strong>genetic errors of disease</strong>, and to develop <strong>molecular interventions</strong> to correct them.</li>
+<li>
+<p>The molecular medicine perspective emphasizes <strong>cellular</strong> and <strong>molecular phenomena</strong> and <strong>interventions</strong> rather than the previous conceptual and observational focus on patients and their organs.</p>
+</li>
+<li>
+<p>Therefore, molecular medicine is interconnected with and develops into <strong>pharmacogenomics</strong>, which in turn has molecular medicine as its application focus.</p>
+</li>
+</ul>
+<p><strong>What is Pharmacogenomics?</strong></p>
+<ul>
+<li>
+<p><strong>Pharmacogenomics</strong> is the branch of <strong>pharmacology</strong> that deals with the <strong>influence of genetic variation on drug response</strong> in patients by correlating <strong>gene expression</strong> or <strong>single-nucleotide polymorphisms</strong> with a drug's <strong>efficacy</strong> or <strong>toxicity</strong>. By doing so, pharmacogenomics aims to develop rational means to <strong>optimize drug therapy</strong>, with respect to the patients' <strong>genotype</strong>, to ensure <strong>maximum efficacy</strong> with <strong>minimal adverse effects</strong> and <strong>economical burden</strong>.</p>
+</li>
+<li>
+<p>Such approaches promise the advent of "<strong>personalized medicine</strong>", in which <strong>drugs</strong> and <strong>drug combinations</strong> are <strong>optimized</strong> for each <strong>individual's unique genetic makeup</strong>.</p>
+</li>
+<li>
+<p><strong>Pharmacogenomics</strong> is the whole <strong>genome application</strong> of <strong>pharmacogenetics</strong>, which examines <strong>single gene interactions</strong>.</p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Concepts of Genetics and Molecular Biology - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="../organic-chemistry/index.html" class="dropdown-item">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/bioinformatics-and-computational-biology/main-concepts.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#concepts-of-genetics-and-molecular-biology" class="nav-link">Concepts of Genetics and Molecular Biology</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#definitions" class="nav-link">Definitions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#characteristics-of-living-beings" class="nav-link">Characteristics of Living Beings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-cell" class="nav-link">The cell</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-four-main-types-of-biological-macromolecules" class="nav-link">The four main types of biological macromolecules</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="concepts-of-genetics-and-molecular-biology">Concepts of Genetics and Molecular Biology</h1>
+<div class="toc">
+<ul>
+<li><a href="#concepts-of-genetics-and-molecular-biology">Concepts of Genetics and Molecular Biology</a><ul>
+<li><a href="#definitions">Definitions</a></li>
+<li><a href="#characteristics-of-living-beings">Characteristics of Living Beings</a></li>
+<li><a href="#the-cell">The cell</a><ul>
+<li><a href="#prokaryotes">Prokaryotes</a></li>
+<li><a href="#eukaryotes">Eukaryotes</a></li>
+</ul>
+</li>
+<li><a href="#the-four-main-types-of-biological-macromolecules">The four main types of biological macromolecules</a><ul>
+<li><a href="#proteins">Proteins</a></li>
+<li><a href="#polysaccharides">Polysaccharides</a></li>
+<li><a href="#lipids-fats">Lipids (Fats)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li><strong>Genetics</strong>: The branch of biology that explores heredity, focusing on how traits are passed from one generation to the next. These traits are governed by <strong>genes</strong>.</li>
+<li>
+<p><strong>Biology</strong>: The science that studies the structure, function, and interactions of living organisms, as well as the conditions necessary for life.</p>
+</li>
+<li>
+<p><strong>Molecular Biology</strong>: A field of biology that investigates living organisms at the molecular level, particularly focusing on the interactions of macromolecules like proteins, <strong>DNA</strong>, and <strong>RNA</strong>, which underlie biological processes.</p>
+</li>
+</ul>
+<h2 id="characteristics-of-living-beings">Characteristics of Living Beings</h2>
+<p>All living organisms share <strong>seven key characteristics</strong> that distinguish them from non-living matter:</p>
+<ul>
+<li>
+<p><strong>Structural Complexity</strong>: Organisms possess intricate structures at multiple levels, from the macroscopic (whole organisms) to the cellular and intracellular levels.</p>
+</li>
+<li>
+<p><strong>Organization</strong>: Living beings exhibit highly ordered and functional structures.</p>
+</li>
+<li>
+<p><strong>Macroscopic level</strong>: such as animals and plants.</p>
+</li>
+<li>
+<p><strong>Microscopic level</strong>: including cellular and intracellular organization.</p>
+</li>
+<li>
+<p><strong>Energy Utilization</strong>: Organisms derive energy from their environment (e.g., solar energy, chemical energy from food) to perform work, build, and maintain their structure.</p>
+</li>
+<li>
+<p><strong>Reproduction</strong>: Organisms have the ability to reproduce, ensuring the continuation of their species by passing down essential characteristics.</p>
+</li>
+<li>
+<p><strong>Development</strong>: In more complex organisms, a single cell can differentiate into multiple cell types, forming specialized tissues.</p>
+</li>
+<li>
+<p><strong>Response to Stimuli</strong>: Living organisms react to environmental cues to maximize their survival with minimal energy expenditure. For example:</p>
+</li>
+<li>
+<p>Movement in response to predators or light (in plants).</p>
+</li>
+<li>
+<p>Adjustments to changing climates.</p>
+</li>
+<li>
+<p><strong>Evolution</strong>: According to the majority of biologists, organisms undergo evolutionary changes over time, allowing them to adapt and transform in response to their environment.</p>
+</li>
+</ul>
+<h2 id="the-cell">The cell</h2>
+<p>The biological unit of all living beings is the cell</p>
+<ul>
+<li>Organisms:</li>
+<li>unicellular (made up of only one cell)</li>
+<li>multi-cellular (made up of a variable number of cells);</li>
+</ul>
+<blockquote>
+<p>on average, human being have about 37.2 trillions cells</p>
+</blockquote>
+<ul>
+<li>Depending on their structure the cells can be divided into:</li>
+<li><strong>Prokaryotes</strong>: have a nucleus not clearly separated from the rest of cellular matter</li>
+<li><strong>Eukaryotes</strong>: cells having a well defined structure</li>
+</ul>
+<h3 id="prokaryotes">Prokaryotes</h3>
+<ul>
+<li>
+<p><strong>Prokaryotes</strong> are <strong>unicellular organisms</strong>, meaning they consist of only one cell. They are considered the most <strong>simple and ancient</strong> life forms on Earth. Unlike more complex cells (eukaryotes), prokaryotes lack a nucleus and membrane-bound organelles.</p>
+</li>
+<li>
+<p><strong>Bacteria</strong>, a major group of prokaryotes, are the most <strong>numerous living organisms</strong> on the planet. They come in different <strong>shapes</strong>, which can be used to classify them:</p>
+</li>
+<li>
+<p><strong>Coccus (plural: cocci)</strong>: These bacteria are <strong>spherical</strong> or round-shaped (a).</p>
+</li>
+<li><strong>Bacillus (plural: bacilli)</strong>: These bacteria are <strong>rod-shaped</strong> or stick-like (b).</li>
+<li><strong>Spirillum (plural: spirilla)</strong>: These bacteria have a <strong>spiral or corkscrew shape</strong> (c).</li>
+</ul>
+<p><img alt="bacterias shapes" src="assets/bacteria-shapes.png" /></p>
+<ul>
+<li>The diversity in bacterial shapes is related to their <strong>function and movement</strong>:</li>
+<li><strong>Cocci</strong>: These tend to be non-motile or move in simple ways and often form clusters or chains.</li>
+<li><strong>Bacilli</strong>: These rod-shaped bacteria can have flagella for movement and are commonly involved in nutrient cycling.</li>
+<li><strong>Spirilla</strong>: These bacteria are more <strong>mobile</strong>, often moving using <strong>flagella</strong> (whip-like structures) to propel themselves, typically found in aquatic environments.</li>
+</ul>
+<p><strong>Examples of Bacteria</strong></p>
+<ul>
+<li><strong>Vibrio</strong>: A comma-shaped bacterium (related to cholera).</li>
+<li><strong>Staphylococci</strong>: A cluster-forming spherical bacterium (related to infections like staph).</li>
+<li><strong>Bacillus</strong>: A rod-shaped bacterium, often involved in decomposing organic matter.</li>
+<li><strong>Spirillum with flagella</strong>: A spiral-shaped bacterium that uses flagella to move, often found in stagnant water.</li>
+</ul>
+<p><img alt="bacteria real examples" src="assets/bacteria-real-examples.png" /></p>
+<p>These structural variations in bacteria help them adapt to different environments, aiding in their survival and interaction with other organisms, including humans.</p>
+<h3 id="eukaryotes">Eukaryotes</h3>
+<p><strong>Eukaryotic cells</strong> are more complex than prokaryotic cells and have a well-defined internal structure. They are found in all multicellular organisms (like animals, plants, fungi, and humans) as well as some unicellular organisms (like certain protists).</p>
+<p><img alt="Eukaryotic cell scheme" src="assets/eukaryote-cell.png" /></p>
+<ul>
+<li><strong>Plasma membrane</strong>:</li>
+<li>Eukaryotic cells are <strong>enclosed by a plasma membrane</strong>, which acts as a barrier controlling what enters and exits the cell. The membrane also maintains the cell's integrity and supports communication between the cell and its environment.</li>
+<li>
+<p><strong>Cytoplasm</strong>:</p>
+</li>
+<li>
+<p>Inside the plasma membrane, there is <strong>cytoplasm</strong>, which consists of a <strong>gel-like substance</strong> that fills the cell. This cytoplasm contains all the <strong>cellular components</strong> and allows for the movement of materials within the cell.</p>
+</li>
+<li>
+<p><strong>Nucleus</strong>:</p>
+</li>
+<li>
+<p>Unlike prokaryotes, eukaryotic cells have a <strong>well-defined nucleus</strong> that contains the cell's genetic material (DNA). The nucleus is enclosed by a <strong>nuclear envelope</strong>, a double membrane that separates the genetic material from the rest of the cell and controls the exchange of materials between the nucleus and the cytoplasm.</p>
+</li>
+<li>
+<p>The nucleus is the <strong>control center</strong> of the cell, regulating cell growth, division, and function by directing protein synthesis.</p>
+</li>
+<li>
+<p><strong>Chromosomes</strong>:</p>
+</li>
+<li>
+<p>Thread-like structures made of DNA and proteins found in the nucleus. They contain the cell’s genetic information and are crucial during cell division, ensuring DNA is accurately replicated and distributed.</p>
+</li>
+<li>
+<p><strong>Ribosomes</strong>:</p>
+</li>
+<li>
+<p>Small structures either <strong>floating freely in the cytoplasm or attached to the rough endoplasmic reticulum</strong>. Ribosomes are responsible for <strong>protein synthesis</strong> by translating genetic instructions into polypeptides (protein chains).</p>
+</li>
+<li>
+<p><strong>Organelles</strong>:</p>
+</li>
+<li>
+<p>In the cytoplasm, eukaryotic cells contain <strong>membrane-bound organelles</strong>, which perform <strong>specific vital functions</strong> necessary for the cell’s survival and operation. Some key organelles include:</p>
+</li>
+<li>
+<p><strong>Mitochondria</strong>:</p>
+<ul>
+<li>Often referred to as the "powerhouses" of the cell, mitochondria generate energy in the form of <strong>ATP (adenosine triphosphate)</strong> through a process called <strong>cellular respiration</strong>. Mitochondria play a crucial role in energy metabolism and are essential for powering various cellular activities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Endoplasmic reticulum (ER)</strong>:</p>
+<ul>
+<li>The <strong>endoplasmic reticulum</strong> is a network of membranes that helps in the <strong>production and transport of proteins and lipids</strong>. There are two types:</li>
+<li><strong>Rough ER</strong> (studded with ribosomes): Involved in the synthesis of proteins that are either secreted from the cell or sent to the cell membrane.</li>
+<li><strong>Smooth ER</strong> (lacks ribosomes): Responsible for lipid synthesis and detoxification of harmful substances.</li>
+</ul>
+</li>
+<li>
+<p><strong>Golgi apparatus</strong>:</p>
+<ul>
+<li>The <strong>Golgi apparatus</strong> functions like the cell's "post office." It <strong>modifies, sorts, and packages proteins</strong> and lipids made in the ER before they are sent to their final destination within or outside the cell. It plays a critical role in the secretion of proteins and in forming lysosomes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Lysosome</strong>:</p>
+</li>
+<li>These are <strong>small vesicles</strong> containing digestive enzymes. They break down waste materials, old cell parts, and foreign invaders, helping to maintain cellular health through waste disposal and recycling.</li>
+</ul>
+<h2 id="the-four-main-types-of-biological-macromolecules">The four main types of biological macromolecules</h2>
+<ol>
+<li>
+<p>Proteins</p>
+</li>
+<li>
+<p><strong>Function</strong>: Proteins are the <strong>workhorses of the cell</strong>, performing a wide range of functions. They are involved in almost every cellular process, including <strong>enzymatic reactions</strong> (as enzymes), <strong>structural support</strong> (e.g., collagen), <strong>transport</strong> (e.g., hemoglobin), <strong>signaling</strong> (e.g., hormones like insulin), and <strong>immune responses</strong> (e.g., antibodies).</p>
+</li>
+<li><strong>Structure</strong>: Proteins are composed of long chains of <strong>amino acids</strong>, which are folded into specific shapes. The shape of a protein determines its function.</li>
+<li>
+<p><strong>Importance</strong>: Without proteins, cells wouldn't be able to carry out vital tasks, such as metabolizing nutrients, moving molecules across membranes, or communicating with other cells.</p>
+</li>
+<li>
+<p>Polysaccharides</p>
+</li>
+<li>
+<p><strong>Function</strong>: Polysaccharides are <strong>complex carbohydrates</strong> made up of long chains of sugar molecules. They play crucial roles in <strong>energy storage</strong> (e.g., glycogen in animals, starch in plants) and as <strong>structural components</strong> (e.g., cellulose in plant cell walls).</p>
+</li>
+<li><strong>Structure</strong>: These molecules are polymers of simple sugars (monosaccharides), such as glucose. When many of these sugar units are linked together, they form polysaccharides.</li>
+<li>
+<p><strong>Importance</strong>: Polysaccharides are important for providing cells with <strong>energy</strong> and <strong>structure</strong>. For example, plants use cellulose to maintain their rigidity, and animals store glycogen as a quick energy source.</p>
+</li>
+<li>
+<p>Lipids</p>
+</li>
+<li>
+<p><strong>Function</strong>: Lipids, including <strong>fats, oils, and phospholipids</strong>, are essential for <strong>energy storage</strong>, <strong>cell membrane structure</strong>, and acting as signaling molecules (e.g., hormones).</p>
+</li>
+<li><strong>Structure</strong>: Lipids are not polymers like proteins or polysaccharides. They are made up of <strong>fatty acids and glycerol</strong>. In cell membranes, they form a <strong>bilayer</strong> that acts as a barrier, protecting the cell and controlling what enters and exits.</li>
+<li>
+<p><strong>Importance</strong>: Lipids play a vital role in maintaining the integrity of the cell membrane, enabling cells to keep their shape and protect their contents. They also serve as <strong>long-term energy storage</strong> and are involved in <strong>cell signaling</strong>.</p>
+</li>
+<li>
+<p>Nucleic acids</p>
+</li>
+<li>
+<p><strong>Function</strong>: Nucleic acids, including <strong>DNA</strong> (deoxyribonucleic acid) and <strong>RNA</strong> (ribonucleic acid), are responsible for <strong>storing and transmitting genetic information</strong>. DNA holds the instructions for building proteins, while RNA translates these instructions into action during protein synthesis.</p>
+</li>
+<li><strong>Structure</strong>: Nucleic acids are composed of <strong>nucleotides</strong>, which consist of a sugar, a phosphate group, and a nitrogenous base. In DNA, these bases are adenine (A), thymine (T), cytosine (C), and guanine (G). In RNA, thymine is replaced by uracil (U).</li>
+<li><strong>Importance</strong>: DNA is essential for <strong>heredity</strong> and provides the blueprint for all cellular functions. RNA plays a key role in <strong>protein synthesis</strong> by reading and translating DNA's instructions.</li>
+</ol>
+<h3 id="proteins">Proteins</h3>
+<p>Proteins are polymers constituted by chains of <strong>amino acids</strong> (monomers). There are <strong>20 different amino acids</strong> that make up proteins:</p>
+<ul>
+<li><strong>Alanine</strong> (Ala, A)</li>
+<li><strong>Cysteine</strong> (Cys, C)</li>
+<li><strong>Aspartic acid</strong> (Asp, D)</li>
+<li><strong>Glutamic acid</strong> (Glu, E)</li>
+<li><strong>Phenylalanine</strong> (Phe, F)</li>
+<li><strong>Glycine</strong> (Gly, G)</li>
+<li><strong>Histidine</strong> (His, H)</li>
+<li><strong>Isoleucine</strong> (Ile, I)</li>
+<li><strong>Lysine</strong> (Lys, K)</li>
+<li><strong>Leucine</strong> (Leu, L)</li>
+<li><strong>Methionine</strong> (Met, M)</li>
+<li><strong>Asparagine</strong> (Asn, N)</li>
+<li><strong>Proline</strong> (Pro, P)</li>
+<li><strong>Glutamine</strong> (Gln, Q)</li>
+<li><strong>Arginine</strong> (Arg, R)</li>
+<li><strong>Serine</strong> (Ser, S)</li>
+<li><strong>Threonine</strong> (Thr, T)</li>
+<li><strong>Valine</strong> (Val, V)</li>
+<li><strong>Tryptophan</strong> (Trp, W)</li>
+<li><strong>Tyrosine</strong> (Tyr, Y)</li>
+</ul>
+<p><img alt="amino acid structure" src="assets/amino-acid-structure.jpg" /></p>
+<p><strong>Amino acids</strong> are molecules composed of the following components:</p>
+<ul>
+<li>1 <strong>central atom of carbon</strong> (C), linked to:</li>
+<li>1 atom of <strong>hydrogen</strong> (H)</li>
+<li>1 <strong>amino group</strong> (-NH₂)</li>
+<li>1 <strong>carboxylate group</strong> (-COOH)</li>
+<li>1 <strong>side chain</strong> (R), which varies for each amino acid (e.g., Ala, Cys, Asp, etc.)</li>
+</ul>
+<p>The side chain (R-group) is what differentiates each amino acid and influences how they interact in protein folding and function. Amino acids (proteins) can have different functions:</p>
+<ul>
+<li>Structural (they constitute the cell’s frame)</li>
+<li>Enzymatic (catalyze (allow) the majority of cellular reactions)</li>
+<li>Hormonal (execute regulative functions)</li>
+<li>Immunity (defense from other entities, mediated by the Immunoglobulines)</li>
+</ul>
+<h3 id="polysaccharides">Polysaccharides</h3>
+<p>Polysaccharides are <strong>polymers</strong> made up of long chains of <strong>monosaccharides</strong> (simple sugars like glucose). They serve various functions, including <strong>energy storage</strong> and <strong>structural support</strong> in living organisms.</p>
+<ul>
+<li><strong>Glycogen</strong>:</li>
+<li>Glycogen is the primary <strong>energy storage</strong> polysaccharide in <strong>animals</strong>. It is highly branched and is stored mainly in the <strong>liver</strong> and <strong>muscles</strong>. When the body needs energy, glycogen is quickly broken down into glucose, which cells use for energy production (ATP). This makes it a crucial <strong>instant energy reservoir</strong>.</li>
+<li>
+<p><strong>Starch (Amid)</strong>:</p>
+</li>
+<li>
+<p>Starch is the most important energy storage polysaccharide in <strong>plants</strong>. It consists of two components:</p>
+<ul>
+<li><strong>Amylose</strong>: A linear chain of glucose molecules.</li>
+<li><strong>Amylopectin</strong>: A branched form of glucose.</li>
+</ul>
+</li>
+<li>
+<p>Plants store starch in structures like <strong>chloroplasts</strong> or <strong>amyloplasts</strong>, and it serves as a long-term <strong>energy reserve</strong> that can be broken down into glucose when needed for growth or energy.</p>
+</li>
+<li>
+<p><strong>Cellulose</strong>:</p>
+</li>
+<li>Cellulose is another polysaccharide found in <strong>plants</strong>, but unlike starch, it plays a <strong>structural role</strong>. It forms the <strong>cell wall</strong> of plant cells, providing rigidity and strength to the plant structure. Unlike starch and glycogen, cellulose is made of <strong>beta-glucose</strong> units, which humans cannot digest, but it’s a critical fiber source in the diet.</li>
+</ul>
+<p>In summary, polysaccharides are essential for:</p>
+<ul>
+<li><strong>Energy storage</strong> (glycogen in animals, starch in plants).</li>
+<li><strong>Structural support</strong> (cellulose in plants).</li>
+</ul>
+<h3 id="lipids-fats">Lipids (Fats)</h3>
+<p>Lipids, also known as fats, are <strong>hydrophobic molecules</strong> that play key roles in energy storage, structural components of membranes, and signaling.</p>
+<ul>
+<li>
+<p><strong>Cellular membrane constituents</strong>:</p>
+</li>
+<li>
+<p>Lipids, especially <strong>phospholipids</strong>, are the main components of the <strong>cell membrane</strong>. The membrane is made up of a <strong>phospholipid bilayer</strong>, which creates a barrier that protects the cell from the external environment and regulates what enters and exits the cell. The hydrophobic tails of phospholipids ensure that the membrane remains selectively permeable.</p>
+</li>
+<li>
+<p><strong>Energy reservoir</strong>:</p>
+</li>
+<li>Lipids also act as a <strong>long-term energy storage</strong>. They store more energy per gram compared to carbohydrates like glycogen. When the body runs low on carbohydrates, it breaks down lipids into fatty acids and glycerol, which can be used to generate ATP. This makes them an important <strong>energy source</strong> when carbohydrates are scarce.</li>
+<li><strong>Triglycerides</strong>, a type of lipid, are stored in <strong>adipose tissue</strong> in animals and are used as an energy reserve during fasting or periods of intense activity.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

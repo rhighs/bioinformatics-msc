@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Organic Chemistry - Bioinformatics for Computational Genomics</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Bioinformatics for Computational Genomics</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RESOURCES.html" class="nav-link">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Lectures</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../genetics-cellular-and-molecular-biology/index.html" class="dropdown-item">Genetics</a>
+</li>
+                                    
+<li>
+    <a href="index.html" class="dropdown-item active" aria-current="page">Organic Chemistry</a>
+</li>
+                                    
+<li>
+    <a href="../biochemistry/index.html" class="dropdown-item">Biochemistry</a>
+</li>
+                                    
+<li>
+    <a href="../bioinformatics-and-computational-biology/index.html" class="dropdown-item">Bioinformatics and Computational Biology</a>
+</li>
+                                    
+<li>
+    <a href="../statistics/index.html" class="dropdown-item">Statistics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../genetics-cellular-and-molecular-biology/index.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../biochemistry/index.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/rhighs/bioinformatics-msc.git/edit/master/docs/lectures/organic-chemistry/index.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#organic-chemistry" class="nav-link">Organic Chemistry</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#lessons" class="nav-link">Lessons</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chaatsheet-and-notes" class="nav-link">Chaatsheet and notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="organic-chemistry">Organic Chemistry</h1>
+<h2 id="lessons">Lessons</h2>
+<ol>
+<li><a href="lesson-1_17-09-2024-introduction.html">Introduction</a></li>
+<li><a href="lesson-2_19-09-2024.html">Atomic structure and chemical bonding</a></li>
+<li><a href="lesson-3_20-09-2024.html">Brønsted-Lowry Acids and Bases, Lewis Acids and Bases</a></li>
+<li><a href="lesson-4_24-09-2024.html">Functional groups, intermolecular forces and physical properties</a></li>
+<li><a href="lesson-5_27-09-2024.html">Alkanes and cycloalkanes, structures, conformations and newma projections</a></li>
+<li><a href="lesson-6_1-10-2024.html">Fundamentals of Stereochemistry: Chirality, Stereogenic Centers, Descriptors, Isomerism, and Optical Activity</a></li>
+</ol>
+<h2 id="chaatsheet-and-notes">Chaatsheet and notes</h2>
+<h3 id="alkyl-groups">Alkyl groups</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Number of Carbons</strong></th>
+<th><strong>Alkyl Group</strong></th>
+<th><strong>Formula</strong></th>
+<th><strong>Structure Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Methyl</td>
+<td><span class="arithmatex">\(\ce{CH3-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH3}\)</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ethyl</td>
+<td><span class="arithmatex">\(\ce{C2H5-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Propyl</td>
+<td><span class="arithmatex">\(\ce{C3H7-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Isopropyl</td>
+<td><span class="arithmatex">\(\ce{C3H7-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH(CH3)2}\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Butyl</td>
+<td><span class="arithmatex">\(\ce{C4H9-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH2CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Isobutyl</td>
+<td><span class="arithmatex">\(\ce{C4H9-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH(CH3)2}\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sec-butyl</td>
+<td><span class="arithmatex">\(\ce{C4H9-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH(CH3)CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Tert-butyl</td>
+<td><span class="arithmatex">\(\ce{C4H9-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-C(CH3)3}\)</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Pentyl</td>
+<td><span class="arithmatex">\(\ce{C5H11-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH2CH2CH2CH3}\)</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Isopentyl (or Isoamyl)</td>
+<td><span class="arithmatex">\(\ce{C5H11-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2CH2CH(CH3)2}\)</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Neopentyl</td>
+<td><span class="arithmatex">\(\ce{C5H11-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2C(CH3)3}\)</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Hexyl</td>
+<td><span class="arithmatex">\(\ce{C6H13-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2(CH2)4CH3}\)</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Heptyl</td>
+<td><span class="arithmatex">\(\ce{C7H15-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2(CH2)5CH3}\)</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Octyl</td>
+<td><span class="arithmatex">\(\ce{C8H17-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2(CH2)6CH3}\)</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Nonyl</td>
+<td><span class="arithmatex">\(\ce{C9H19-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2(CH2)7CH3}\)</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Decyl</td>
+<td><span class="arithmatex">\(\ce{C10H21-}\)</span></td>
+<td><span class="arithmatex">\(\ce{-CH2(CH2)8CH3}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="skeletal-structures">Skeletal structures</h4>
+<p align="center">
+    <img src="assets/alkyl-groups-skeletals.png" />
+</p>
+
+<h3 id="straight-chain-alkanes">Straight-chain alkanes</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Number of Carbons</strong></th>
+<th><strong>Alkane Name</strong></th>
+<th><strong>Formula</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Methane</td>
+<td><span class="arithmatex">\(\ce{CH4}\)</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ethane</td>
+<td><span class="arithmatex">\(\ce{C2H6}\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Propane</td>
+<td><span class="arithmatex">\(\ce{C3H8}\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Butane</td>
+<td><span class="arithmatex">\(\ce{C4H10}\)</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Pentane</td>
+<td><span class="arithmatex">\(\ce{C5H12}\)</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Hexane</td>
+<td><span class="arithmatex">\(\ce{C6H14}\)</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Heptane</td>
+<td><span class="arithmatex">\(\ce{C7H16}\)</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Octane</td>
+<td><span class="arithmatex">\(\ce{C8H18}\)</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Nonane</td>
+<td><span class="arithmatex">\(\ce{C9H20}\)</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Decane</td>
+<td><span class="arithmatex">\(\ce{C10H22}\)</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Undecane</td>
+<td><span class="arithmatex">\(\ce{C11H24}\)</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Dodecane</td>
+<td><span class="arithmatex">\(\ce{C12H26}\)</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tridecane</td>
+<td><span class="arithmatex">\(\ce{C13H28}\)</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Tetradecane</td>
+<td><span class="arithmatex">\(\ce{C14H30}\)</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Pentadecane</td>
+<td><span class="arithmatex">\(\ce{C15H32}\)</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Hexadecane</td>
+<td><span class="arithmatex">\(\ce{C16H34}\)</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Heptadecane</td>
+<td><span class="arithmatex">\(\ce{C17H36}\)</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Octadecane</td>
+<td><span class="arithmatex">\(\ce{C18H38}\)</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Nonadecane</td>
+<td><span class="arithmatex">\(\ce{C19H40}\)</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Icosane</td>
+<td><span class="arithmatex">\(\ce{C20H42}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="types-of-stereoisomers">Types of stereoisomers</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Mirror Image?</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enantiomers</strong></td>
+<td>Yes, non-superimposable</td>
+<td>L-alanine and D-alanine</td>
+</tr>
+<tr>
+<td><strong>Diastereoisomers</strong></td>
+<td>No</td>
+<td>Cis-trans isomers, epimers (D-glucose vs. D-galactose), anomers (α-D-glucose vs. β-D-glucose)</td>
+</tr>
+<tr>
+<td><strong>Conformational Isomers</strong></td>
+<td>No</td>
+<td>Chair and boat forms of cyclohexane, gauche and anti in butane</td>
+</tr>
+<tr>
+<td><strong>Atropisomers</strong></td>
+<td>No</td>
+<td>Restricted rotation biaryls (substituted biphenyls)</td>
+</tr>
+<tr>
+<td><strong>Configurational Isomers</strong></td>
+<td>Depends</td>
+<td>Encompasses both enantiomers and diastereoisomers</td>
+</tr>
+<tr>
+<td><strong>Homomers</strong></td>
+<td>Identical</td>
+<td>Two ethanol molecules</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stereochemistry-defs-cheatsheet">Stereochemistry defs cheatsheet</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Term</strong></th>
+<th><strong>Definition</strong></th>
+<th><strong>Key Characteristics</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Molecular Symmetry</strong></td>
+<td><strong>Chiral</strong></td>
+<td>Molecule that cannot be superimposed on its mirror image.</td>
+<td>- Has at least one stereogenic center<br> - No plane of symmetry<br> - Exists as two enantiomers (R and S forms)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Achiral</strong></td>
+<td>Molecule that can be superimposed on its mirror image.</td>
+<td>- Often has a plane of symmetry<br> - No stereogenic centers in most cases<br> - No enantiomers</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Meso Compound</strong></td>
+<td>Achiral molecule with stereogenic centers, has internal symmetry.</td>
+<td>- Contains stereogenic centers<br> - Plane of symmetry makes it superimposable on its mirror image<br> - Optically inactive</td>
+</tr>
+<tr>
+<td><strong>Types of Isomers</strong></td>
+<td><strong>Structural Isomers</strong></td>
+<td>Molecules with the same molecular formula but different connectivity.</td>
+<td>- Different physical and chemical properties<br> - Examples: chain isomers, positional isomers</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Stereoisomers</strong></td>
+<td>Molecules with the same molecular formula and connectivity but different spatial arrangements.</td>
+<td>- Includes enantiomers and diastereomers</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Conformational Isomers</strong></td>
+<td>Isomers that differ by rotation around single bonds.</td>
+<td>- Examples: staggered and eclipsed ethane<br> - Same connectivity, flexible arrangement</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Configurational Isomers</strong></td>
+<td>Isomers that cannot be interconverted without breaking bonds.</td>
+<td>- Includes enantiomers and diastereomers<br> - Require bond breaking to interconvert</td>
+</tr>
+<tr>
+<td><strong>Types of Stereoisomers</strong></td>
+<td><strong>Enantiomers</strong></td>
+<td>Non-superimposable mirror-image molecules.</td>
+<td>- Opposite configurations at all stereogenic centers<br> - Same physical properties (except optical rotation direction)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Diastereomers</strong></td>
+<td>Stereoisomers that are not mirror images of each other.</td>
+<td>- Different configurations at one or more (but not all) stereogenic centers<br> - Different physical and chemical properties</td>
+</tr>
+<tr>
+<td><strong>Enantiomeric Properties</strong></td>
+<td><strong>Optical Activity</strong></td>
+<td>Ability of chiral molecules to rotate plane-polarized light.</td>
+<td>- Clockwise rotation: (+) or dextrorotatory<br> - Counterclockwise rotation: (-) or levorotatory<br> - Racemic mixtures are optically inactive</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Racemic Mixture</strong></td>
+<td>1:1 mixture of two enantiomers, optically inactive as rotations cancel.</td>
+<td>- Forms</td>
+</tr>
+</tbody>
+</table>
+<p>racemate crystal structure in solids<br> - Often requires chiral resolution techniques to separate                                                                                          |
+| <strong>Stereochemical Rules</strong> | <strong>Cahn-Ingold-Prelog (CIP)</strong> | System to assign priority to substituents on a stereocenter for R/S configurations.                         | - Priority based on atomic number, bond multiplicity, and connectivity<br> - Used to determine R (clockwise) or S (counterclockwise) configurations at stereogenic centers                         |
+|                          | <strong>R/S Configuration</strong>  | Labels to specify the absolute configuration of a chiral center.                                                  | - Assign priorities, arrange so the lowest priority is away, and trace from highest to lowest to determine R or S                                                                                   |
+|                          | <strong>E/Z Configuration</strong>  | Used to designate the configuration of double bonds (geometric isomerism).                                        | - <strong>E</strong>: higher priority groups on opposite sides<br> - <strong>Z</strong>: higher priority groups on the same side                                                                                              |
+| <strong>Stereogenic Centers</strong>  | <strong>Stereogenic Center</strong> | Atom, usually carbon, with four different substituents, giving rise to chirality.                                 | - Necessary for chirality<br> - Each stereogenic center can have R or S configuration                                                                                                              |
+|                          | <strong>Prochiral Center</strong>   | Atom that can become chiral by changing one substituent.                                                          | - Important in reactions that introduce chirality<br> - Example: carbonyl carbon in prochiral ketones                                                                                               |
+| <strong>Stereochemistry in Reactions</strong> | <strong>Enantioselective</strong> | Reaction that selectively produces one enantiomer over the other.                                                     | - Common in synthesis of chiral drugs<br> - Requires chiral catalysts or reagents                                                                                                                   |
+|                          | <strong>Diastereoselective</strong> | Reaction that favors the formation of one diastereomer over others.                                               | - Involves chiral centers but doesn’t create mirror images<br> - Used in complex molecule synthesis                                                                                                 |
+|                          | <strong>Stereospecific</strong>     | Reaction where a specific stereoisomer of the reactant leads to a specific stereoisomer of the product.           | - Examples: SN2 reactions that invert configuration<br> - Mechanism inherently linked to stereochemistry                                                                                           |</p>
+<h3 id="textpk_a-value-trends"><span class="arithmatex">\(\text{pK}_a\)</span> value trends</h3>
+<ul>
+<li><strong>Lower pKa (&lt; 0)</strong>: Very strong acids, very weak conjugate bases.</li>
+<li><strong>pKa 0 to 5</strong>: Strong to moderate acids, weak conjugate bases.</li>
+<li><strong>pKa 5 to 14</strong>: Weak acids, moderate conjugate bases.</li>
+<li><strong>pKa &gt; 14</strong>: Very weak acids, strong bases.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Conjugate Acid pKa</th>
+<th>Conjugate Base Stability</th>
+<th>Leaving Group Quality</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pKa &lt; 0</strong></td>
+<td>Very stable (weak base)</td>
+<td>Excellent leaving group</td>
+<td><span class="arithmatex">\(\text{I}^-\)</span>, <span class="arithmatex">\(\text{Br}^-\)</span>, <span class="arithmatex">\(\text{Cl}^-\)</span></td>
+</tr>
+<tr>
+<td><strong>pKa 5–15</strong></td>
+<td>Moderately stable</td>
+<td>Moderate leaving group</td>
+<td><span class="arithmatex">\(\text{H}_2\text{O}\)</span>, alcohols</td>
+</tr>
+<tr>
+<td><strong>pKa &gt; 15</strong></td>
+<td>Unstable (strong base)</td>
+<td>Poor leaving group</td>
+<td><span class="arithmatex">\(\text{OH}^-\)</span>, <span class="arithmatex">\(\text{NH}_2^-\)</span>, alkoxides</td>
+</tr>
+</tbody>
+</table>
+<h3 id="acidity-and-basicity-trends">Acidity and basicity trends</h3>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Trend in Acidity</th>
+<th>Trend in Basicity</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Down a Group (e.g., HCl to HI)</strong></td>
+<td>Acidity increases</td>
+<td>Basicity decreases</td>
+<td>Larger atoms down a group form weaker bonds with <span class="arithmatex">\(\text{H}\)</span>, increasing acidity. Conjugate bases are more stable.</td>
+</tr>
+<tr>
+<td><strong>Across a Period (e.g., CH₄ to HF)</strong></td>
+<td>Acidity increases</td>
+<td>Basicity decreases</td>
+<td>More electronegative atoms across a period hold onto negative charge better, making stronger acids.</td>
+</tr>
+<tr>
+<td><strong>Electronegativity</strong></td>
+<td>Higher electronegativity = stronger acid</td>
+<td>Lower electronegativity = stronger base</td>
+<td>More electronegative atoms stabilize the conjugate base better, increasing acidity.</td>
+</tr>
+<tr>
+<td><strong>Atomic Size</strong></td>
+<td>Larger atoms = stronger acid</td>
+<td>Smaller atoms = stronger base</td>
+<td>Larger atoms stabilize the negative charge in the conjugate base, enhancing acidity.</td>
+</tr>
+<tr>
+<td><strong>Inductive Effect</strong></td>
+<td>Electron-withdrawing groups increase acidity</td>
+<td>Electron-donating groups increase basicity</td>
+<td>Electronegative groups near acidic sites pull electron density, stabilizing the conjugate base.</td>
+</tr>
+<tr>
+<td><strong>Resonance</strong></td>
+<td>Resonance stabilization increases acidity</td>
+<td>Resonance decreases basicity</td>
+<td>Delocalization of negative charge stabilizes the conjugate base, favoring acidity.</td>
+</tr>
+<tr>
+<td><strong>Hybridization</strong></td>
+<td>More s-character = stronger acid</td>
+<td>Less s-character = stronger base</td>
+<td><span class="arithmatex">\(sp\)</span> hybridized atoms hold negative charge closer, stabilizing the conjugate base.</td>
+</tr>
+<tr>
+<td><strong>Solvent Effects</strong></td>
+<td>Protic solvents stabilize acids</td>
+<td>Aprotic solvents stabilize bases</td>
+<td>Protic solvents can stabilize conjugate bases through hydrogen bonding, enhancing acidity.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="deprotonation-step-should-it-apply">Deprotonation step, should it apply?</h3>
+<p>If you see <strong>O or N with three bonds and a positive charge</strong> after the nucleophilic attack, <strong>apply deprotonation</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Apply Deprotonation?</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Oxygen or nitrogen with three bonds and a positive charge</strong> (e.g., <span class="arithmatex">\(\text{R-OH}_2^+\)</span> or <span class="arithmatex">\(\text{R-NH}_3^+\)</span>)</td>
+<td><strong>Yes</strong></td>
+<td>Oxygen and nitrogen prefer neutral states with fewer bonds.</td>
+</tr>
+<tr>
+<td><strong>Nitrogen with four bonds and a positive charge</strong> (e.g., <span class="arithmatex">\(\text{R}_4\text{N}^+\)</span>)</td>
+<td><strong>No</strong></td>
+<td>Quaternary ammonium ions are stable with a positive charge.</td>
+</tr>
+<tr>
+<td><strong>After nucleophilic attack by neutral molecule (e.g., <span class="arithmatex">\(\text{H}_2\text{O}\)</span> or <span class="arithmatex">\(\text{NH}_3\)</span>)</strong></td>
+<td><strong>Usually Yes</strong></td>
+<td>The nucleophile gains a proton and needs to lose it for stability.</td>
+</tr>
+<tr>
+<td><strong>Leaving group departure without proton gain</strong> (e.g., direct SN1/SN2)</td>
+<td><strong>No</strong></td>
+<td>No positive intermediate is formed that requires neutralization.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alkyl-halides-reaction-type-based-off-of-class-type-primary-secondary-tertiary">Alkyl halides, reaction type based off of class type (primary, secondary, tertiary)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Class of Halide</strong></th>
+<th><strong>Common Mechanisms</strong></th>
+<th><strong>Conditions Favoring Each Mechanism</strong></th>
+<th><strong>Example Reaction</strong></th>
+<th><strong>Product</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Alkyl Halide</strong></td>
+<td><span class="arithmatex">\(\text{S}_\text{N}2\)</span></td>
+<td>Strong nucleophile in aprotic solvent</td>
+<td><span class="arithmatex">\(\text{CH}_3\text{CH}_2\text{Br} + \text{OH}^- \rightarrow \text{CH}_3\text{CH}_2\text{OH} + \text{Br}^-\)</span></td>
+<td>Ethanol (<span class="arithmatex">\(\text{CH}_3\text{CH}_2\text{OH}\)</span>)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>E2</strong></td>
+<td>Strong base (e.g., NaOEt)</td>
+<td><span class="arithmatex">\(\text{CH}_3\text{CH}_2\text{CH}_2\text{Br} + \text{EtO}^- \rightarrow \text{CH}_2=\text{CHCH}_3 + \text{EtOH}\)</span></td>
+<td>Propene (<span class="arithmatex">\(\text{CH}_2=\text{CHCH}_3\)</span>)</td>
+</tr>
+<tr>
+<td></td>
+<td>No <span class="arithmatex">\(\text{S}_\text{N}1\)</span></td>
+<td>Primary carbocations are unstable</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>No E1</strong></td>
+<td>Primary carbocations are unstable</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Secondary Alkyl Halide</strong></td>
+<td><span class="arithmatex">\(\text{S}_\text{N}2\)</span></td>
+<td>Strong nucleophile, aprotic solvent</td>
+<td><span class="arithmatex">\(\text{CH}_3\text{CHBrCH}_3 + \text{CN}^- \rightarrow \text{CH}_3\text{CH(CN)CH}_3 + \text{Br}^-\)</span></td>
+<td>Isopropyl cyanide (<span class="arithmatex">\(\text{CH}_3\text{CH(CN)CH}_3\)</span>)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>E2</strong></td>
+<td>Strong base (e.g., NaOEt or NaOH)</td>
+<td><span class="arithmatex">\(\text{CH}_3\text{CHBrCH}_3 + \text{EtO}^- \rightarrow \text{CH}_3\text{CH=CH}_2 + \text{EtOH}\)</span></td>
+<td>Propene (<span class="arithmatex">\(\text{CH}_3\text{CH=CH}_2\)</span>)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><span class="arithmatex">\(\text{S}_\text{N}1\)</span></strong> (less common)</td>
+<td>Weak nucleophile, polar protic solvent</td>
+<td><span class="arithmatex">\(\text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \rightarrow \text{CH}_3\text{CH(OH)CH}_3 + \text{HBr}\)</span></td>
+<td>Isopropanol (<span class="arithmatex">\(\text{CH}_3\text{CH(OH)CH}_3\)</span>)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>E1</strong></td>
+<td>Weak base, polar protic solvent</td>
+<td>$text{CH}_3\text{CHBrCH}_3 + \text{H}_2\text{O} \</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>rightarrow \text{CH}_2=\text{CHCH}_3 + \text{HBr}$ | Propene (<span class="arithmatex">\(\text{CH}_3\text{CH=CH}_2\)</span>)       |
+| <strong>Tertiary Alkyl Halide</strong> | No <span class="arithmatex">\(\text{S}_\text{N}2\)</span>  due to steric hindrance | -                               | -                                                                       | -                                                |
+|                          | <span class="arithmatex">\(\text{S}_\text{N}1\)</span> | Weak nucleophile, polar protic solvent | <span class="arithmatex">\(\text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_3\text{COH} + \text{HBr}\)</span> | tert-Butyl alcohol (<span class="arithmatex">\(\text{(CH}_3\text{)}_3\text{COH}\)</span>) |
+|                          | <strong>E2</strong>                 | Strong base (e.g., NaOH, NaOEt)        | <span class="arithmatex">\(\text{(CH}_3\text{)}_3\text{CBr} + \text{OH}^- \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{H}_2\text{O} + \text{Br}^-\)</span> | Isobutene (<span class="arithmatex">\(\text{(CH}_3\text{)}_2\text{C=CH}_2\)</span>) |
+|                          | <strong>E1</strong>                 | Weak base, polar protic solvent        | <span class="arithmatex">\(\text{(CH}_3\text{)}_3\text{CBr} + \text{H}_2\text{O} \rightarrow \text{(CH}_3\text{)}_2\text{C=CH}_2 + \text{HBr}\)</span> | Isobutene (<span class="arithmatex">\(\text{(CH}_3\text{)}_2\text{C=CH}_2\)</span>) |</p>
+<h3 id="determining-the-relationships-between-molecules">Determining the relationships between molecules</h3>
+<p align="center">
+    <img src="assets/determine-relationships-between-mols.png" />
+</p>
+<p align="center">
+    <img src="assets/determine-relationships-between-mols-2.png" />
+</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/mathjax-config.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
